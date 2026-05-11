@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ETF & Mutual Fund Comparison Tool</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>ETF &amp; Mutual Fund Comparison Tool</h1>
+    <p class="tagline">Compare up to five funds on total return, CAGR, max drawdown, and volatility — dividend-adjusted, side by side.</p>
+  </header>
+
+  <main>
+    <section class="card form-card">
+      <h2>1. Enter tickers</h2>
+      <p class="muted">Up to five ETFs or mutual funds. Examples: VOO, QQQ, SCHD, VTSAX, FXAIX.</p>
+      <div id="ticker-inputs" class="ticker-grid"></div>
+
+      <h2>2. Pick a period</h2>
+      <div class="period-pills" role="group" aria-label="Time period">
+        <button type="button" class="pill" data-period="YTD">YTD</button>
+        <button type="button" class="pill" data-period="1Y">1Y</button>
+        <button type="button" class="pill" data-period="3Y">3Y</button>
+        <button type="button" class="pill active" data-period="5Y">5Y</button>
+        <button type="button" class="pill" data-period="10Y">10Y</button>
+      </div>
+
+      <details class="custom-range">
+        <summary>Or use a custom date range</summary>
+        <div class="range-inputs">
+          <label>Start <input type="date" id="custom-start"></label>
+          <label>End <input type="date" id="custom-end"></label>
+          <button type="button" id="clear-custom" class="link-btn">Clear custom range</button>
+        </div>
+      </details>
+
+      <div class="form-actions">
+        <button type="button" id="compare-btn" class="primary-btn">Compare</button>
+        <span id="compare-status" class="status-text" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <div id="warning-banner" class="warning-banner hidden" role="alert"></div>
+    <div id="error-banner" class="error-banner hidden" role="alert"></div>
+
+    <section id="results" class="results hidden">
+      <div class="chart-grid">
+        <div class="card chart-card">
+          <h3>Total Return</h3>
+          <canvas id="chart-total-return"></canvas>
+        </div>
+        <div class="card chart-card">
+          <h3>Annualized Volatility</h3>
+          <canvas id="chart-volatility"></canvas>
+        </div>
+        <div class="card chart-card">
+          <h3>Max Drawdown</h3>
+          <canvas id="chart-drawdown"></canvas>
+        </div>
+        <div class="card chart-card chart-card-wide">
+          <h3>Growth of $1,000</h3>
+          <canvas id="chart-growth"></canvas>
+        </div>
+      </div>
+
+      <div class="card table-card">
+        <h3>Summary</h3>
+        <div class="table-wrap">
+          <table id="summary-table">
+            <thead>
+              <tr>
+                <th>Fund</th>
+                <th>Ticker</th>
+                <th class="num">Total Return</th>
+                <th class="num">CAGR</th>
+                <th class="num">Max Drawdown</th>
+                <th class="num">Volatility</th>
+                <th>Inception</th>
+                <th>Data Start</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Disclaimer.</strong> Informational and educational use only — not financial, investment, tax, or legal advice. Data from Yahoo Finance via yfinance and may be delayed or incomplete. Past performance does not guarantee future results.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
