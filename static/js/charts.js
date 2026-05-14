@@ -1,6 +1,17 @@
 (function (global) {
-  const PALETTE = ["#4f46e5", "#10b981", "#f59e0b", "#ec4899", "#06b6d4"];
+  // Through the Noise — Editorial accents (+ soft neutral as 5th)
+  const PALETTE = ["#1F3D6B", "#1A6E6E", "#C84A30", "#B58820", "#5A554C"];
+  const GRID = "rgba(20, 24, 30, 0.10)";
+  const INK = "#14181E";
+  const SOFT = "#5A554C";
   const charts = {};
+
+  if (typeof Chart !== "undefined") {
+    Chart.defaults.font.family = "'IBM Plex Sans', system-ui, sans-serif";
+    Chart.defaults.font.size = 12;
+    Chart.defaults.color = SOFT;
+    Chart.defaults.borderColor = GRID;
+  }
 
   function colorFor(i) { return PALETTE[i % PALETTE.length]; }
 
@@ -48,7 +59,7 @@
         scales: {
           y: {
             ticks: { callback: v => v + "%" },
-            grid: { color: "#eef2f7" },
+            grid: { color: GRID },
             beginAtZero: opts && opts.beginAtZero,
           },
           x: {
@@ -108,12 +119,12 @@
           x: {
             type: "time",
             time: { unit: "year" },
-            grid: { color: "#eef2f7" },
+            grid: { color: GRID },
             ticks: { autoSkip: true, maxTicksLimit: 8 },
           },
           y: {
             ticks: { callback: v => "$" + numberFmt.format(v) },
-            grid: { color: "#eef2f7" },
+            grid: { color: GRID },
           },
         },
       },

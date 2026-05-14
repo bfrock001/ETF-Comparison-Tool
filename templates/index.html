@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ETF & Mutual Fund Comparison Tool</title>
+  <title>ETF Comparison Tool — Through the Noise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 </head>
 <body>
   <header class="site-header">
-    <h1>ETF &amp; Mutual Fund Comparison Tool</h1>
+    <h1 class="display-title">ETF Comparison Tool</h1>
+    <p class="byline">Presented by <span class="wordmark">Through the <em>Noise</em></span></p>
     <p class="tagline">Compare up to five funds on total return, CAGR, max drawdown, and volatility — dividend-adjusted, side by side.</p>
   </header>
 
