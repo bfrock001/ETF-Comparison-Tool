@@ -2,29 +2,28 @@
 
 from __future__ import annotations
 
+import logging
 import time
 from datetime import date, datetime
 from functools import lru_cache
 
 import pandas as pd
-import requests
 import yfinance as yf
 
 
+log = logging.getLogger(__name__)
+
 _RETRY_DELAYS = (0.5, 1.5, 4.0)
-_RETRYABLE = (
-    requests.exceptions.ConnectionError,
-    requests.exceptions.Timeout,
-    requests.exceptions.HTTPError,
-)
 
 
 def _with_retry(func, *args, **kwargs):
-    last_exc = None
+    last_exc: BaseException | None = None
     for delay in (*_RETRY_DELAYS, None):
         try:
             return func(*args, **kwargs)
-        except _RETRYABLE as e:
+        except (KeyboardInterrupt, SystemExit):
+            raise
+        except Exception as e:
             last_exc = e
             if delay is None:
                 raise
@@ -33,19 +32,51 @@ def _with_retry(func, *args, **kwargs):
         raise last_exc
 
 
-@lru_cache(maxsize=128)
+# Only successful validations are cached, so a transient Yahoo failure
+# (cold-start cookie/crumb miss, rate limit, etc.) cannot poison subsequent
+# lookups for the same symbol.
+_name_cache: dict[str, str] = {}
+
+
+def _lookup_name(ticker: yf.Ticker, symbol: str) -> str:
+    """Best-effort name resolution. Never raises — falls back to the symbol."""
+    try:
+        info = ticker.info or {}
+        name = info.get("longName") or info.get("shortName")
+        if name:
+            return name
+    except Exception as e:
+        log.warning("info lookup failed for %s: %r", symbol, e)
+    try:
+        fast = getattr(ticker, "fast_info", None)
+        if fast is not None:
+            name = fast.get("longName") if hasattr(fast, "get") else None
+            if name:
+                return name
+    except Exception as e:
+        log.warning("fast_info lookup failed for %s: %r", symbol, e)
+    return symbol
+
+
 def validate_ticker(symbol: str) -> dict:
     symbol = symbol.strip().upper()
     if not symbol:
         return {"valid": False, "name": None}
+    if symbol in _name_cache:
+        return {"valid": True, "name": _name_cache[symbol]}
+
     try:
-        info = _with_retry(lambda: yf.Ticker(symbol).info) or {}
-    except Exception:
+        ticker = yf.Ticker(symbol)
+        hist = _with_retry(lambda: ticker.history(period="5d", auto_adjust=True))
+    except Exception as e:
+        log.warning("validate_ticker history fetch failed for %s: %r", symbol, e)
         return {"valid": False, "name": None}
 
-    name = info.get("longName") or info.get("shortName")
-    if not name:
+    if hist is None or hist.empty:
         return {"valid": False, "name": None}
+
+    name = _lookup_name(ticker, symbol)
+    _name_cache[symbol] = name
     return {"valid": True, "name": name}
 
 
