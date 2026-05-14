@@ -67,6 +67,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 48px 32px 28px;
+  text-align: center;
 }
 .display-title {
   font-family: var(--serif);
@@ -83,7 +84,7 @@ main {
   font-size: 14px;
   font-weight: 400;
   color: var(--soft);
-  margin: 8px 0 0;
+  margin: 10px 0 0;
   letter-spacing: 0.01em;
 }
 .byline .wordmark {
@@ -101,7 +102,7 @@ main {
   font-family: var(--sans);
   font-size: 15px;
   color: var(--soft);
-  margin: 18px 0 0;
+  margin: 18px auto 0;
   max-width: 720px;
   line-height: 1.5;
 }
