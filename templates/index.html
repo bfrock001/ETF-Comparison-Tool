@@ -13,11 +13,23 @@
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <img class="brand-logo" src="{{ url_for('static', filename='btn-logo.svg') }}" alt="Beyond the Noise" width="56" height="62">
-    <h1 class="display-title">ETF Comparison Tool</h1>
-    <p class="byline">Presented by <span class="wordmark">Through the <em>Noise</em></span></p>
-    <p class="tagline">Compare up to five funds on total return, CAGR, max drawdown, and volatility — dividend-adjusted, side by side.</p>
+  <header class="page-header" role="banner">
+    <div class="page-header__inner">
+      <a class="brand" href="/">
+        <img class="brand__logo" src="{{ url_for('static', filename='btn-logo.svg') }}" alt="Beyond the Noise logo" />
+      </a>
+      <div class="page-header__titles">
+        <h1 class="page-title">ETF Comparison Tool</h1>
+        <p class="page-subtitle">Presented by <span class="brand-wordmark">
+          <span class="brand-wordmark__text">Beyond the <em>Noise</em></span>
+          <svg class="signal-mark" viewBox="0 0 240 40" aria-hidden="true" preserveAspectRatio="none">
+            <polyline points="4,22 16,8 28,30 40,12 52,28 64,14 76,26 88,10 100,28 112,16 124,24 136,12 148,28 160,14 172,30 184,10 196,26 208,16 220,28 232,18" fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+          </svg>
+        </span></p>
+        <p class="tagline">Compare up to five funds on total return, CAGR, max drawdown, and volatility — dividend-adjusted, side by side.</p>
+      </div>
+      <div class="header-spacer" aria-hidden="true"></div>
+    </div>
   </header>
 
   <main>
