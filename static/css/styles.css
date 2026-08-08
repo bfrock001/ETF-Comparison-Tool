@@ -1,18 +1,18 @@
 :root {
-  /* Through the Noise — Editorial palette */
-  --paper: #F1ECE2;
-  --paperAlt: #EDE7DA;
-  --ink: #14181E;
-  --soft: #5A554C;
-  --faint: #9C958A;
-  --rule: rgba(20, 24, 30, 0.14);
-  --grid: rgba(20, 24, 30, 0.10);
-  --gridFaint: rgba(20, 24, 30, 0.05);
+  /* Beyond the Noise — Editorial palette */
+  --paper: #ECE6D9;
+  --paperAlt: #E5DDCC;
+  --ink: #1B2129;
+  --soft: #57534A;
+  --faint: #928A7B;
+  --rule: rgba(27, 33, 41, 0.14);
+  --grid: rgba(27, 33, 41, 0.10);
+  --gridFaint: rgba(27, 33, 41, 0.05);
 
-  --clay: #C84A30;
-  --teal: #1A6E6E;
-  --navy: #1F3D6B;
-  --gold: #B58820;
+  --clay: #C44A30;
+  --teal: #2C7370;
+  --navy: #1E3A5F;
+  --gold: #B8932A;
 
   /* Semantic aliases */
   --bg: var(--paper);
@@ -21,10 +21,10 @@
   --accent-soft: rgba(31, 61, 107, 0.10);
 
   --warn-bg: rgba(181, 136, 32, 0.10);
-  --warn-ink: #6E5316;
+  --warn-ink: #7A5B12;
   --warn-line: rgba(181, 136, 32, 0.40);
   --error-bg: rgba(200, 74, 48, 0.08);
-  --error-ink: #8E2F1C;
+  --error-ink: #8A2F1C;
   --error-line: rgba(200, 74, 48, 0.40);
 
   /* Chart series — editorial accents + soft neutral as the 5th */
@@ -35,7 +35,7 @@
   --c5: var(--soft);
 
   --radius: 4px;
-  --serif: 'Instrument Serif', 'Cormorant Garamond', Georgia, serif;
+  --serif: 'Cormorant Garamond', Georgia, serif;
   --sans: 'IBM Plex Sans', system-ui, sans-serif;
   --mono: 'IBM Plex Mono', ui-monospace, monospace;
 }
@@ -429,3 +429,7 @@ main {
   main { padding: 0 20px 48px; }
   .site-header { padding: 32px 20px 20px; }
 }
+
+/* BTN header logo + footer credit (merge resolution) */
+.brand-logo { display:block; margin:0 auto 14px; width:56px; height:auto; }
+.site-footer .foot-brand { margin-top:8px; font-size:12.5px; }

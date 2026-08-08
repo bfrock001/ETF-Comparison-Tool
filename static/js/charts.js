@@ -1,9 +1,9 @@
 (function (global) {
-  // Through the Noise — Editorial accents (+ soft neutral as 5th)
-  const PALETTE = ["#1F3D6B", "#1A6E6E", "#C84A30", "#B58820", "#5A554C"];
-  const GRID = "rgba(20, 24, 30, 0.10)";
-  const INK = "#14181E";
-  const SOFT = "#5A554C";
+  // Beyond the Noise — Editorial accents (+ soft neutral as 5th)
+  const PALETTE = ["#1E3A5F", "#2C7370", "#C44A30", "#B8932A", "#57534A"];
+  const GRID = "rgba(27, 33, 41, 0.10)";
+  const INK = "#1B2129";
+  const SOFT = "#57534A";
   const charts = {};
 
   if (typeof Chart !== "undefined") {

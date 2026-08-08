@@ -18,6 +18,11 @@ def index():
     return render_template("index.html")
 
 
+@app.get("/terms")
+def terms():
+    return render_template("terms.html")
+
+
 @app.get("/api/validate")
 def api_validate():
     ticker = request.args.get("ticker", "").strip()
