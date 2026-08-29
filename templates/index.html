@@ -35,7 +35,7 @@
   <nav class="tabs" role="tablist" aria-label="Tools">
     <div class="tabs__inner">
       <button type="button" class="tab active" role="tab" aria-selected="true" data-tab="compare">Compare funds</button>
-      <button type="button" class="tab" role="tab" aria-selected="false" data-tab="screener">Asset-class screener</button>
+      <button type="button" class="tab" role="tab" aria-selected="false" data-tab="screener">Fund Finder</button>
     </div>
   </nav>
 
@@ -119,7 +119,7 @@
     <div id="panel-screener" class="tab-panel hidden" role="tabpanel">
       <section class="card form-card">
         <h2>1. Choose an asset class</h2>
-        <p class="muted">The largest ETFs and mutual funds in the class, ranked by fund size — with fees, trailing returns, and a risk-adjusted score. Your preferred fund is marked <span class="anchor-tag">★ pick</span>.</p>
+        <p class="muted">The largest ETFs and mutual funds in the class, ranked by fund size — with fees, trailing returns, and a risk-adjusted score. Your preferred fund is marked <span class="anchor-tag">★ pick</span>. Tick up to five funds, then send them to Compare to chart them side by side.</p>
         <div class="screener-controls">
           <label class="field">
             <span class="field__label">Asset class</span>
@@ -138,10 +138,12 @@
 
       <section id="screener-results" class="card table-card">
         <h3 id="screener-title">Funds</h3>
+        <div id="finder-selection" class="finder-selection hidden" aria-live="polite"></div>
         <div class="table-wrap">
           <table id="screener-table">
             <thead>
               <tr>
+                <th class="select-col" aria-label="Select"></th>
                 <th data-sort="name" class="sortable">Fund</th>
                 <th data-sort="aum" class="sortable num">AUM</th>
                 <th data-sort="expense" class="sortable num">Fees</th>

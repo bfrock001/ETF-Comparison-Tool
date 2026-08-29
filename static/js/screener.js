@@ -15,12 +15,16 @@
     table: document.getElementById("screener-table"),
     tbody: document.querySelector("#screener-table tbody"),
     headers: document.querySelectorAll("#screener-table th.sortable"),
+    selection: document.getElementById("finder-selection"),
   };
 
   // Columns where a lower number is better, so the first click sorts ascending.
   const LOWER_IS_BETTER = new Set(["expense"]);
   // Columns that sort as text.
   const TEXT_COLS = new Set(["name"]);
+  const MAX_SELECT = 5;
+
+  const selected = new Set();  // tickers chosen for comparison (persists across classes)
 
   let dataset = null;          // full JSON payload
   let classIndex = {};         // id -> class object
@@ -173,7 +177,7 @@
     const rows = visibleRows();
     if (!rows.length) {
       els.tbody.innerHTML =
-        '<tr><td colspan="10" class="empty-row">No ' +
+        '<tr><td colspan="11" class="empty-row">No ' +
         (typeFilter === "all" ? "" : typeFilter.toLowerCase() + " ") +
         "funds in this class.</td></tr>";
       updateHeaderIndicators();
@@ -193,6 +197,8 @@
           (r.note ? " · <span class='fund-note' title=\"" + r.note.replace(/"/g, "&quot;") + "\">yield-based ⓘ</span>" : "") +
         "</div>";
       tr.innerHTML =
+        "<td class='select-cell'><input type='checkbox' class='fund-check' data-ticker='" +
+          r.ticker + "' aria-label='Select " + r.ticker + "'></td>" +
         "<td>" + nameCell + "</td>" +
         "<td class='num'>" + fmtAum(r.aum) + "</td>" +
         "<td class='num'>" + fmtExpense(r.expense) + "</td>" +
@@ -206,6 +212,7 @@
       els.tbody.appendChild(tr);
     });
     updateHeaderIndicators();
+    refreshChecks();
   }
 
   function updateHeaderIndicators() {
@@ -215,6 +222,57 @@
         th.classList.add(sortDir === "asc" ? "sorted-asc" : "sorted-desc");
       }
     });
+  }
+
+  // ---- selection ----------------------------------------------------------
+  // Sync the visible checkboxes to the selection set and disable the rest once
+  // five are chosen. The set itself persists across class / filter / sort.
+  function refreshChecks() {
+    const full = selected.size >= MAX_SELECT;
+    els.tbody.querySelectorAll(".fund-check").forEach((cb) => {
+      cb.checked = selected.has(cb.dataset.ticker);
+      cb.disabled = full && !cb.checked;
+    });
+  }
+
+  function renderSelectionBar() {
+    const n = selected.size;
+    if (!n) {
+      els.selection.classList.add("hidden");
+      els.selection.innerHTML = "";
+      return;
+    }
+    const chips = [...selected].map((t) =>
+      "<span class='sel-chip'>" + t +
+      "<button type='button' class='sel-chip__x' data-remove='" + t +
+      "' aria-label='Remove " + t + "'>×</button></span>"
+    ).join("");
+    els.selection.innerHTML =
+      "<span class='finder-selection__label'>Compare</span>" +
+      "<span class='sel-chips'>" + chips + "</span>" +
+      "<span class='finder-selection__count'>" + n + " / " + MAX_SELECT + "</span>" +
+      "<button type='button' id='compare-selected' class='primary-btn primary-btn--sm'>" +
+        "Compare selected →</button>" +
+      "<button type='button' id='clear-selection' class='link-btn'>Clear</button>";
+    els.selection.classList.remove("hidden");
+  }
+
+  function selectionChanged() {
+    renderSelectionBar();
+    refreshChecks();
+  }
+
+  function clearSelection() {
+    selected.clear();
+    selectionChanged();
+  }
+
+  function compareSelected() {
+    if (!selected.size || !window.ETFCompare) return;
+    window.ETFCompare.setTickers([...selected]);
+    activateTab("compare");
+    window.ETFCompare.run();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   // ---- error --------------------------------------------------------------
@@ -247,6 +305,28 @@
       }
       if (currentClass) render();
     }));
+
+    // Row checkboxes (delegated — the tbody is rebuilt on every render).
+    els.tbody.addEventListener("change", (e) => {
+      const cb = e.target.closest(".fund-check");
+      if (!cb) return;
+      const ticker = cb.dataset.ticker;
+      if (cb.checked) {
+        if (selected.size >= MAX_SELECT) { cb.checked = false; return; }
+        selected.add(ticker);
+      } else {
+        selected.delete(ticker);
+      }
+      selectionChanged();
+    });
+
+    // Selection bar: remove a chip, clear all, or send to Compare.
+    els.selection.addEventListener("click", (e) => {
+      const rm = e.target.closest("[data-remove]");
+      if (rm) { selected.delete(rm.dataset.remove); selectionChanged(); return; }
+      if (e.target.closest("#clear-selection")) { clearSelection(); return; }
+      if (e.target.closest("#compare-selected")) { compareSelected(); return; }
+    });
   }
 
   document.addEventListener("DOMContentLoaded", wire);

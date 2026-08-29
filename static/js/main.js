@@ -223,6 +223,20 @@
     });
   }
 
+  // Small API so the Fund Finder tab can push a selection into this tab.
+  window.ETFCompare = {
+    setTickers(tickers) {
+      const inputs = Array.from(els.inputs.querySelectorAll("input"));
+      inputs.forEach((inp, i) => {
+        inp.value = (tickers[i] || "").toUpperCase();
+        inp.classList.remove("invalid");
+        const fb = els.inputs.querySelector('.ticker-feedback[data-for="' + i + '"]');
+        if (fb) { fb.textContent = ""; fb.className = "ticker-feedback"; }
+      });
+    },
+    run() { runCompare(); },
+  };
+
   document.addEventListener("DOMContentLoaded", () => {
     buildTickerInputs();
     wirePeriodPills();
