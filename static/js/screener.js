@@ -16,6 +16,8 @@
     tbody: document.querySelector("#screener-table tbody"),
     headers: document.querySelectorAll("#screener-table th.sortable"),
     selection: document.getElementById("finder-selection"),
+    showSelect: document.getElementById("show-count-select"),
+    count: document.getElementById("screener-count"),
   };
 
   // Columns where a lower number is better, so the first click sorts ascending.
@@ -32,6 +34,7 @@
   let typeFilter = "all";
   let sortKey = "aum";
   let sortDir = "desc";
+  let showCount = 10;          // 10 | 25 | Infinity ("all")
   let loaded = false;
 
   // ---- tab switching ------------------------------------------------------
@@ -74,6 +77,10 @@
         year: "numeric", month: "long", day: "numeric",
       }) + " · dividend-adjusted, via Yahoo Finance.";
     }
+    // Force the display controls to their defaults so a browser-restored
+    // value can't leave the control out of sync with the rendered rows.
+    els.showSelect.value = "10";
+    showCount = 10;
     const first = dataset.classes[0];
     if (first) { els.select.value = first.id; selectClass(first.id); }
   }
@@ -174,24 +181,23 @@
 
   function render() {
     els.tbody.innerHTML = "";
-    const rows = visibleRows();
-    if (!rows.length) {
+    const all = visibleRows();                    // filtered + sorted
+    const rows = showCount === Infinity ? all : all.slice(0, showCount);
+    if (!all.length) {
       els.tbody.innerHTML =
         '<tr><td colspan="11" class="empty-row">No ' +
         (typeFilter === "all" ? "" : typeFilter.toLowerCase() + " ") +
         "funds in this class.</td></tr>";
+      updateCount(0, 0);
       updateHeaderIndicators();
       return;
     }
     rows.forEach((r) => {
-      const isAnchor = r.ticker === currentClass.anchor;
       const tr = document.createElement("tr");
-      if (isAnchor) tr.className = "anchor-row";
       const nameCell =
         "<div class='fund-name'>" +
           typeChip(r.type) +
           "<span class='fund-name__text'>" + (r.name || r.ticker) + "</span>" +
-          (isAnchor ? " <span class='anchor-tag'>★ pick</span>" : "") +
         "</div>" +
         "<div class='fund-sub'>" + r.ticker +
           (r.note ? " · <span class='fund-note' title=\"" + r.note.replace(/"/g, "&quot;") + "\">yield-based ⓘ</span>" : "") +
@@ -213,6 +219,14 @@
     });
     updateHeaderIndicators();
     refreshChecks();
+    updateCount(rows.length, all.length);
+  }
+
+  function updateCount(shown, total) {
+    if (!total) { els.count.textContent = ""; return; }
+    els.count.textContent = shown < total
+      ? "Showing the top " + shown + " of " + total + " funds (ranked by the sorted column)."
+      : "Showing all " + total + " funds in this class.";
   }
 
   function updateHeaderIndicators() {
@@ -287,6 +301,12 @@
     els.tabs.forEach((t) => t.addEventListener("click", () => activateTab(t.dataset.tab)));
 
     els.select.addEventListener("change", () => selectClass(els.select.value));
+
+    els.showSelect.addEventListener("change", () => {
+      const v = els.showSelect.value;
+      showCount = v === "all" ? Infinity : parseInt(v, 10);
+      if (currentClass) render();
+    });
 
     els.typePills.forEach((p) => p.addEventListener("click", () => {
       els.typePills.forEach((x) => x.classList.remove("active"));

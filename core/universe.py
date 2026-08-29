@@ -1,14 +1,19 @@
-"""Curated fund universe for the Screener tab.
+"""Curated fund universe for the Fund Finder tab.
 
 There is no free screener API (yfinance can only look up funds you name), so the
 candidate set for each asset class is maintained by hand here. The build pipeline
 (`build_universe.py`) then resolves each ticker against Yahoo Finance, drops any
 that fail, and ranks the survivors by AUM — so the ordering below is not
-significant, only the membership is.
+significant, only the membership is. The UI shows the top 10 by default with a
+"show 25 / all" control, so the long tail just adds browse depth.
+
+The lists are ETF-heavy on purpose: Yahoo's expense-ratio data is accurate for
+ETFs but unreliable for mutual funds, so every mutual fund included here also has
+a verified fee in EXPENSE_OVERRIDES below. Narrow classes (gold, long treasury,
+etc.) simply don't have 35-40 sizable funds — they list as many as genuinely
+exist.
 
 `anchor` is the user's preferred fund for the class (highlighted in the UI).
-Keep families diverse (Vanguard / Fidelity / Schwab / iShares / SPDR / State
-Street) so fees and returns can compete head-to-head.
 """
 
 from __future__ import annotations
@@ -25,45 +30,45 @@ GROUPS = ["US Equity", "International Equity", "Fixed Income", "Alternatives"]
 #     change rarely; re-check against the fund's own fact sheet if in doubt. <<<
 EXPENSE_OVERRIDES: dict[str, float] = {
     # Total Market
-    "VTSAX": 0.04, "FSKAX": 0.015, "SWTSX": 0.03, "FZROX": 0.00, "VTSMX": 0.14,
+    "VTSAX": 0.04, "VTSMX": 0.14, "FSKAX": 0.015, "FZROX": 0.00, "SWTSX": 0.03,
+    "VITSX": 0.03, "VSMPX": 0.02, "FSTMX": 0.015,
     # Large Cap Blend
-    "VFIAX": 0.04, "FXAIX": 0.015, "SWPPX": 0.02,
+    "VFIAX": 0.04, "FXAIX": 0.015, "SWPPX": 0.02, "VLCAX": 0.05, "VINIX": 0.035,
+    "VFINX": 0.14, "FNILX": 0.00, "PREIX": 0.19, "FUSEX": 0.015, "SVSPX": 0.16,
     # Large Cap Value
-    "VVIAX": 0.05, "DODGX": 0.51, "FLCOX": 0.035,
+    "VVIAX": 0.05, "DODGX": 0.51, "FLCOX": 0.035, "VIVAX": 0.17,
     # Mid Cap Value
     "VMVAX": 0.07,
     # Mid Cap Growth
-    "VMGMX": 0.07, "VMGRX": 0.36,
+    "VMGMX": 0.07, "VMGRX": 0.36, "RPMGX": 0.73,
     # Small Cap Value
-    "VSIAX": 0.07,
+    "VSIAX": 0.07, "VISVX": 0.17,
     # Small Cap Growth
-    "VSGAX": 0.07,
+    "VSGAX": 0.07, "VISGX": 0.17,
     # Intl Developed
-    "VTMGX": 0.07, "FSPSX": 0.035, "SWISX": 0.06, "VDVIX": 0.16,
+    "VTMGX": 0.07, "FSPSX": 0.035, "SWISX": 0.06, "VDVIX": 0.16, "VTMNX": 0.06,
     # Emerging Markets
-    "VEMAX": 0.14, "FPADX": 0.075,
+    "VEMAX": 0.14, "FPADX": 0.075, "VEIEX": 0.28,
     # Total International
-    "VTIAX": 0.09, "FTIHX": 0.06, "VFWAX": 0.11, "VGTSX": 0.17,
+    "VTIAX": 0.09, "FTIHX": 0.06, "VFWAX": 0.11, "VGTSX": 0.17, "FSGGX": 0.055,
+    "FZILX": 0.00, "VTSNX": 0.08,
     # Total Bond
-    "VBTLX": 0.05, "FXNAX": 0.025, "SWAGX": 0.04,
+    "VBTLX": 0.05, "FXNAX": 0.025, "SWAGX": 0.04, "VBTIX": 0.035, "DODIX": 0.41,
+    "FTBFX": 0.45,
     # Corp Bonds
     "VICSX": 0.07, "VWESX": 0.20, "FCBFX": 0.45,
     # LT Treasury
-    "VLGSX": 0.07, "VUSTX": 0.20,
+    "VLGSX": 0.07, "VUSTX": 0.20, "FNBGX": 0.03,
     # Interm Treasury
-    "VSIGX": 0.07, "FUAMX": 0.03, "VFITX": 0.20,
+    "VSIGX": 0.07, "VFITX": 0.20, "FUAMX": 0.03,
     # TIPS
-    "VAIPX": 0.10, "VIPSX": 0.20, "FIPDX": 0.05,
+    "VAIPX": 0.10, "VIPSX": 0.20, "FIPDX": 0.05, "FINPX": 0.05, "VTAPX": 0.04,
     # REIT
-    "VGSLX": 0.13, "FSRNX": 0.07, "TRREX": 0.65,
+    "VGSLX": 0.13, "FSRNX": 0.07, "TRREX": 0.65, "FRESX": 0.70, "CSRSX": 0.87,
     # Money-market (ST T-Bills)
     "VUSXX": 0.09, "VMFXX": 0.11,
 }
 
-
-def expense_for(ticker: str, yahoo_value: float | None) -> float | None:
-    """Curated expense ratio when we have one, else Yahoo's value."""
-    return EXPENSE_OVERRIDES.get(ticker.upper(), yahoo_value)
 
 # id -> metadata. `tickers` is the full candidate universe (includes the anchor).
 ASSET_CLASSES: dict[str, dict] = {
@@ -73,8 +78,10 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "US Equity",
         "anchor": "VTSAX",
         "tickers": [
-            "VTSAX", "VTI", "FSKAX", "ITOT", "SCHB", "SWTSX", "FZROX",
-            "SPTM", "IWV", "VTSMX",
+            # ETFs
+            "VTI", "ITOT", "SCHB", "SPTM", "IWV", "VTHR",
+            # Mutual funds
+            "VTSAX", "FSKAX", "FZROX", "SWTSX", "VTSMX", "VITSX", "VSMPX", "FSTMX",
         ],
     },
     "large-cap-blend": {
@@ -82,8 +89,12 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "US Equity",
         "anchor": "VFIAX",
         "tickers": [
-            "VFIAX", "VOO", "IVV", "SPY", "FXAIX", "SWPPX", "SPLG",
-            "SCHX", "VV", "IWB",
+            # ETFs
+            "VOO", "IVV", "SPY", "SPLG", "SCHX", "VV", "IWB", "VONE", "RSP",
+            "OEF", "SCHK", "IWL", "MGC", "DIA", "SPTM",
+            # Mutual funds
+            "VFIAX", "FXAIX", "SWPPX", "VLCAX", "VINIX", "VFINX", "FNILX",
+            "PREIX", "FUSEX", "SVSPX",
         ],
     },
     "large-cap-value": {
@@ -91,8 +102,11 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "US Equity",
         "anchor": "VVIAX",
         "tickers": [
-            "VVIAX", "VTV", "IWD", "SCHV", "DODGX", "SPYV", "VONV",
-            "VLUE", "FLCOX", "IVE",
+            # ETFs
+            "VTV", "IWD", "SCHV", "SPYV", "VONV", "IVE", "VLUE", "MGV", "RPV",
+            "PRF", "FVD", "VYM", "DVY", "SDY", "DHS", "FTA",
+            # Mutual funds
+            "VVIAX", "DODGX", "FLCOX", "VIVAX",
         ],
     },
     "mid-cap-value": {
@@ -100,7 +114,10 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "US Equity",
         "anchor": "VMVAX",
         "tickers": [
-            "VMVAX", "VOE", "IWS", "IJJ", "IVOV", "XMVM", "FLQM",
+            # ETFs
+            "VOE", "IWS", "IJJ", "IVOV", "MDYV", "IMCV", "XMVM", "RFV", "FLQM",
+            # Mutual funds
+            "VMVAX",
         ],
     },
     "mid-cap-growth": {
@@ -108,8 +125,10 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "US Equity",
         "anchor": "VMGMX",
         "tickers": [
-            "VMGMX", "VOT", "IWP", "IMCG", "VMGRX", "SPMD", "EFG",
-            "XMMO", "PWB",
+            # ETFs
+            "VOT", "IWP", "IMCG", "MDYG", "RFG", "XMHQ", "GGRW", "PEZ",
+            # Mutual funds
+            "VMGMX", "VMGRX", "RPMGX",
         ],
     },
     "small-cap-value": {
@@ -117,7 +136,11 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "US Equity",
         "anchor": "VSIAX",
         "tickers": [
-            "VSIAX", "VBR", "AVUV", "IWN", "IJS", "SLYV", "DFSV", "VTWV",
+            # ETFs
+            "VBR", "AVUV", "IWN", "IJS", "SLYV", "DFSV", "VTWV", "VIOV", "ISCV",
+            "RZV", "DES", "EES", "FNDA",
+            # Mutual funds
+            "VSIAX", "VISVX",
         ],
     },
     "small-cap-growth": {
@@ -125,8 +148,11 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "US Equity",
         "anchor": "VSGAX",
         "tickers": [
-            "VSGAX", "VBK", "IWO", "IJT", "SLYG", "VTWG", "GSSC",
-            "XSMO", "PSCG",
+            # ETFs
+            "VBK", "IWO", "IJT", "SLYG", "VTWG", "GSSC", "XSMO", "VIOG", "ISCG",
+            "RZG",
+            # Mutual funds
+            "VSGAX", "VISGX",
         ],
     },
     # ---- International Equity ------------------------------------------------
@@ -135,8 +161,11 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "International Equity",
         "anchor": "VTMGX",
         "tickers": [
-            "VTMGX", "VEA", "IEFA", "SCHF", "EFA", "FSPSX", "SWISX",
-            "IDEV", "SPDW", "VDVIX",
+            # ETFs
+            "VEA", "IEFA", "SCHF", "EFA", "IDEV", "SPDW", "EFAV", "EFG", "EFV",
+            "DBEF", "HEFA", "DFIC", "IQLT", "FNDF", "GSIE",
+            # Mutual funds
+            "VTMGX", "FSPSX", "SWISX", "VDVIX", "VTMNX",
         ],
     },
     "emerging-markets": {
@@ -144,8 +173,11 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "International Equity",
         "anchor": "VEMAX",
         "tickers": [
-            "VEMAX", "VWO", "IEMG", "EEM", "SCHE", "SPEM", "FPADX",
-            "DGS",
+            # ETFs
+            "VWO", "IEMG", "EEM", "SCHE", "SPEM", "EEMV", "FNDE", "EMXC", "DEM",
+            "EDIV", "XSOE", "AVEM", "DGRE", "DGS",
+            # Mutual funds
+            "VEMAX", "FPADX", "VEIEX",
         ],
     },
     "total-international": {
@@ -153,8 +185,10 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "International Equity",
         "anchor": "VTIAX",
         "tickers": [
-            "VTIAX", "VXUS", "IXUS", "VEU", "FTIHX", "ACWX", "CWI",
-            "VFWAX", "VGTSX",
+            # ETFs
+            "VXUS", "IXUS", "VEU", "ACWX", "CWI", "DFAX",
+            # Mutual funds
+            "VTIAX", "FTIHX", "VFWAX", "VGTSX", "FSGGX", "FZILX", "VTSNX",
         ],
     },
     # ---- Fixed Income -------------------------------------------------------
@@ -163,8 +197,11 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "Fixed Income",
         "anchor": "VBTLX",
         "tickers": [
-            "VBTLX", "BND", "AGG", "FXNAX", "SCHZ", "SWAGX", "SPAB",
-            "BNDW", "IUSB",
+            # ETFs
+            "BND", "AGG", "SCHZ", "SPAB", "BNDW", "IUSB", "BIV", "FBND", "BOND",
+            "AGGY", "EAGG",
+            # Mutual funds
+            "VBTLX", "FXNAX", "SWAGX", "VBTIX", "DODIX", "FTBFX",
         ],
     },
     "corp-bonds": {
@@ -172,8 +209,11 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "Fixed Income",
         "anchor": "VICSX",
         "tickers": [
-            "VICSX", "LQD", "VCIT", "VCSH", "IGIB", "SPIB", "USIG",
-            "VWESX", "FCBFX",
+            # ETFs
+            "LQD", "VCIT", "VCSH", "IGIB", "SPIB", "USIG", "VCLT", "SPLB",
+            "IGSB", "IGLB", "SLQD", "SPSB", "CORP", "GIGB", "FLCB",
+            # Mutual funds
+            "VICSX", "VWESX", "FCBFX",
         ],
     },
     "lt-treasury": {
@@ -181,8 +221,10 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "Fixed Income",
         "anchor": "VLGSX",
         "tickers": [
-            "VLGSX", "TLT", "VGLT", "SPTL", "EDV", "TLH", "VUSTX",
-            "GOVZ",
+            # ETFs
+            "TLT", "VGLT", "SPTL", "EDV", "TLH", "GOVZ", "ZROZ",
+            # Mutual funds
+            "VLGSX", "VUSTX", "FNBGX",
         ],
     },
     "interm-treasury": {
@@ -190,8 +232,10 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "Fixed Income",
         "anchor": "VSIGX",
         "tickers": [
-            "VSIGX", "IEF", "VGIT", "SPTI", "IEI", "SCHR", "FUAMX",
-            "VFITX",
+            # ETFs
+            "IEF", "VGIT", "SPTI", "IEI", "SCHR", "GOVT",
+            # Mutual funds
+            "VSIGX", "VFITX", "FUAMX",
         ],
     },
     "tips": {
@@ -199,8 +243,10 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "Fixed Income",
         "anchor": "TIP",
         "tickers": [
-            "TIP", "SCHP", "VTIP", "VAIPX", "STIP", "SPIP", "FIPDX",
-            "TDTT", "VIPSX",
+            # ETFs
+            "TIP", "SCHP", "VTIP", "STIP", "SPIP", "TDTT", "LTPZ", "STPZ", "TIPX",
+            # Mutual funds
+            "VAIPX", "VIPSX", "FIPDX", "FINPX", "VTAPX",
         ],
     },
     "st-tbills": {
@@ -211,8 +257,11 @@ ASSET_CLASSES: dict[str, dict] = {
         # price-based returns are meaningless — flagged at build time, and the
         # T-bill ETFs (SGOV/BIL/SHV...) are what actually compute here.
         "tickers": [
-            "VUSXX", "SGOV", "BIL", "SHV", "GBIL", "TBIL", "USFR",
-            "SHY", "VMFXX", "SPAXX",
+            # ETFs
+            "SGOV", "BIL", "SHV", "GBIL", "TBIL", "USFR", "SHY", "TFLO", "TBLL",
+            "OBIL", "SCHO", "VGSH", "VBIL",
+            # Money-market funds
+            "VUSXX", "VMFXX",
         ],
     },
     # ---- Alternatives -------------------------------------------------------
@@ -221,8 +270,11 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "Alternatives",
         "anchor": "VGSLX",
         "tickers": [
-            "VGSLX", "VNQ", "SCHH", "XLRE", "IYR", "USRT", "FSRNX",
-            "ICF", "RWR", "TRREX",
+            # ETFs
+            "VNQ", "SCHH", "XLRE", "IYR", "USRT", "ICF", "RWR", "FREL", "REM",
+            "MORT", "SRVR", "INDS", "REZ", "KBWY", "ROOF",
+            # Mutual funds
+            "VGSLX", "FSRNX", "TRREX", "FRESX", "CSRSX",
         ],
     },
     "gold": {
@@ -230,12 +282,18 @@ ASSET_CLASSES: dict[str, dict] = {
         "group": "Alternatives",
         "anchor": "IAU",
         # Gold-bullion funds are almost all ETFs; "gold" mutual funds are
-        # miner-equity funds (a different asset), so this class is ETF-heavy.
+        # miner-equity funds (a different asset), so this class is ETF-only.
         "tickers": [
             "IAU", "GLD", "GLDM", "SGOL", "IAUM", "BAR", "OUNZ", "AAAU",
+            "GLTR", "DBP",
         ],
     },
 }
+
+
+def expense_for(ticker: str, yahoo_value: float | None) -> float | None:
+    """Curated expense ratio when we have one, else Yahoo's value."""
+    return EXPENSE_OVERRIDES.get(ticker.upper(), yahoo_value)
 
 
 def iter_all_tickers() -> list[str]:

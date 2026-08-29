@@ -119,7 +119,7 @@
     <div id="panel-screener" class="tab-panel hidden" role="tabpanel">
       <section class="card form-card">
         <h2>1. Choose an asset class</h2>
-        <p class="muted">The largest ETFs and mutual funds in the class, ranked by fund size — with fees, trailing returns, and a risk-adjusted score. Your preferred fund is marked <span class="anchor-tag">★ pick</span>. Tick up to five funds, then send them to Compare to chart them side by side.</p>
+        <p class="muted">The largest ETFs and mutual funds in the class, ranked by fund size — with fees, trailing returns, and a risk-adjusted score. Tick up to five funds, then send them to Compare to chart them side by side.</p>
         <div class="screener-controls">
           <label class="field">
             <span class="field__label">Asset class</span>
@@ -130,6 +130,14 @@
             <button type="button" class="pill" data-type="ETF">ETFs</button>
             <button type="button" class="pill" data-type="Mutual Fund">Mutual funds</button>
           </div>
+          <label class="field field--show">
+            <span class="field__label">Show</span>
+            <select id="show-count-select" class="select select--sm" autocomplete="off">
+              <option value="10">Top 10</option>
+              <option value="25">Top 25</option>
+              <option value="all">All</option>
+            </select>
+          </label>
         </div>
         <p id="screener-asof" class="screener-asof"></p>
       </section>
@@ -159,6 +167,7 @@
             <tbody></tbody>
           </table>
         </div>
+        <p id="screener-count" class="screener-count"></p>
         <p class="screener-legend">
           AUM = fund net assets. Fees = net expense ratio. YTD is cumulative; 1Y is total return;
           3Y / 5Y / 10Y / Life are annualized. A blank return cell means the fund is younger than
