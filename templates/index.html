@@ -32,7 +32,15 @@
     </div>
   </header>
 
+  <nav class="tabs" role="tablist" aria-label="Tools">
+    <div class="tabs__inner">
+      <button type="button" class="tab active" role="tab" aria-selected="true" data-tab="compare">Compare funds</button>
+      <button type="button" class="tab" role="tab" aria-selected="false" data-tab="screener">Asset-class screener</button>
+    </div>
+  </nav>
+
   <main>
+    <div id="panel-compare" class="tab-panel" role="tabpanel">
     <section class="card form-card">
       <h2>1. Enter tickers</h2>
       <p class="muted">Up to five ETFs or mutual funds. Examples: VOO, QQQ, SCHD, VTSAX, FXAIX.</p>
@@ -106,6 +114,59 @@
         </div>
       </div>
     </section>
+    </div><!-- /panel-compare -->
+
+    <div id="panel-screener" class="tab-panel hidden" role="tabpanel">
+      <section class="card form-card">
+        <h2>1. Choose an asset class</h2>
+        <p class="muted">The largest ETFs and mutual funds in the class, ranked by fund size — with fees, trailing returns, and a risk-adjusted score. Your preferred fund is marked <span class="anchor-tag">★ pick</span>.</p>
+        <div class="screener-controls">
+          <label class="field">
+            <span class="field__label">Asset class</span>
+            <select id="asset-class-select" class="select" autocomplete="off"></select>
+          </label>
+          <div class="type-filter" role="group" aria-label="Fund type">
+            <button type="button" class="pill active" data-type="all">All</button>
+            <button type="button" class="pill" data-type="ETF">ETFs</button>
+            <button type="button" class="pill" data-type="Mutual Fund">Mutual funds</button>
+          </div>
+        </div>
+        <p id="screener-asof" class="screener-asof"></p>
+      </section>
+
+      <div id="screener-error" class="error-banner hidden" role="alert"></div>
+
+      <section id="screener-results" class="card table-card">
+        <h3 id="screener-title">Funds</h3>
+        <div class="table-wrap">
+          <table id="screener-table">
+            <thead>
+              <tr>
+                <th data-sort="name" class="sortable">Fund</th>
+                <th data-sort="aum" class="sortable num">AUM</th>
+                <th data-sort="expense" class="sortable num">Fees</th>
+                <th data-sort="ytd" class="sortable num">YTD</th>
+                <th data-sort="r1y" class="sortable num">1Y</th>
+                <th data-sort="r3y" class="sortable num">3Y</th>
+                <th data-sort="r5y" class="sortable num">5Y</th>
+                <th data-sort="r10y" class="sortable num">10Y</th>
+                <th data-sort="life" class="sortable num">Life</th>
+                <th data-sort="sharpe" class="sortable num">Sharpe</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="screener-legend">
+          AUM = fund net assets. Fees = net expense ratio. YTD is cumulative; 1Y is total return;
+          3Y / 5Y / 10Y / Life are annualized. A blank return cell means the fund is younger than
+          that window. <strong>Sharpe</strong> is a risk-adjusted score — annualized return over
+          volatility for the <strong>trailing 5&nbsp;years</strong> (ending on the data date above),
+          at a 4% risk-free rate; higher is better. Funds younger than 5&nbsp;years use their full
+          history since inception, so their Sharpe reflects a shorter, not-strictly-comparable window.
+        </p>
+      </section>
+    </div><!-- /panel-screener -->
   </main>
 
   <footer class="site-footer">
@@ -115,5 +176,6 @@
 
   <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/screener.js') }}"></script>
 </body>
 </html>

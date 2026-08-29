@@ -4,13 +4,16 @@ from __future__ import annotations
 
 import os
 from datetime import date
+from pathlib import Path
 
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, send_file
 
 from core import data_fetcher, metrics, utils
 
 
 app = Flask(__name__)
+
+SCREENER_DATA = Path(app.root_path) / "static" / "data" / "fund_tables.json"
 
 
 @app.get("/")
@@ -21,6 +24,18 @@ def index():
 @app.get("/terms")
 def terms():
     return render_template("terms.html")
+
+
+@app.get("/api/screener")
+def api_screener():
+    """Serve the precomputed asset-class fund tables (built by build_universe.py)."""
+    if not SCREENER_DATA.exists():
+        return jsonify({"error": "Fund tables have not been generated yet."}), 503
+    resp = send_file(SCREENER_DATA, mimetype="application/json")
+    # Revalidate every time (ETag/Last-Modified give cheap 304s) so a rebuild is
+    # picked up immediately rather than being masked by a stale cached copy.
+    resp.headers["Cache-Control"] = "no-cache"
+    return resp
 
 
 @app.get("/api/validate")

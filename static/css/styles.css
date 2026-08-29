@@ -430,6 +430,164 @@ main {
   .site-header { padding: 32px 20px 20px; }
 }
 
+/* ---- Tabs --------------------------------------------------------------- */
+.tabs { border-bottom: 1px solid var(--rule); background: var(--paper); }
+.tabs__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  gap: 4px;
+}
+.tab {
+  font-family: var(--sans);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 16px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--soft);
+  cursor: pointer;
+  transition: color 120ms, border-color 120ms;
+}
+.tab:hover { color: var(--ink); }
+.tab.active { color: var(--ink); border-bottom-color: var(--gold); }
+.tab-panel { padding-top: 32px; }
+
+/* ---- Screener controls -------------------------------------------------- */
+.screener-controls {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.field { display: flex; flex-direction: column; gap: 6px; min-width: 240px; }
+.field__label {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--soft);
+}
+.select {
+  padding: 10px 12px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  min-width: 240px;
+}
+.select:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 3px var(--accent-soft); }
+.type-filter { display: flex; gap: 8px; }
+
+.screener-asof {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--soft);
+  margin: 16px 0 0;
+  letter-spacing: 0.02em;
+}
+.anchor-tag {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+/* ---- Screener table ----------------------------------------------------- */
+#screener-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-family: var(--sans);
+  min-width: 860px;
+}
+#screener-table th, #screener-table td {
+  text-align: left;
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+#screener-table th {
+  font-weight: 700;
+  color: var(--soft);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+#screener-table th.num, #screener-table td.num {
+  text-align: right;
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+}
+#screener-table th.sortable { cursor: pointer; user-select: none; position: relative; }
+#screener-table th.sortable:hover { color: var(--ink); }
+#screener-table th.sortable::after {
+  content: "";
+  opacity: 0.35;
+  margin-left: 4px;
+}
+#screener-table th.sortable.num::after { content: " ⇅"; }
+#screener-table th.sorted-asc::after { content: " ▲"; opacity: 1; color: var(--gold); }
+#screener-table th.sorted-desc::after { content: " ▼"; opacity: 1; color: var(--gold); }
+
+.anchor-row { background: rgba(184, 147, 42, 0.07); }
+.anchor-row td:first-child { box-shadow: inset 3px 0 0 var(--gold); }
+
+.fund-name { display: flex; align-items: center; gap: 8px; }
+.fund-name__text { font-weight: 500; }
+.fund-sub {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--soft);
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+.fund-note { color: var(--warn-ink); cursor: help; }
+
+.type-chip {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid var(--rule);
+  color: var(--soft);
+  flex-shrink: 0;
+}
+.type-chip--etf { color: var(--navy); border-color: rgba(30, 58, 95, 0.35); }
+.type-chip--mf { color: var(--teal); border-color: rgba(44, 115, 112, 0.35); }
+.type-chip--mmf { color: var(--gold); border-color: rgba(184, 147, 42, 0.40); }
+
+.empty-row { text-align: center; color: var(--soft); font-style: italic; padding: 28px 12px; }
+
+.screener-legend {
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--soft);
+  line-height: 1.6;
+  margin: 16px 0 0;
+  max-width: 900px;
+}
+.screener-legend strong { color: var(--ink); font-weight: 600; }
+
+@media (max-width: 900px) {
+  .tabs__inner { padding: 0 16px; }
+  .screener-controls { gap: 16px; }
+}
+
 /* BTN footer credit */
 .site-footer .foot-brand { margin-top:8px; font-size:12.5px; }
 
