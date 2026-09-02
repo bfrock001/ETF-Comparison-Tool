@@ -185,6 +185,14 @@
     <p class="foot-brand">&copy; Beyond the Noise &middot; Educational use only &mdash; not advice &middot; <a href="/terms">Terms, Disclaimers &amp; Privacy</a></p>
   </footer>
 
+  <div id="fund-modal" class="fund-modal hidden" role="dialog" aria-modal="true" aria-labelledby="fm-name">
+    <div class="fund-modal__backdrop" data-fm-close></div>
+    <div class="fund-modal__panel" role="document">
+      <button type="button" class="fund-modal__close" data-fm-close aria-label="Close">&times;</button>
+      <div id="fund-modal-body" class="fund-modal__body"></div>
+    </div>
+  </div>
+
   <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   <script src="{{ url_for('static', filename='js/screener.js') }}"></script>

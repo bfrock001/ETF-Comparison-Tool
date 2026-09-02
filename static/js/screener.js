@@ -18,6 +18,8 @@
     selection: document.getElementById("finder-selection"),
     showSelect: document.getElementById("show-count-select"),
     count: document.getElementById("screener-count"),
+    modal: document.getElementById("fund-modal"),
+    modalBody: document.getElementById("fund-modal-body"),
   };
 
   // Columns where a lower number is better, so the first click sorts ascending.
@@ -30,6 +32,7 @@
 
   let dataset = null;          // full JSON payload
   let classIndex = {};         // id -> class object
+  let fundByTicker = {};       // ticker -> row (for the detail modal's returns strip)
   let currentClass = null;     // class object
   let typeFilter = "all";
   let sortKey = "aum";
@@ -69,7 +72,11 @@
     }
     showError(null);
     classIndex = {};
-    dataset.classes.forEach((c) => { classIndex[c.id] = c; });
+    fundByTicker = {};
+    dataset.classes.forEach((c) => {
+      classIndex[c.id] = c;
+      c.funds.forEach((f) => { if (!fundByTicker[f.ticker]) fundByTicker[f.ticker] = f; });
+    });
     populateSelect(dataset.classes);
     if (dataset.generated) {
       const d = new Date(dataset.generated);
@@ -197,7 +204,8 @@
       const nameCell =
         "<div class='fund-name'>" +
           typeChip(r.type) +
-          "<span class='fund-name__text'>" + (r.name || r.ticker) + "</span>" +
+          "<button type='button' class='fund-link' data-ticker='" + r.ticker + "'>" +
+            (r.name || r.ticker) + "</button>" +
         "</div>" +
         "<div class='fund-sub'>" + r.ticker +
           (r.note ? " · <span class='fund-note' title=\"" + r.note.replace(/"/g, "&quot;") + "\">yield-based ⓘ</span>" : "") +
@@ -289,6 +297,159 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  // ---- fund detail modal --------------------------------------------------
+  function fmtMoney(v, cur) {
+    if (v === null || v === undefined || Number.isNaN(v)) return "—";
+    const sym = cur === "USD" || !cur ? "$" : "";
+    return sym + v.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function fmtMktCap(m) {  // m is in $millions
+    if (m === null || m === undefined || Number.isNaN(m) || m === 0) return "—";
+    if (m >= 1e6) return "$" + (m / 1e6).toFixed(2) + "T";
+    if (m >= 1e3) return "$" + (m / 1e3).toFixed(1) + "B";
+    return "$" + m.toFixed(0) + "M";
+  }
+
+  function bars(items, max, unit) {
+    return "<ul class='fm-bars'>" + items.map((it) =>
+      "<li><span class='fm-bar__label'>" + it.name + "</span>" +
+      "<span class='fm-bar__track'><span class='fm-bar__fill' style='width:" +
+        (max > 0 ? Math.max(2, (it.pct / max) * 100) : 0) + "%'></span></span>" +
+      "<span class='fm-bar__val'>" + it.pct.toFixed(2) + unit + "</span></li>"
+    ).join("") + "</ul>";
+  }
+
+  function statTile(label, value) {
+    return "<div class='fm-stat'><div class='fm-stat__label'>" + label +
+      "</div><div class='fm-stat__val'>" + value + "</div></div>";
+  }
+
+  function openFundDetail(ticker) {
+    ticker = String(ticker).toUpperCase();
+    els.modal.classList.remove("hidden");
+    document.body.classList.add("modal-open");
+    els.modalBody.innerHTML = "<div class='fm-loading'><span class='spinner'></span>Loading " +
+      ticker + " …</div>";
+    fetch("/api/fund/" + encodeURIComponent(ticker))
+      .then((res) => res.json().then((d) => ({ ok: res.ok, d })))
+      .then(({ ok, d }) => {
+        if (!ok) throw new Error(d && d.error ? d.error : "Failed to load.");
+        renderFundDetail(d);
+      })
+      .catch((e) => {
+        els.modalBody.innerHTML = "<div class='fm-error'>Couldn't load details for " +
+          ticker + ".<br><span class='muted'>" + (e.message || "") + "</span></div>";
+      });
+  }
+
+  function renderFundDetail(d) {
+    const row = fundByTicker[d.ticker];
+    const chgCls = (d.change_pct || 0) >= 0 ? "pos" : "neg";
+    const chg = d.change_pct === null || d.change_pct === undefined ? "" :
+      "<div class='fm-price__chg " + chgCls + "'>" +
+      (d.change >= 0 ? "+" : "") + (d.change != null ? d.change.toFixed(2) : "") +
+      " (" + (d.change_pct >= 0 ? "+" : "") + d.change_pct.toFixed(2) + "%)</div>";
+
+    let facts =
+      statTile("Type", d.type) +
+      statTile("Expense", fmtExpense(d.expense)) +
+      statTile("AUM", fmtAum(d.aum)) +
+      statTile("Yield", d.yield != null ? d.yield.toFixed(2) + "%" : "—");
+    if (row) {
+      facts += statTile("YTD", fmtPct(row.ytd)) + statTile("1Y", fmtPct(row.r1y)) +
+        statTile("3Y", fmtPct(row.r3y)) + statTile("5Y", fmtPct(row.r5y)) +
+        statTile("10Y", fmtPct(row.r10y)) + statTile("Life", fmtPct(row.life)) +
+        statTile("Sharpe", fmtSharpe(row.sharpe));
+    }
+
+    const sections = [];
+
+    if (d.holdings && d.holdings.length) {
+      sections.push(
+        "<section class='fm-sec'><h3>Top 10 Holdings</h3>" +
+        "<table class='fm-holdings'><tbody>" +
+        d.holdings.map((h) =>
+          "<tr><td class='fm-sym'>" + h.symbol + "</td><td class='fm-hname'>" +
+          (h.name || "") + "</td><td class='num'>" +
+          (h.pct != null ? h.pct.toFixed(2) + "%" : "—") + "</td></tr>"
+        ).join("") + "</tbody></table></section>"
+      );
+    }
+    if (d.sectors && d.sectors.length) {
+      const max = Math.max.apply(null, d.sectors.map((s) => s.pct));
+      sections.push("<section class='fm-sec'><h3>Sector Weightings</h3>" + bars(d.sectors, max, "%") + "</section>");
+    }
+
+    const grid1 = sections.length
+      ? "<div class='fm-grid'>" + sections.join("") + "</div>" : "";
+
+    const sections2 = [];
+    const comp = d.composition || {};
+    if (comp.stock != null) {
+      const items = [
+        { name: "Stocks", pct: comp.stock }, { name: "Bonds", pct: comp.bond },
+        { name: "Cash", pct: comp.cash }, { name: "Other", pct: comp.other },
+      ].filter((x) => x.pct && x.pct > 0);
+      if (items.length) {
+        sections2.push("<section class='fm-sec'><h3>Portfolio Composition</h3>" + bars(items, 100, "%") + "</section>");
+      }
+    }
+    if (d.bond_ratings && d.bond_ratings.length) {
+      const max = Math.max.apply(null, d.bond_ratings.map((r) => r.pct));
+      sections2.push("<section class='fm-sec'><h3>Bond Credit Quality</h3>" + bars(d.bond_ratings, max, "%") + "</section>");
+    }
+    const grid2 = sections2.length
+      ? "<div class='fm-grid'>" + sections2.join("") + "</div>" : "";
+
+    let equity = "";
+    const eq = d.equity || {};
+    if (eq.pe != null || eq.pb != null || eq.median_mktcap != null) {
+      const cat = eq.cat || {};
+      const showCat = cat.pe != null || cat.pb != null || cat.ps != null || cat.pcf != null;
+      const rowsE = [
+        ["Price / Earnings", eq.pe, cat.pe], ["Price / Book", eq.pb, cat.pb],
+        ["Price / Sales", eq.ps, cat.ps], ["Price / Cashflow", eq.pcf, cat.pcf],
+        ["Median Market Cap", eq.median_mktcap != null ? fmtMktCap(eq.median_mktcap) : "—", null, true],
+        ["3-Yr Earnings Growth", eq.growth3y != null ? eq.growth3y.toFixed(2) + "%" : "—", null, true],
+      ];
+      equity =
+        "<section class='fm-sec fm-sec--wide'><h3>Equity Valuation</h3>" +
+        "<table class='fm-ratios'><thead><tr><th>Metric</th><th class='num'>Fund</th>" +
+        (showCat ? "<th class='num'>Category avg</th>" : "") + "</tr></thead><tbody>" +
+        rowsE.map((r) => {
+          const fund = r[3] ? r[1] : (r[1] != null ? r[1].toFixed(2) : "—");
+          const c = r[3] ? "" : (r[2] != null ? r[2].toFixed(2) : "—");
+          return "<tr><td>" + r[0] + "</td><td class='num'>" + fund + "</td>" +
+            (showCat ? "<td class='num'>" + c + "</td>" : "") + "</tr>";
+        }).join("") + "</tbody></table></section>";
+    }
+
+    const catFamily = [d.category, d.family].filter(Boolean).join(" · ");
+    els.modalBody.innerHTML =
+      "<div class='fm-head'>" +
+        "<div class='fm-head__id'>" +
+          "<h2 id='fm-name' class='fm-name'>" + d.name +
+            " <span class='fm-ticker'>" + d.ticker + "</span></h2>" +
+          (catFamily ? "<div class='fm-catfam'>" + typeChip(d.type) + catFamily + "</div>" : "") +
+        "</div>" +
+        "<div class='fm-price'>" +
+          "<div class='fm-price__val'>" + fmtMoney(d.price, d.currency) + "</div>" + chg +
+        "</div>" +
+      "</div>" +
+      "<div class='fm-stats'>" + facts + "</div>" +
+      grid1 + grid2 + equity +
+      "<p class='fm-note'>Composition, holdings, and valuation data from Yahoo Finance and may be " +
+      "delayed. Holdings shown are the top 10 only. P/E, P/B, P/S and P/CF are portfolio aggregates. " +
+      "Educational use only — not investment advice.</p>";
+  }
+
+  function closeModal() {
+    els.modal.classList.add("hidden");
+    els.modalBody.innerHTML = "";
+    document.body.classList.remove("modal-open");
+  }
+
   // ---- error --------------------------------------------------------------
   function showError(msg) {
     if (!msg) { els.error.classList.add("hidden"); return; }
@@ -347,7 +508,24 @@
       if (e.target.closest("#clear-selection")) { clearSelection(); return; }
       if (e.target.closest("#compare-selected")) { compareSelected(); return; }
     });
+
+    // Fund name -> open the detail modal.
+    els.tbody.addEventListener("click", (e) => {
+      const link = e.target.closest(".fund-link");
+      if (link) openFundDetail(link.dataset.ticker);
+    });
+
+    // Modal close: × button, backdrop, or Escape.
+    els.modal.addEventListener("click", (e) => {
+      if (e.target.closest("[data-fm-close]")) closeModal();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !els.modal.classList.contains("hidden")) closeModal();
+    });
   }
+
+  // Exposed so the Compare tab (main.js) can open the same modal.
+  window.FundDetail = { open: openFundDetail };
 
   document.addEventListener("DOMContentLoaded", wire);
 })();

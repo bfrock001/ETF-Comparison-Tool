@@ -128,7 +128,7 @@
           '<span class="ticker-chip" style="background:' + ETFCharts.colorFor(i) + '"></span>' +
           (r.name || "") +
         "</td>" +
-        "<td><strong>" + r.ticker + "</strong></td>" +
+        "<td><button type='button' class='fund-link fund-link--mono' data-ticker='" + r.ticker + "'>" + r.ticker + "</button></td>" +
         '<td class="num">' + fmtPct(r.total_return) + "</td>" +
         '<td class="num">' + fmtPct(r.cagr) + "</td>" +
         '<td class="num">' + fmtPct(r.max_drawdown) + "</td>" +
@@ -242,5 +242,10 @@
     wirePeriodPills();
     wireCustomRange();
     els.compareBtn.addEventListener("click", runCompare);
+    // Ticker in the summary table -> open the fund detail modal (from screener.js).
+    els.tableBody.addEventListener("click", (e) => {
+      const link = e.target.closest(".fund-link");
+      if (link && window.FundDetail) window.FundDetail.open(link.dataset.ticker);
+    });
   });
 })();

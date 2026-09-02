@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import os
+import re
 from datetime import date
 from pathlib import Path
 
@@ -36,6 +37,24 @@ def api_screener():
     # picked up immediately rather than being masked by a stale cached copy.
     resp.headers["Cache-Control"] = "no-cache"
     return resp
+
+
+_TICKER_RE = re.compile(r"^[A-Za-z0-9.\-]{1,15}$")
+
+
+@app.get("/api/fund/<ticker>")
+def api_fund(ticker):
+    """Composition detail (holdings, sectors, ratios) for one fund, on demand."""
+    ticker = (ticker or "").strip().upper()
+    if not _TICKER_RE.match(ticker):
+        return jsonify({"error": "Invalid ticker."}), 400
+    try:
+        detail = data_fetcher.get_fund_detail(ticker)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    if not detail:
+        return jsonify({"error": f"No fund data found for {ticker}."}), 404
+    return jsonify(detail)
 
 
 @app.get("/api/validate")
