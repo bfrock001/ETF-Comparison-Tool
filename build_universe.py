@@ -21,7 +21,7 @@ from pathlib import Path
 
 import yfinance as yf
 
-from core import screener
+from core import data_fetcher, screener
 from core.universe import ASSET_CLASSES, expense_for, iter_all_tickers
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -29,6 +29,10 @@ log = logging.getLogger("build_universe")
 
 RISK_FREE_RATE = 0.04  # single assumption used for the Sharpe-style column
 OUT_PATH = Path(__file__).parent / "static" / "data" / "fund_tables.json"
+# Composition detail (holdings/sectors/ratios) precomputed here because Yahoo's
+# quoteSummary endpoint is blocked from cloud IPs (Render), so the live app
+# can't fetch it — see core/data_fetcher.get_fund_detail.
+DETAILS_PATH = Path(__file__).parent / "static" / "data" / "fund_details.json"
 
 _TYPE_MAP = {
     "ETF": "ETF",
@@ -161,7 +165,47 @@ def main() -> int:
 
     resolved = sum(len(c["funds"]) for c in classes)
     log.info("Wrote %s — %d classes, %d fund rows.", OUT_PATH, len(classes), resolved)
+
+    build_details(classes, refresh=args.refresh, delay=args.delay)
     return 0
+
+
+def _load_details_cache() -> dict[str, dict]:
+    if not DETAILS_PATH.exists():
+        return {}
+    try:
+        return json.loads(DETAILS_PATH.read_text(encoding="utf-8")).get("funds", {})
+    except Exception:
+        return {}
+
+
+def build_details(classes: list[dict], refresh: bool, delay: float) -> None:
+    """Fetch composition detail (holdings/sectors/ratios) for every resolved
+    fund and write fund_details.json. Runs where quoteSummary works (locally)."""
+    tickers = sorted({f["ticker"] for c in classes for f in c["funds"]})
+    cache = {} if refresh else _load_details_cache()
+    log.info("Fetching detail for %d funds (%d cached)…", len(tickers), len(cache))
+
+    details: dict[str, dict] = dict(cache)
+    for i, sym in enumerate(tickers, 1):
+        if sym in details and details[sym].get("name"):
+            continue
+        log.info("[detail %d/%d] %s", i, len(tickers), sym)
+        try:
+            d = data_fetcher.get_fund_detail(sym)
+        except Exception as e:
+            log.warning("  %s: detail failed (%r)", sym, e)
+            d = None
+        if d and d.get("name"):
+            details[sym] = d
+        time.sleep(delay)
+
+    payload = {
+        "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "funds": {t: details[t] for t in tickers if t in details},
+    }
+    DETAILS_PATH.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    log.info("Wrote %s — %d fund details.", DETAILS_PATH, len(payload["funds"]))
 
 
 if __name__ == "__main__":

@@ -757,6 +757,7 @@ body.modal-open { overflow: hidden; }
 .fm-price { text-align: right; }
 .fm-price__val { font-family: var(--mono); font-size: 24px; font-weight: 600; color: var(--ink); }
 .fm-price__chg { font-family: var(--mono); font-size: 14px; margin-top: 2px; }
+.fm-asof { font-family: var(--mono); font-size: 10.5px; color: var(--faint); margin-top: 4px; }
 
 .fm-stats {
   display: grid;

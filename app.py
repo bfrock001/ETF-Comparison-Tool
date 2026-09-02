@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 import re
 from datetime import date
@@ -15,6 +16,20 @@ from core import data_fetcher, metrics, utils
 app = Flask(__name__)
 
 SCREENER_DATA = Path(app.root_path) / "static" / "data" / "fund_tables.json"
+FUND_DETAILS = Path(app.root_path) / "static" / "data" / "fund_details.json"
+
+_details_cache: dict | None = None
+
+
+def _load_details() -> dict:
+    """Precomputed fund detail, loaded once. Rebuilt on each deploy/restart."""
+    global _details_cache
+    if _details_cache is None:
+        try:
+            _details_cache = json.loads(FUND_DETAILS.read_text(encoding="utf-8"))
+        except Exception:
+            _details_cache = {"generated": None, "funds": {}}
+    return _details_cache
 
 
 @app.get("/")
@@ -44,16 +59,35 @@ _TICKER_RE = re.compile(r"^[A-Za-z0-9.\-]{1,15}$")
 
 @app.get("/api/fund/<ticker>")
 def api_fund(ticker):
-    """Composition detail (holdings, sectors, ratios) for one fund, on demand."""
+    """Composition detail (holdings, sectors, ratios) for one fund.
+
+    Served from precomputed data (Yahoo's quoteSummary endpoint is blocked from
+    cloud IPs, so it can't be fetched live in production). Falls back to a live
+    fetch only for tickers outside the curated universe — which works locally
+    but may be unavailable on hosts where quoteSummary is blocked.
+    """
     ticker = (ticker or "").strip().upper()
     if not _TICKER_RE.match(ticker):
         return jsonify({"error": "Invalid ticker."}), 400
+
+    data = _load_details()
+    fund = (data.get("funds") or {}).get(ticker)
+    if fund:
+        out = dict(fund)
+        out["as_of"] = data.get("generated")
+        return jsonify(out)
+
+    # Not in the precomputed set — attempt a live fetch (works where
+    # quoteSummary is reachable).
     try:
         detail = data_fetcher.get_fund_detail(ticker)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
     if not detail:
-        return jsonify({"error": f"No fund data found for {ticker}."}), 404
+        return jsonify({
+            "error": f"Detailed data for {ticker} isn't available "
+                     "(it's outside the Fund Finder's covered set).",
+        }), 404
     return jsonify(detail)
 
 

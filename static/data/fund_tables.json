@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-29T23:47:38+00:00",
+  "generated": "2026-09-02T15:32:50+00:00",
   "risk_free_rate": 0.04,
   "classes": [
     {
@@ -375,6 +375,24 @@
           "mdd": -55.19,
           "sharpe": 0.52,
           "inception": "1990-07-31"
+        },
+        {
+          "ticker": "FUSEX",
+          "name": "Fidelity 500 Index Investor",
+          "type": "Mutual Fund",
+          "expense": 0.015,
+          "aum": 156978331648,
+          "note": null,
+          "ytd": 1.95,
+          "r1y": 5.33,
+          "r3y": 9.64,
+          "r5y": 8.7,
+          "r10y": 12.17,
+          "life": 7.61,
+          "vol": 17.4,
+          "mdd": -56.6,
+          "sharpe": 0.37,
+          "inception": "1988-02-17"
         },
         {
           "ticker": "SWPPX",
@@ -4097,6 +4115,24 @@
           "mdd": -6.77,
           "sharpe": -0.44,
           "inception": "2009-08-21"
+        },
+        {
+          "ticker": "FINPX",
+          "name": "Fidelity Salem Street Trust - Fidelity Inflation-Protected Bond Fund",
+          "type": "Mutual Fund",
+          "expense": 0.05,
+          "aum": null,
+          "note": null,
+          "ytd": -3.6,
+          "r1y": -4.48,
+          "r3y": -0.99,
+          "r5y": null,
+          "r10y": null,
+          "life": -1.29,
+          "vol": 4.76,
+          "mdd": -7.7,
+          "sharpe": -1.11,
+          "inception": "2015-01-02"
         }
       ]
     },
@@ -4725,6 +4761,24 @@
           "mdd": -40.17,
           "sharpe": -0.19,
           "inception": "2018-05-14"
+        },
+        {
+          "ticker": "ROOF",
+          "name": "NYLI CBRE NextGen Real Estate ETF",
+          "type": "ETF",
+          "expense": 0.6,
+          "aum": 37322840,
+          "note": null,
+          "ytd": 3.82,
+          "r1y": 14.63,
+          "r3y": -4.86,
+          "r5y": -0.4,
+          "r10y": 1.87,
+          "life": 5.03,
+          "vol": 22.63,
+          "mdd": -50.43,
+          "sharpe": -0.15,
+          "inception": "2011-06-14"
         }
       ]
     },

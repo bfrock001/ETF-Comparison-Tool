@@ -435,6 +435,9 @@
         "</div>" +
         "<div class='fm-price'>" +
           "<div class='fm-price__val'>" + fmtMoney(d.price, d.currency) + "</div>" + chg +
+          (d.as_of ? "<div class='fm-asof'>as of " +
+            new Date(d.as_of).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }) +
+            "</div>" : "") +
         "</div>" +
       "</div>" +
       "<div class='fm-stats'>" + facts + "</div>" +
