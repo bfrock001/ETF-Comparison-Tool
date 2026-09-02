@@ -75,6 +75,12 @@ def api_fund(ticker):
     if fund:
         out = dict(fund)
         out["as_of"] = data.get("generated")
+        # Composition is a snapshot, but refresh the price live (history endpoint
+        # works from cloud IPs, unlike the composition source).
+        live = data_fetcher.get_live_price(ticker)
+        if live and live.get("price") is not None:
+            out.update(live)
+            out["price_live"] = True
         return jsonify(out)
 
     # Not in the precomputed set — attempt a live fetch (works where

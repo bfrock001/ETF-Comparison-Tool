@@ -1,0 +1,52 @@
+name: Refresh fund data
+
+# Rebuilds the Fund Finder data and commits it (which triggers a Render deploy).
+#
+# NOTE ON WHAT THIS CAN REFRESH:
+#   - Fund tables (returns, fees, Sharpe) use Yahoo's history endpoint, which
+#     works from GitHub's runners — so these refresh reliably here.
+#   - Fund detail (holdings, sectors, valuation ratios) uses Yahoo's
+#     quoteSummary endpoint, which is blocked from datacenter IPs. build_universe
+#     detects this and PRESERVES the existing fund_details.json rather than
+#     wiping it. To refresh the detail snapshot, run the build locally (see
+#     scripts/refresh-data). This job keeps the tables current in the meantime.
+
+on:
+  schedule:
+    - cron: "17 8 * * 1"    # every Monday 08:17 UTC
+  workflow_dispatch: {}       # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Rebuild fund data
+        run: python build_universe.py --refresh --delay 0.3
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "btn-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add static/data/fund_tables.json static/data/fund_details.json
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Auto-refresh fund data [skip ci]"
+            git push
+          fi

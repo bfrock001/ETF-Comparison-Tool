@@ -325,6 +325,11 @@
       "</div><div class='fm-stat__val'>" + value + "</div></div>";
   }
 
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  }
+
   function openFundDetail(ticker) {
     ticker = String(ticker).toUpperCase();
     els.modal.classList.remove("hidden");
@@ -435,16 +440,20 @@
         "</div>" +
         "<div class='fm-price'>" +
           "<div class='fm-price__val'>" + fmtMoney(d.price, d.currency) + "</div>" + chg +
-          (d.as_of ? "<div class='fm-asof'>as of " +
+          (d.as_of && !d.price_live ? "<div class='fm-asof'>as of " +
             new Date(d.as_of).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }) +
             "</div>" : "") +
         "</div>" +
       "</div>" +
       "<div class='fm-stats'>" + facts + "</div>" +
+      (d.description ? "<p class='fm-desc'>" + esc(d.description) + "</p>" : "") +
       grid1 + grid2 + equity +
-      "<p class='fm-note'>Composition, holdings, and valuation data from Yahoo Finance and may be " +
-      "delayed. Holdings shown are the top 10 only. P/E, P/B, P/S and P/CF are portfolio aggregates. " +
-      "Educational use only — not investment advice.</p>";
+      "<p class='fm-note'>" +
+      (d.as_of ? "Holdings and composition are a snapshot as of " +
+        new Date(d.as_of).toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" }) +
+        "; the price is refreshed live. " : "") +
+      "Data from Yahoo Finance and may be delayed. Holdings shown are the top 10 only. " +
+      "P/E, P/B, P/S and P/CF are portfolio aggregates. Educational use only — not investment advice.</p>";
   }
 
   function closeModal() {

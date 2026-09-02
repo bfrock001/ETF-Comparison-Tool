@@ -179,14 +179,27 @@ def _load_details_cache() -> dict[str, dict]:
         return {}
 
 
+def _healthy(funds: dict) -> int:
+    return sum(1 for f in funds.values() if f.get("name") and f.get("composition"))
+
+
 def build_details(classes: list[dict], refresh: bool, delay: float) -> None:
     """Fetch composition detail (holdings/sectors/ratios) for every resolved
-    fund and write fund_details.json. Runs where quoteSummary works (locally)."""
+    fund and write fund_details.json.
+
+    Yahoo's quoteSummary endpoint is blocked from datacenter IPs (CI, cloud), so
+    this only succeeds from a residential connection. To stay safe when run
+    somewhere it's blocked, it (a) trips a circuit breaker after a run of
+    failures and (b) refuses to overwrite a healthy existing file with a thin
+    result — so a scheduled CI run refreshes the tables but preserves details.
+    """
     tickers = sorted({f["ticker"] for c in classes for f in c["funds"]})
-    cache = {} if refresh else _load_details_cache()
+    existing = _load_details_cache()
+    cache = {} if refresh else existing
     log.info("Fetching detail for %d funds (%d cached)…", len(tickers), len(cache))
 
     details: dict[str, dict] = dict(cache)
+    consecutive_fail = 0
     for i, sym in enumerate(tickers, 1):
         if sym in details and details[sym].get("name"):
             continue
@@ -198,11 +211,24 @@ def build_details(classes: list[dict], refresh: bool, delay: float) -> None:
             d = None
         if d and d.get("name"):
             details[sym] = d
+            consecutive_fail = 0
+        else:
+            consecutive_fail += 1
+            if consecutive_fail >= 12 and _healthy(details) < 5:
+                log.warning("quoteSummary looks blocked (%d straight failures) — "
+                            "aborting detail refresh, keeping existing file.", consecutive_fail)
+                return
         time.sleep(delay)
+
+    new_healthy = _healthy({t: details[t] for t in tickers if t in details})
+    if DETAILS_PATH.exists() and new_healthy < max(0.6 * len(tickers), 0.6 * _healthy(existing)):
+        log.warning("Only %d healthy details of %d — keeping existing file rather "
+                    "than overwriting with a thin result.", new_healthy, len(tickers))
+        return
 
     payload = {
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "funds": {t: details[t] for t in tickers if t in details},
+        "funds": {t: details[t] for t in tickers if t in details and details[t].get("name")},
     }
     DETAILS_PATH.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     log.info("Wrote %s — %d fund details.", DETAILS_PATH, len(payload["funds"]))

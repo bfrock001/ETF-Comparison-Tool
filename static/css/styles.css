@@ -786,6 +786,18 @@ body.modal-open { overflow: hidden; }
   margin-top: 3px;
 }
 
+.fm-desc {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--soft);
+  margin: 20px 0 0;
+  padding: 14px 16px;
+  background: var(--paperAlt);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
 .fm-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

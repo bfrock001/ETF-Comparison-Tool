@@ -170,6 +170,31 @@ def _ratio(v):
     return round(1.0 / v, 2) if 0 < v < 1 else round(v, 2)
 
 
+def get_live_price(symbol: str) -> dict | None:
+    """Current price + day change via the history/chart endpoint, which (unlike
+    quoteSummary) works from cloud IPs. Not cached — callers want it fresh."""
+    symbol = symbol.strip().upper()
+    try:
+        hist = _with_retry(lambda: yf.Ticker(symbol).history(period="5d", auto_adjust=False))
+    except Exception as e:
+        log.warning("live price failed for %s: %r", symbol, e)
+        return None
+    if hist is None or hist.empty or "Close" not in hist:
+        return None
+    closes = hist["Close"].dropna()
+    if closes.empty:
+        return None
+    last = float(closes.iloc[-1])
+    prev = float(closes.iloc[-2]) if len(closes) >= 2 else None
+    change = (last - prev) if prev else None
+    pct = ((last / prev - 1.0) * 100.0) if prev else None
+    return {
+        "price": round(last, 4),
+        "change": round(change, 4) if change is not None else None,
+        "change_pct": round(pct, 4) if pct is not None else None,
+    }
+
+
 @lru_cache(maxsize=256)
 def get_fund_detail(symbol: str) -> dict | None:
     """Composition detail for one fund. Sections absent from Yahoo come back
@@ -206,6 +231,7 @@ def get_fund_detail(symbol: str) -> dict | None:
         "expense": expense,
         "aum": info.get("totalAssets"),
         "yield": round(yld * 100.0, 2) if yld is not None else None,
+        "description": (info.get("longBusinessSummary") or "").strip() or None,
         "holdings": [], "sectors": [], "composition": {},
         "equity": {}, "bond_ratings": [],
     }
@@ -216,6 +242,13 @@ def get_fund_detail(symbol: str) -> dict | None:
         fd = None
     if fd is None:
         return out
+
+    try:
+        desc = fd.description
+        if desc and isinstance(desc, str) and desc.strip():
+            out["description"] = desc.strip()
+    except Exception:
+        pass
 
     try:
         th = fd.top_holdings
