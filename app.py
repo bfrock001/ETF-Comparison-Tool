@@ -97,6 +97,29 @@ def api_fund(ticker):
     return jsonify(detail)
 
 
+@app.get("/api/fund_row/<ticker>")
+def api_fund_row(ticker):
+    """A screener-table row for one fund, computed live — powers the Fund
+    Finder's "look up any fund" box.
+
+    Same shape as the precomputed rows in fund_tables.json. Returns/Sharpe come
+    from price history (works everywhere); expense/AUM come from `info`
+    (quoteSummary), which may be blank on hosts where that endpoint is blocked.
+    """
+    ticker = (ticker or "").strip().upper()
+    if not _TICKER_RE.match(ticker):
+        return jsonify({"error": "Invalid ticker."}), 400
+    try:
+        row = data_fetcher.get_fund_row(ticker)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    if not row:
+        return jsonify({
+            "error": f"No Yahoo Finance data for {ticker}.",
+        }), 404
+    return jsonify(row)
+
+
 @app.get("/api/validate")
 def api_validate():
     ticker = request.args.get("ticker", "").strip()

@@ -20,6 +20,9 @@
     count: document.getElementById("screener-count"),
     modal: document.getElementById("fund-modal"),
     modalBody: document.getElementById("fund-modal-body"),
+    lookupInput: document.getElementById("lookup-input"),
+    lookupBtn: document.getElementById("lookup-btn"),
+    lookupFeedback: document.getElementById("lookup-feedback"),
   };
 
   // Columns where a lower number is better, so the first click sorts ascending.
@@ -29,6 +32,7 @@
   const MAX_SELECT = 5;
 
   const selected = new Set();  // tickers chosen for comparison (persists across classes)
+  const pinned = new Map();    // looked-up funds (ticker -> live row), pinned atop every class
 
   let dataset = null;          // full JSON payload
   let classIndex = {};         // id -> class object
@@ -186,11 +190,51 @@
     return '<span class="type-chip type-chip--' + cls + '" title="' + type + '">' + short + "</span>";
   }
 
+  function buildRow(r, isPinned) {
+    const tr = document.createElement("tr");
+    if (isPinned) tr.className = "pinned-row";
+    const addedChip = isPinned
+      ? "<span class='added-chip' title='Added by you'>added</span>" : "";
+    const removeBtn = isPinned
+      ? " · <button type='button' class='row-remove' data-unpin='" + r.ticker +
+        "' aria-label='Remove " + r.ticker + "'>remove ×</button>" : "";
+    const nameCell =
+      "<div class='fund-name'>" +
+        typeChip(r.type) + addedChip +
+        "<button type='button' class='fund-link' data-ticker='" + r.ticker + "'>" +
+          (r.name || r.ticker) + "</button>" +
+      "</div>" +
+      "<div class='fund-sub'>" + r.ticker +
+        (r.note ? " · <span class='fund-note' title=\"" + r.note.replace(/"/g, "&quot;") + "\">yield-based ⓘ</span>" : "") +
+        removeBtn +
+      "</div>";
+    tr.innerHTML =
+      "<td class='select-cell'><input type='checkbox' class='fund-check' data-ticker='" +
+        r.ticker + "' aria-label='Select " + r.ticker + "'></td>" +
+      "<td>" + nameCell + "</td>" +
+      "<td class='num'>" + fmtAum(r.aum) + "</td>" +
+      "<td class='num'>" + fmtExpense(r.expense) + "</td>" +
+      "<td class='num'>" + fmtPct(r.ytd) + "</td>" +
+      "<td class='num'>" + fmtPct(r.r1y) + "</td>" +
+      "<td class='num'>" + fmtPct(r.r3y) + "</td>" +
+      "<td class='num'>" + fmtPct(r.r5y) + "</td>" +
+      "<td class='num'>" + fmtPct(r.r10y) + "</td>" +
+      "<td class='num'>" + fmtPct(r.life) + "</td>" +
+      "<td class='num'>" + fmtSharpe(r.sharpe) + "</td>";
+    return tr;
+  }
+
   function render() {
     els.tbody.innerHTML = "";
-    const all = visibleRows();                    // filtered + sorted
+    // Looked-up funds pin to the top, always visible — not filtered or sliced.
+    const pinnedRows = [...pinned.values()];
+    pinnedRows.forEach((r) => els.tbody.appendChild(buildRow(r, true)));
+
+    // Class rows below, minus any ticker already pinned (avoid a duplicate row).
+    const all = (currentClass ? visibleRows() : []).filter((r) => !pinned.has(r.ticker));
     const rows = showCount === Infinity ? all : all.slice(0, showCount);
-    if (!all.length) {
+
+    if (!all.length && !pinnedRows.length) {
       els.tbody.innerHTML =
         '<tr><td colspan="11" class="empty-row">No ' +
         (typeFilter === "all" ? "" : typeFilter.toLowerCase() + " ") +
@@ -199,32 +243,7 @@
       updateHeaderIndicators();
       return;
     }
-    rows.forEach((r) => {
-      const tr = document.createElement("tr");
-      const nameCell =
-        "<div class='fund-name'>" +
-          typeChip(r.type) +
-          "<button type='button' class='fund-link' data-ticker='" + r.ticker + "'>" +
-            (r.name || r.ticker) + "</button>" +
-        "</div>" +
-        "<div class='fund-sub'>" + r.ticker +
-          (r.note ? " · <span class='fund-note' title=\"" + r.note.replace(/"/g, "&quot;") + "\">yield-based ⓘ</span>" : "") +
-        "</div>";
-      tr.innerHTML =
-        "<td class='select-cell'><input type='checkbox' class='fund-check' data-ticker='" +
-          r.ticker + "' aria-label='Select " + r.ticker + "'></td>" +
-        "<td>" + nameCell + "</td>" +
-        "<td class='num'>" + fmtAum(r.aum) + "</td>" +
-        "<td class='num'>" + fmtExpense(r.expense) + "</td>" +
-        "<td class='num'>" + fmtPct(r.ytd) + "</td>" +
-        "<td class='num'>" + fmtPct(r.r1y) + "</td>" +
-        "<td class='num'>" + fmtPct(r.r3y) + "</td>" +
-        "<td class='num'>" + fmtPct(r.r5y) + "</td>" +
-        "<td class='num'>" + fmtPct(r.r10y) + "</td>" +
-        "<td class='num'>" + fmtPct(r.life) + "</td>" +
-        "<td class='num'>" + fmtSharpe(r.sharpe) + "</td>";
-      els.tbody.appendChild(tr);
-    });
+    rows.forEach((r) => els.tbody.appendChild(buildRow(r, false)));
     updateHeaderIndicators();
     refreshChecks();
     updateCount(rows.length, all.length);
@@ -295,6 +314,43 @@
     activateTab("compare");
     window.ETFCompare.run();
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // ---- look up / pin any fund ---------------------------------------------
+  function setLookupFeedback(html, cls) {
+    els.lookupFeedback.innerHTML = html || "";
+    els.lookupFeedback.className = "lookup-feedback" + (cls ? " " + cls : "");
+  }
+
+  async function lookupFund() {
+    const raw = els.lookupInput.value.trim().toUpperCase();
+    if (!raw) { els.lookupInput.focus(); return; }
+    if (pinned.has(raw)) {
+      setLookupFeedback(raw + " is already in the list.", "");
+      els.lookupInput.value = "";
+      return;
+    }
+    els.lookupBtn.disabled = true;
+    setLookupFeedback("<span class='spinner'></span>Looking up " + raw + " …", "");
+    try {
+      const res = await fetch("/api/fund_row/" + encodeURIComponent(raw));
+      const d = await res.json();
+      if (!res.ok || !d || !d.ticker) {
+        setLookupFeedback((d && d.error) || ("Couldn't find " + raw + " on Yahoo Finance."), "bad");
+        return;
+      }
+      pinned.set(d.ticker, d);
+      // So the detail modal's returns strip finds a row for a looked-up fund
+      // (don't clobber a precomputed one if it exists).
+      if (!fundByTicker[d.ticker]) fundByTicker[d.ticker] = d;
+      els.lookupInput.value = "";
+      setLookupFeedback("Added " + d.ticker + " — " + (d.name || "") + ".", "ok");
+      render();
+    } catch (e) {
+      setLookupFeedback("Network error — please try again.", "bad");
+    } finally {
+      els.lookupBtn.disabled = false;
+    }
   }
 
   // ---- fund detail modal --------------------------------------------------
@@ -521,10 +577,23 @@
       if (e.target.closest("#compare-selected")) { compareSelected(); return; }
     });
 
-    // Fund name -> open the detail modal.
+    // Remove a pinned (looked-up) row, or open the detail modal from a name.
     els.tbody.addEventListener("click", (e) => {
+      const unpin = e.target.closest("[data-unpin]");
+      if (unpin) {
+        pinned.delete(unpin.dataset.unpin);
+        setLookupFeedback("Removed " + unpin.dataset.unpin + ".", "");
+        render();
+        return;
+      }
       const link = e.target.closest(".fund-link");
       if (link) openFundDetail(link.dataset.ticker);
+    });
+
+    // Look up / add any fund by ticker.
+    els.lookupBtn.addEventListener("click", lookupFund);
+    els.lookupInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") { e.preventDefault(); lookupFund(); }
     });
 
     // Modal close: × button, backdrop, or Escape.

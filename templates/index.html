@@ -140,6 +140,18 @@
           </label>
         </div>
         <p id="screener-asof" class="screener-asof"></p>
+
+        <div class="finder-lookup">
+          <span class="field__label">Not listed? Add any fund by ticker</span>
+          <p class="muted finder-lookup__hint">Type an ETF or mutual fund symbol to pin it to the table below — even one outside the curated set. Click its name for full details, or tick it to compare.</p>
+          <div class="finder-lookup__row">
+            <input type="text" id="lookup-input" class="lookup-input" maxlength="12"
+                   placeholder="e.g. SCHD, QQQ, VWIAX" autocomplete="off" spellcheck="false"
+                   aria-label="Fund ticker to add">
+            <button type="button" id="lookup-btn" class="primary-btn primary-btn--sm">Add fund</button>
+          </div>
+          <span id="lookup-feedback" class="lookup-feedback" aria-live="polite"></span>
+        </div>
       </section>
 
       <div id="screener-error" class="error-banner hidden" role="alert"></div>
