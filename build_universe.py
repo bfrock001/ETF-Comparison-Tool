@@ -19,9 +19,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-import yfinance as yf
-
-from core import data_fetcher, screener
+from core import data_fetcher, discovery
 from core.universe import ASSET_CLASSES, expense_for, iter_all_tickers
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -34,61 +32,15 @@ OUT_PATH = Path(__file__).parent / "static" / "data" / "fund_tables.json"
 # can't fetch it — see core/data_fetcher.get_fund_detail.
 DETAILS_PATH = Path(__file__).parent / "static" / "data" / "fund_details.json"
 
-_TYPE_MAP = {
-    "ETF": "ETF",
-    "MUTUALFUND": "Mutual Fund",
-    "MONEYMARKET": "Money Market",
-}
-
-
 def _fetch_one(symbol: str) -> dict | None:
-    """Fetch info + max history for one symbol and compute its metrics."""
-    tk = yf.Ticker(symbol)
-    try:
-        info = tk.info or {}
-    except Exception as e:
-        log.warning("  %s: info failed (%r)", symbol, e)
-        info = {}
+    """Fetch info + max history for one symbol and compute its screener row.
 
-    try:
-        hist = tk.history(period="max", auto_adjust=True)
-    except Exception as e:
-        log.warning("  %s: history failed (%r)", symbol, e)
-        return None
-    if hist is None or hist.empty or "Close" not in hist:
-        log.warning("  %s: no price history", symbol)
-        return None
-    # Yahoo occasionally serves a single stale row for a symbol mid-glitch
-    # (e.g. after a share-class event). Treat too-short history as unresolved
-    # rather than admitting an all-blank row.
-    if len(hist["Close"].dropna()) < 5:
-        log.warning("  %s: only %d price rows — skipping", symbol, len(hist))
-        return None
-
-    metrics = screener.compute(hist["Close"], RISK_FREE_RATE)
-
-    quote_type = (info.get("quoteType") or "").upper()
-    fund_type = _TYPE_MAP.get(quote_type, "Fund")
-    expense = info.get("netExpenseRatio")
-    if expense is None:
-        ar = info.get("annualReportExpenseRatio")
-        # annualReportExpenseRatio is a fraction (0.0004) — convert to percent.
-        expense = round(ar * 100.0, 2) if isinstance(ar, (int, float)) else None
-    expense = expense_for(symbol, expense)  # curated fee wins when we have one
-
-    note = None
-    if quote_type == "MONEYMARKET":
-        note = "Money-market fund — Yahoo carries a flat $1.00 NAV, so price-based returns understate the true yield."
-
-    return {
-        "ticker": symbol,
-        "name": info.get("longName") or info.get("shortName") or symbol,
-        "type": fund_type,
-        "expense": expense,
-        "aum": info.get("totalAssets"),
-        "note": note,
-        **metrics,
-    }
+    Delegates to ``data_fetcher.get_fund_row`` so a precomputed row and a
+    live-looked-up one (the Fund Finder's type-in feature) are computed
+    identically. The returned record includes Yahoo's ``category``, which
+    ``discovery.classify`` uses to slot auto-discovered ETFs into a class.
+    """
+    return data_fetcher.get_fund_row(symbol, RISK_FREE_RATE)
 
 
 def _load_cache() -> dict[str, dict]:
@@ -109,11 +61,25 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--refresh", action="store_true", help="refetch every ticker")
     ap.add_argument("--delay", type=float, default=0.4, help="seconds between fetches")
+    ap.add_argument("--discover", type=int, default=300, metavar="N",
+                    help="also pull the N largest US ETFs via the Yahoo screener "
+                         "and auto-classify them (0 disables discovery)")
     args = ap.parse_args()
 
     cache = {} if args.refresh else _load_cache()
-    all_tickers = iter_all_tickers()
-    log.info("Fetching %d unique tickers (%d cached)…", len(all_tickers), len(cache))
+    curated = iter_all_tickers()
+    curated_set = set(curated)
+
+    # Auto-discovery: the N largest US ETFs from the Yahoo screener, minus
+    # leveraged/inverse/tiny funds. Degrades to [] if the screener is
+    # unreachable, so the build still runs on the curated universe alone.
+    discovered = discovery.discover_etfs(limit=args.discover)
+    log.info("Discovery: %d candidate ETFs from the screener.", len(discovered))
+    disc_new = [d["symbol"] for d in discovered if d["symbol"] not in curated_set]
+
+    all_tickers = curated + [s for s in disc_new if s not in curated_set]
+    log.info("Fetching %d unique tickers (%d curated + %d discovered, %d cached)…",
+             len(all_tickers), len(curated), len(disc_new), len(cache))
 
     funds: dict[str, dict] = dict(cache)
     for i, sym in enumerate(all_tickers, 1):
@@ -124,6 +90,23 @@ def main() -> int:
         if rec is not None:
             funds[sym] = rec
         time.sleep(args.delay)
+
+    # Class membership = curated lists, plus each discovered ETF classified by
+    # Yahoo's category (name heuristics resolve the ambiguous style boxes).
+    class_members: dict[str, list[str]] = {
+        cid: list(meta["tickers"]) for cid, meta in ASSET_CLASSES.items()
+    }
+    classified = 0
+    for sym in disc_new:
+        rec = funds.get(sym)
+        if not rec or not rec.get("name"):
+            continue
+        cid = discovery.classify(rec.get("category"), rec.get("name"))
+        if cid and cid not in discovery.UNRELIABLE_CLASSES and sym not in class_members[cid]:
+            class_members[cid].append(sym)
+            rec["discovered"] = True
+            classified += 1
+    log.info("Discovery: %d ETFs classified into asset classes.", classified)
 
     # A non-money-market fund with no computable return in any window is a data
     # glitch (see the min-rows guard above), so drop it. Money-market funds are
@@ -139,7 +122,7 @@ def main() -> int:
     classes = []
     for cid, meta in ASSET_CLASSES.items():
         rows = [
-            funds[t] for t in meta["tickers"]
+            funds[t] for t in class_members[cid]
             if t in funds and funds[t].get("name") and _usable(funds[t])
         ]
         # Re-apply curated fees so cached rows pick up override edits without a

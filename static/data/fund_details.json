@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T16:17:52+00:00",
+  "generated": "2026-09-05T18:39:28+00:00",
   "funds": {
     "AAAU": {
       "ticker": "AAAU",
@@ -396,6 +396,224 @@
       },
       "bond_ratings": []
     },
+    "AVNM": {
+      "ticker": "AVNM",
+      "name": "Avantis All International Markets Equity ETF",
+      "type": "ETF",
+      "category": "Foreign Large Blend",
+      "family": "Avantis Investors",
+      "currency": "USD",
+      "price": 86.64,
+      "change": 0.279999,
+      "change_pct": 0.324223,
+      "expense": 0.31,
+      "aum": 756694208,
+      "yield": 2.27,
+      "description": "The fund is a \u201cfund of funds,\u201d meaning that it seeks to achieve its objective by investing in other Avantis exchange-traded funds (ETFs) (collectively, the underlying funds). The underlying funds represent a broadly diversified basket of equity securities that seek to select or overweight securities that are expected to have higher returns or better risk characteristics than a passive, market-cap weighted index.",
+      "holdings": [
+        {
+          "symbol": "AVDE",
+          "name": "Avantis International Equity ETF",
+          "pct": 39.98
+        },
+        {
+          "symbol": "AVIV",
+          "name": "Avantis International Large Cap Val ETF",
+          "pct": 20.54
+        },
+        {
+          "symbol": "AVEM",
+          "name": "Avantis Emerging Markets Equity ETF",
+          "pct": 18.53
+        },
+        {
+          "symbol": "AVES",
+          "name": "Avantis Emerging Markets Value ETF",
+          "pct": 9.92
+        },
+        {
+          "symbol": "AVDV",
+          "name": "Avantis International Small Cap Val ETF",
+          "pct": 7.04
+        },
+        {
+          "symbol": "AVDS",
+          "name": "Avantis International Small Cp Eq ETF",
+          "pct": 2.04
+        },
+        {
+          "symbol": "AVEE",
+          "name": "Avantis Emerging Markets Sm Cp Eq ETF",
+          "pct": 1.87
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Financial Services",
+          "pct": 24.34
+        },
+        {
+          "name": "Industrials",
+          "pct": 16.82
+        },
+        {
+          "name": "Technology",
+          "pct": 13.56
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 10.99
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 10.11
+        },
+        {
+          "name": "Energy",
+          "pct": 7.47
+        },
+        {
+          "name": "Healthcare",
+          "pct": 4.58
+        },
+        {
+          "name": "Communication Services",
+          "pct": 4.26
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 4.11
+        },
+        {
+          "name": "Utilities",
+          "pct": 2.33
+        },
+        {
+          "name": "Real Estate",
+          "pct": 1.45
+        }
+      ],
+      "composition": {
+        "stock": 99.72,
+        "bond": 0.0,
+        "cash": 0.18,
+        "other": 0.09
+      },
+      "equity": {
+        "pe": 14.35,
+        "pb": 1.73,
+        "ps": 1.13,
+        "pcf": 7.73,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
+    "AVNV": {
+      "ticker": "AVNV",
+      "name": "Avantis All International Markets Value ETF",
+      "type": "ETF",
+      "category": "Foreign Large Value",
+      "family": "Avantis Investors",
+      "currency": "USD",
+      "price": 88.3164,
+      "change": 0.0834961,
+      "change_pct": 0.0946315,
+      "expense": 0.34,
+      "aum": 77114792,
+      "yield": 2.52,
+      "description": "The fund is a \u201cfund of funds,\u201d meaning that it seeks to achieve its objective by investing in other Avantis exchange-traded funds (ETFs) (collectively, the underlying funds). The underlying funds represent a broadly diversified basket of equity securities that seek to select or overweight securities that are expected to have higher returns or better risk characteristics than a passive, market-cap weighted index.",
+      "holdings": [
+        {
+          "symbol": "AVIV",
+          "name": "Avantis International Large Cap Val ETF",
+          "pct": 45.69
+        },
+        {
+          "symbol": "AVES",
+          "name": "Avantis Emerging Markets Value ETF",
+          "pct": 28.63
+        },
+        {
+          "symbol": "AVDV",
+          "name": "Avantis International Small Cap Val ETF",
+          "pct": 25.57
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Financial Services",
+          "pct": 25.43
+        },
+        {
+          "name": "Industrials",
+          "pct": 17.82
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 13.19
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 12.15
+        },
+        {
+          "name": "Energy",
+          "pct": 9.07
+        },
+        {
+          "name": "Technology",
+          "pct": 8.74
+        },
+        {
+          "name": "Communication Services",
+          "pct": 4.07
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 3.85
+        },
+        {
+          "name": "Healthcare",
+          "pct": 3.56
+        },
+        {
+          "name": "Real Estate",
+          "pct": 1.27
+        },
+        {
+          "name": "Utilities",
+          "pct": 0.86
+        }
+      ],
+      "composition": {
+        "stock": 99.62,
+        "bond": 0.0,
+        "cash": 0.32,
+        "other": 0.06
+      },
+      "equity": {
+        "pe": 13.17,
+        "pb": 1.52,
+        "ps": 1.1,
+        "pcf": 6.34,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
     "AVUV": {
       "ticker": "AVUV",
       "name": "Avantis US Small Cap Value ETF",
@@ -555,6 +773,140 @@
       "equity": {},
       "bond_ratings": []
     },
+    "BBUS": {
+      "ticker": "BBUS",
+      "name": "JPMorgan BetaBuilders U.S. Equity ETF",
+      "type": "ETF",
+      "category": "Large Blend",
+      "family": "JPMorgan",
+      "currency": "USD",
+      "price": 138.98,
+      "change": -0.51001,
+      "change_pct": -0.365625,
+      "expense": 0.02,
+      "aum": 9188185088,
+      "yield": 0.99,
+      "description": "The underlying index is a free float adjusted market capitalization weighted index which consists of equity securities primarily traded in the United States. The underlying index targets 85% of those stocks by market capitalization, and primarily includes large- and mid-cap companies. The fund will invest at least 80% of its assets in securities included in the underlying index.",
+      "holdings": [
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corp",
+          "pct": 7.81
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc",
+          "pct": 7.02
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corp",
+          "pct": 5.69
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon.com Inc",
+          "pct": 3.85
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc Class A",
+          "pct": 3.0
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom Inc",
+          "pct": 2.6
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc Class C",
+          "pct": 2.39
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms Inc Class A",
+          "pct": 1.89
+        },
+        {
+          "symbol": "MU",
+          "name": "Micron Technology Inc",
+          "pct": 1.63
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla Inc",
+          "pct": 1.57
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 39.0
+        },
+        {
+          "name": "Financial Services",
+          "pct": 12.12
+        },
+        {
+          "name": "Communication Services",
+          "pct": 9.51
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 9.23
+        },
+        {
+          "name": "Healthcare",
+          "pct": 9.21
+        },
+        {
+          "name": "Industrials",
+          "pct": 7.71
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 4.37
+        },
+        {
+          "name": "Energy",
+          "pct": 3.55
+        },
+        {
+          "name": "Utilities",
+          "pct": 1.96
+        },
+        {
+          "name": "Real Estate",
+          "pct": 1.7
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 1.65
+        }
+      ],
+      "composition": {
+        "stock": 99.4,
+        "bond": 0.0,
+        "cash": 0.6,
+        "other": 0.0
+      },
+      "equity": {
+        "pe": 24.87,
+        "pb": 5.35,
+        "ps": 3.74,
+        "pcf": 19.17,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
     "BIL": {
       "ticker": "BIL",
       "name": "State Street SPDR Bloomberg 1-3 Month T-Bill ETF",
@@ -636,6 +988,56 @@
         {
           "label": "BBB",
           "pct": 19.33
+        }
+      ]
+    },
+    "BLV": {
+      "ticker": "BLV",
+      "name": "Vanguard Long-Term Bond Index Fund ETF Shares",
+      "type": "ETF",
+      "category": "Long-Term Bond",
+      "family": "Vanguard",
+      "currency": "USD",
+      "price": 65.83,
+      "change": 0.0699997,
+      "change_pct": 0.106447,
+      "expense": 0.03,
+      "aum": 8339098624,
+      "yield": 4.95,
+      "description": "This index includes all medium and larger issues of U.S. government, investment-grade corporate, and investment-grade international dollar-denominated bonds that have maturities of greater than 10 years and are publicly issued. All of the fund's investments will be selected through the sampling process, and at least 80% of the fund's assets will be invested in bonds held in the index.",
+      "holdings": [],
+      "sectors": [],
+      "composition": {
+        "stock": 0.0,
+        "bond": 99.65,
+        "cash": 0.34,
+        "other": 0.0
+      },
+      "equity": {},
+      "bond_ratings": [
+        {
+          "label": "US Government",
+          "pct": 56.48
+        },
+        {
+          "label": "AAA",
+          "pct": 0.91
+        },
+        {
+          "label": "AA",
+          "pct": 60.12
+        },
+        {
+          "label": "A",
+          "pct": 19.48
+        },
+        {
+          "label": "BBB",
+          "pct": 19.47
+        },
+        {
+          "label": "Other",
+          "pct": 0.02
         }
       ]
     },
@@ -873,6 +1275,128 @@
           "pct": 0.06
         }
       ]
+    },
+    "COWZ": {
+      "ticker": "COWZ",
+      "name": "Pacer US Cash Cows 100 ETF",
+      "type": "ETF",
+      "category": "Mid-Cap Value",
+      "family": "Pacer",
+      "currency": "USD",
+      "price": 71.3,
+      "change": -0.93,
+      "change_pct": -1.28755,
+      "expense": 0.49,
+      "aum": 20098213888,
+      "yield": 1.72,
+      "description": "Under normal circumstances, at least 80% of the fund's total assets (exclusive of collateral held from securities lending) will be invested in the component securities of the index. The index uses an objective, rules-based methodology to provide exposure to large and mid-capitalization U.S. companies with high free cash flow yields. Companies with high free cash flow yields are commonly referred to as \"cash cows\".",
+      "holdings": [
+        {
+          "symbol": "CRM",
+          "name": "Salesforce Inc",
+          "pct": 2.46
+        },
+        {
+          "symbol": "MPC",
+          "name": "Marathon Petroleum Corp",
+          "pct": 2.26
+        },
+        {
+          "symbol": "NEM",
+          "name": "Newmont Corp",
+          "pct": 2.25
+        },
+        {
+          "symbol": "INTU",
+          "name": "Intuit Inc",
+          "pct": 2.15
+        },
+        {
+          "symbol": "BKNG",
+          "name": "Booking Holdings Inc",
+          "pct": 2.13
+        },
+        {
+          "symbol": "BMY",
+          "name": "Bristol-Myers Squibb Co",
+          "pct": 2.07
+        },
+        {
+          "symbol": "ADBE",
+          "name": "Adobe Inc",
+          "pct": 2.07
+        },
+        {
+          "symbol": "T",
+          "name": "AT&T Inc",
+          "pct": 2.02
+        },
+        {
+          "symbol": "GILD",
+          "name": "Gilead Sciences Inc",
+          "pct": 2.01
+        },
+        {
+          "symbol": "CMCSA",
+          "name": "Comcast Corp Class A",
+          "pct": 1.99
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 25.7
+        },
+        {
+          "name": "Healthcare",
+          "pct": 19.85
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 12.76
+        },
+        {
+          "name": "Energy",
+          "pct": 11.94
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 9.35
+        },
+        {
+          "name": "Communication Services",
+          "pct": 8.75
+        },
+        {
+          "name": "Industrials",
+          "pct": 7.11
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 4.53
+        }
+      ],
+      "composition": {
+        "stock": 99.8,
+        "bond": 0.0,
+        "cash": 0.11,
+        "other": 0.08
+      },
+      "equity": {
+        "pe": 17.8,
+        "pb": 3.05,
+        "ps": 1.36,
+        "pcf": 9.24,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
     },
     "CSRSX": {
       "ticker": "CSRSX",
@@ -2493,6 +3017,140 @@
       },
       "bond_ratings": []
     },
+    "DIVB": {
+      "ticker": "DIVB",
+      "name": "iShares Core Dividend ETF",
+      "type": "ETF",
+      "category": "Large Value",
+      "family": "iShares",
+      "currency": "USD",
+      "price": 69.0,
+      "change": -0.68,
+      "change_pct": -0.97589,
+      "expense": 0.05,
+      "aum": 2009009792,
+      "yield": 2.02,
+      "description": "The fund generally will invest at least 80% of its assets in the component securities of its underlying index and in investments that have economic characteristics that are substantially identical to the component securities of its underlying index. The underlying index is designed to provide exposure to U.S.-based companies that return capital to shareholders through either dividend payments or share buybacks.",
+      "holdings": [
+        {
+          "symbol": "ADP",
+          "name": "Automatic Data Processing Inc",
+          "pct": 5.61
+        },
+        {
+          "symbol": "ACN",
+          "name": "Accenture PLC Class A",
+          "pct": 4.9
+        },
+        {
+          "symbol": "IBM",
+          "name": "International Business Machines Corp",
+          "pct": 3.75
+        },
+        {
+          "symbol": "PAYX",
+          "name": "Paychex Inc",
+          "pct": 2.73
+        },
+        {
+          "symbol": "HPQ",
+          "name": "HP Inc",
+          "pct": 2.69
+        },
+        {
+          "symbol": "JPM",
+          "name": "JPMorgan Chase & Co",
+          "pct": 2.69
+        },
+        {
+          "symbol": "CTSH",
+          "name": "Cognizant Technology Solutions Corp Class A",
+          "pct": 2.67
+        },
+        {
+          "symbol": "XOM",
+          "name": "ExxonMobil Holdings Corp",
+          "pct": 2.31
+        },
+        {
+          "symbol": "JNJ",
+          "name": "Johnson & Johnson",
+          "pct": 2.14
+        },
+        {
+          "symbol": "ABBV",
+          "name": "AbbVie Inc",
+          "pct": 1.76
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 33.19
+        },
+        {
+          "name": "Financial Services",
+          "pct": 16.36
+        },
+        {
+          "name": "Healthcare",
+          "pct": 14.12
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 8.99
+        },
+        {
+          "name": "Energy",
+          "pct": 8.51
+        },
+        {
+          "name": "Communication Services",
+          "pct": 5.05
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 4.61
+        },
+        {
+          "name": "Industrials",
+          "pct": 3.7
+        },
+        {
+          "name": "Real Estate",
+          "pct": 2.71
+        },
+        {
+          "name": "Utilities",
+          "pct": 1.96
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 0.79
+        }
+      ],
+      "composition": {
+        "stock": 99.73,
+        "bond": 0.0,
+        "cash": 0.26,
+        "other": 0.0
+      },
+      "equity": {
+        "pe": 17.95,
+        "pb": 2.95,
+        "ps": 1.75,
+        "pcf": 10.93,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
     "DODGX": {
       "ticker": "DODGX",
       "name": "Dodge & Cox Stock I",
@@ -3996,6 +4654,130 @@
       },
       "bond_ratings": []
     },
+    "EMGF": {
+      "ticker": "EMGF",
+      "name": "iShares Emerging Markets Equity Factor ETF",
+      "type": "ETF",
+      "category": "Diversified Emerging Mkts",
+      "family": "iShares",
+      "currency": "USD",
+      "price": 73.665,
+      "change": 1.185,
+      "change_pct": 1.63493,
+      "expense": 0.26,
+      "aum": 1929151232,
+      "yield": 2.0,
+      "description": "The index is composed of large- and mid-capitalization equity securities from the STOXX Emerging Markets Index that are selected and weighted using an optimization process designed to maximize exposure to five target factors: momentum, quality, value, low volatility and size.",
+      "holdings": [
+        {
+          "symbol": "2330.TW",
+          "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+          "pct": 10.31
+        },
+        {
+          "symbol": "005930.KQ",
+          "name": "Samsung Electronics Co Ltd",
+          "pct": 6.8
+        },
+        {
+          "symbol": "000660.KQ",
+          "name": "SK hynix Inc",
+          "pct": 4.51
+        },
+        {
+          "symbol": "0700.HK",
+          "name": "Tencent Holdings Ltd",
+          "pct": 2.72
+        },
+        {
+          "symbol": "9988.HK",
+          "name": "Alibaba Group Holding Ltd Ordinary Shares",
+          "pct": 1.96
+        },
+        {
+          "symbol": "2454.TW",
+          "name": "MediaTek Inc",
+          "pct": 1.5
+        },
+        {
+          "symbol": "2308.TW",
+          "name": "Delta Electronics Inc",
+          "pct": 1.0
+        },
+        {
+          "symbol": "2317.TW",
+          "name": "Hon Hai Precision Industry Co Ltd",
+          "pct": 0.66
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 38.77
+        },
+        {
+          "name": "Financial Services",
+          "pct": 19.26
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 9.25
+        },
+        {
+          "name": "Industrials",
+          "pct": 7.26
+        },
+        {
+          "name": "Communication Services",
+          "pct": 6.49
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 5.81
+        },
+        {
+          "name": "Energy",
+          "pct": 3.78
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 3.32
+        },
+        {
+          "name": "Healthcare",
+          "pct": 3.0
+        },
+        {
+          "name": "Utilities",
+          "pct": 2.13
+        },
+        {
+          "name": "Real Estate",
+          "pct": 0.94
+        }
+      ],
+      "composition": {
+        "stock": 99.52,
+        "bond": 0.0,
+        "cash": 0.33,
+        "other": 0.14
+      },
+      "equity": {
+        "pe": 13.57,
+        "pb": 2.15,
+        "ps": 1.95,
+        "pcf": 10.83,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
     "EMXC": {
       "ticker": "EMXC",
       "name": "iShares MSCI Emerging Markets ex China ETF",
@@ -4265,6 +5047,307 @@
         {
           "label": "Other",
           "pct": 0.04
+        }
+      ]
+    },
+    "FDEM": {
+      "ticker": "FDEM",
+      "name": "Fidelity Emerging Markets Multifactor ETF",
+      "type": "ETF",
+      "category": "Diversified Emerging Mkts",
+      "family": "Fidelity Investments",
+      "currency": "USD",
+      "price": 36.9857,
+      "change": 0.495697,
+      "change_pct": 1.35845,
+      "expense": 0.25,
+      "aum": 600861312,
+      "yield": 2.94,
+      "description": "The fund normally invests at least 80% of its assets in securities included in the index and in depositary receipts representing securities included in the index. The index is designed to reflect the performance of stocks of large- and mid-capitalization emerging markets companies that have attractive valuations, high quality profiles, positive momentum signals, lower volatility than the broader emerging markets equity market, and lower correlation to the U.S. equity market.",
+      "holdings": [
+        {
+          "symbol": "2330.TW",
+          "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+          "pct": 12.26
+        },
+        {
+          "symbol": "005930.KQ",
+          "name": "Samsung Electronics Co Ltd",
+          "pct": 6.97
+        },
+        {
+          "symbol": "000660.KQ",
+          "name": "SK hynix Inc",
+          "pct": 4.36
+        },
+        {
+          "symbol": "1209.HK",
+          "name": "China Resources Mixc Lifestyle Services Ltd",
+          "pct": 1.79
+        },
+        {
+          "symbol": "EMAARDEV.AE",
+          "name": "Emaar Development PJSC Ordinary Shares",
+          "pct": 1.67
+        },
+        {
+          "symbol": "FUNO11.MX",
+          "name": "Fibra Uno Administracion SA de CV Certificados Bursatiles Fiduciarios Inmob",
+          "pct": 1.49
+        },
+        {
+          "symbol": "2454.TW",
+          "name": "MediaTek Inc",
+          "pct": 1.38
+        },
+        {
+          "symbol": "BH-R",
+          "name": "Bumrungrad Hospital PCL Units Non-Voting Depository Receipt",
+          "pct": 1.35
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 36.75
+        },
+        {
+          "name": "Financial Services",
+          "pct": 15.46
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 12.3
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 10.53
+        },
+        {
+          "name": "Healthcare",
+          "pct": 7.02
+        },
+        {
+          "name": "Energy",
+          "pct": 6.68
+        },
+        {
+          "name": "Real Estate",
+          "pct": 5.0
+        },
+        {
+          "name": "Industrials",
+          "pct": 4.06
+        },
+        {
+          "name": "Communication Services",
+          "pct": 2.21
+        }
+      ],
+      "composition": {
+        "stock": 99.28,
+        "bond": 0.0,
+        "cash": 0.57,
+        "other": 0.16
+      },
+      "equity": {
+        "pe": 11.67,
+        "pb": 1.83,
+        "ps": 1.45,
+        "pcf": 8.52,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": [
+        {
+          "label": "US Government",
+          "pct": 0.03
+        }
+      ]
+    },
+    "FDL": {
+      "ticker": "FDL",
+      "name": "First Trust Morningstar Dividend Leaders Index Fund",
+      "type": "ETF",
+      "category": "Large Value",
+      "family": "First Trust",
+      "currency": "USD",
+      "price": 52.92,
+      "change": -0.470001,
+      "change_pct": -0.880317,
+      "expense": 0.43,
+      "aum": 8090885632,
+      "yield": 3.49,
+      "description": "The fund will normally invest at least 90% of its net assets (including investment borrowings) in the securities that comprise the index. The index is designed to measure the performance of the 100 highest-yielding stocks that have a consistent record of dividend payment and have the ability to sustain their dividend payments. It is non-diversified.",
+      "holdings": [
+        {
+          "symbol": "CVX",
+          "name": "Chevron Corp",
+          "pct": 8.56
+        },
+        {
+          "symbol": "VZ",
+          "name": "Verizon Communications Inc",
+          "pct": 7.85
+        },
+        {
+          "symbol": "PFE",
+          "name": "Pfizer Inc",
+          "pct": 6.47
+        },
+        {
+          "symbol": "PM",
+          "name": "Philip Morris International Inc",
+          "pct": 5.81
+        },
+        {
+          "symbol": "PEP",
+          "name": "PepsiCo Inc",
+          "pct": 4.64
+        },
+        {
+          "symbol": "MO",
+          "name": "Altria Group Inc",
+          "pct": 4.09
+        },
+        {
+          "symbol": "BMY",
+          "name": "Bristol-Myers Squibb Co",
+          "pct": 3.68
+        },
+        {
+          "symbol": "CMCSA",
+          "name": "Comcast Corp Class A",
+          "pct": 3.15
+        },
+        {
+          "symbol": "UPS",
+          "name": "United Parcel Service Inc Class B",
+          "pct": 2.83
+        },
+        {
+          "symbol": "ACN",
+          "name": "Accenture PLC Class A",
+          "pct": 2.61
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Consumer Defensive",
+          "pct": 23.41
+        },
+        {
+          "name": "Financial Services",
+          "pct": 13.36
+        },
+        {
+          "name": "Utilities",
+          "pct": 13.3
+        },
+        {
+          "name": "Healthcare",
+          "pct": 12.61
+        },
+        {
+          "name": "Energy",
+          "pct": 12.2
+        },
+        {
+          "name": "Communication Services",
+          "pct": 11.89
+        },
+        {
+          "name": "Technology",
+          "pct": 5.36
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 4.19
+        },
+        {
+          "name": "Industrials",
+          "pct": 3.27
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 0.4
+        }
+      ],
+      "composition": {
+        "stock": 99.89,
+        "bond": 0.0,
+        "cash": 0.11,
+        "other": 0.0
+      },
+      "equity": {
+        "pe": 16.8,
+        "pb": 2.15,
+        "ps": 1.68,
+        "pcf": 8.6,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
+    "FIIG": {
+      "ticker": "FIIG",
+      "name": "First Trust Intermediate Duration Investment Grade Corporate ETF",
+      "type": "ETF",
+      "category": "Corporate Bond",
+      "family": "First Trust Advisors L.P.",
+      "currency": "USD",
+      "price": 20.31,
+      "change": -0.0100002,
+      "change_pct": -0.0492137,
+      "expense": 0.49,
+      "aum": 641320512,
+      "yield": 4.73,
+      "description": "Under normal market conditions, the fund seeks to achieve its objectives by investing at least 80% of its net assets in investment grade corporate debt securities. At least 80% of the fund\u2019s net assets will be invested in corporate debt securities that are, at the time of purchase, investment grade (i.e., rated Baa3/BBB- or above) by at least one nationally recognized statistical rating organization (\u201cNRSRO\u201d) rating such securities, or if unrated, debt securities determined by the fund\u2019s investment advisor to be of comparable quality.",
+      "holdings": [],
+      "sectors": [],
+      "composition": {
+        "stock": 0.0,
+        "bond": 99.11,
+        "cash": 0.88,
+        "other": 0.0
+      },
+      "equity": {},
+      "bond_ratings": [
+        {
+          "label": "US Government",
+          "pct": 3.21
+        },
+        {
+          "label": "AAA",
+          "pct": 6.08
+        },
+        {
+          "label": "AA",
+          "pct": 6.92
+        },
+        {
+          "label": "A",
+          "pct": 27.34
+        },
+        {
+          "label": "BBB",
+          "pct": 51.96
+        },
+        {
+          "label": "BB",
+          "pct": 7.7
         }
       ]
     },
@@ -7813,6 +8896,100 @@
       },
       "bond_ratings": []
     },
+    "HAWX": {
+      "ticker": "HAWX",
+      "name": "iShares Currency Hedged MSCI ACWI ex U.S. ETF",
+      "type": "ETF",
+      "category": "Foreign Large Blend",
+      "family": "iShares",
+      "currency": "USD",
+      "price": 46.2899,
+      "change": 0.199203,
+      "change_pct": 0.432199,
+      "expense": 0.35,
+      "aum": 353042688,
+      "yield": 2.46,
+      "description": "The fund generally will invest at least 80% of its assets in the component securities and other instruments of the index and in investments that have economic characteristics that are substantially identical to the component securities of the index. The underlying index includes large- and mid-capitalization companies and may change over time.",
+      "holdings": [
+        {
+          "symbol": "ACWX",
+          "name": "iShares MSCI ACWI ex US ETF",
+          "pct": 100.05
+        },
+        {
+          "symbol": "XTSLA",
+          "name": "BlackRock Cash Funds Treasury SL Agency",
+          "pct": 0.0
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Financial Services",
+          "pct": 25.36
+        },
+        {
+          "name": "Technology",
+          "pct": 20.46
+        },
+        {
+          "name": "Industrials",
+          "pct": 14.05
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 7.59
+        },
+        {
+          "name": "Healthcare",
+          "pct": 6.95
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 6.33
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 5.17
+        },
+        {
+          "name": "Energy",
+          "pct": 4.9
+        },
+        {
+          "name": "Communication Services",
+          "pct": 4.87
+        },
+        {
+          "name": "Utilities",
+          "pct": 2.96
+        },
+        {
+          "name": "Real Estate",
+          "pct": 1.36
+        }
+      ],
+      "composition": {
+        "stock": 99.67,
+        "bond": 0.0,
+        "cash": 0.21,
+        "other": 0.11
+      },
+      "equity": {
+        "pe": 18.06,
+        "pb": 2.34,
+        "ps": 2.04,
+        "pcf": 12.14,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
     "HEFA": {
       "ticker": "HEFA",
       "name": "iShares Currency Hedged MSCI EAFE ETF",
@@ -9077,6 +10254,140 @@
       },
       "bond_ratings": []
     },
+    "ILCB": {
+      "ticker": "ILCB",
+      "name": "iShares Morningstar U.S. Equity ETF",
+      "type": "ETF",
+      "category": "Large Blend",
+      "family": "iShares",
+      "currency": "USD",
+      "price": 106.75,
+      "change": -0.389999,
+      "change_pct": -0.364009,
+      "expense": 0.03,
+      "aum": 1302521600,
+      "yield": 0.96,
+      "description": "The fund generally will invest at least 80% of its assets in the component securities of its underlying index and in investments that have economic characteristics that are substantially identical to the component securities of its underlying index. The underlying index measures the performance of U.S. stocks issued by large-mid capitalization companies that have exhibited similar \u201cgrowth\u201d and \u201cvalue\u201d characteristics, as determined by Morningstar, Inc.\u2019s proprietary index methodology.",
+      "holdings": [
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corp",
+          "pct": 7.72
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc",
+          "pct": 6.93
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corp",
+          "pct": 5.62
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon.com Inc",
+          "pct": 3.8
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc Class A",
+          "pct": 2.96
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom Inc",
+          "pct": 2.57
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc Class C",
+          "pct": 2.36
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms Inc Class A",
+          "pct": 1.87
+        },
+        {
+          "symbol": "MU",
+          "name": "Micron Technology Inc",
+          "pct": 1.61
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla Inc",
+          "pct": 1.55
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 38.63
+        },
+        {
+          "name": "Financial Services",
+          "pct": 11.98
+        },
+        {
+          "name": "Communication Services",
+          "pct": 9.4
+        },
+        {
+          "name": "Healthcare",
+          "pct": 9.37
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 9.27
+        },
+        {
+          "name": "Industrials",
+          "pct": 7.96
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 4.37
+        },
+        {
+          "name": "Energy",
+          "pct": 3.59
+        },
+        {
+          "name": "Utilities",
+          "pct": 1.94
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 1.79
+        },
+        {
+          "name": "Real Estate",
+          "pct": 1.68
+        }
+      ],
+      "composition": {
+        "stock": 99.84,
+        "bond": 0.0,
+        "cash": 0.16,
+        "other": 0.0
+      },
+      "equity": {
+        "pe": 24.89,
+        "pb": 5.33,
+        "ps": 3.68,
+        "pcf": 19.14,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
     "IMCG": {
       "ticker": "IMCG",
       "name": "iShares Morningstar Mid-Cap Growth ETF",
@@ -10171,6 +11482,140 @@
         "pb": 3.6,
         "ps": 2.25,
         "pcf": 14.95,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
+    "IVOG": {
+      "ticker": "IVOG",
+      "name": "Vanguard S&P Mid-Cap 400 Growth Index Fund ETF Shares",
+      "type": "ETF",
+      "category": "Mid-Cap Growth",
+      "family": "Vanguard",
+      "currency": "USD",
+      "price": 141.4,
+      "change": 0.320892,
+      "change_pct": 0.227456,
+      "expense": 0.1,
+      "aum": 1799517184,
+      "yield": 0.55,
+      "description": "The target index measures the performance of mid-size growth companies in the United States. Under normal circumstances, the fund invests at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in the stocks that make up the target index.",
+      "holdings": [
+        {
+          "symbol": "TWLO",
+          "name": "Twilio Inc Class A",
+          "pct": 1.64
+        },
+        {
+          "symbol": "FTI",
+          "name": "TechnipFMC PLC",
+          "pct": 1.57
+        },
+        {
+          "symbol": "CW",
+          "name": "Curtiss-Wright Corp",
+          "pct": 1.47
+        },
+        {
+          "symbol": "ATI",
+          "name": "ATI Inc",
+          "pct": 1.4
+        },
+        {
+          "symbol": "NVT",
+          "name": "nVent Electric PLC",
+          "pct": 1.36
+        },
+        {
+          "symbol": "P",
+          "name": "Everpure Inc Class A",
+          "pct": 1.33
+        },
+        {
+          "symbol": "OKTA",
+          "name": "Okta Inc Class A",
+          "pct": 1.3
+        },
+        {
+          "symbol": "XPO",
+          "name": "XPO Inc",
+          "pct": 1.29
+        },
+        {
+          "symbol": "UTHR",
+          "name": "United Therapeutics Corp",
+          "pct": 1.2
+        },
+        {
+          "symbol": "THC",
+          "name": "Tenet Healthcare Corp",
+          "pct": 1.2
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Industrials",
+          "pct": 28.28
+        },
+        {
+          "name": "Technology",
+          "pct": 22.02
+        },
+        {
+          "name": "Healthcare",
+          "pct": 15.91
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 7.86
+        },
+        {
+          "name": "Financial Services",
+          "pct": 7.4
+        },
+        {
+          "name": "Real Estate",
+          "pct": 5.54
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 3.88
+        },
+        {
+          "name": "Energy",
+          "pct": 3.24
+        },
+        {
+          "name": "Communication Services",
+          "pct": 2.43
+        },
+        {
+          "name": "Utilities",
+          "pct": 1.74
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 1.72
+        }
+      ],
+      "composition": {
+        "stock": 99.27,
+        "bond": 0.0,
+        "cash": 0.4,
+        "other": 0.33
+      },
+      "equity": {
+        "pe": 26.56,
+        "pb": 4.49,
+        "ps": 3.15,
+        "pcf": 18.2,
         "median_mktcap": null,
         "growth3y": null,
         "cat": {
@@ -12564,6 +14009,140 @@
       },
       "bond_ratings": []
     },
+    "MTUM": {
+      "ticker": "MTUM",
+      "name": "iShares MSCI USA Momentum Factor ETF",
+      "type": "ETF",
+      "category": "Large Blend",
+      "family": "iShares",
+      "currency": "USD",
+      "price": 304.86,
+      "change": 5.43997,
+      "change_pct": 1.81684,
+      "expense": 0.15,
+      "aum": 24230012928,
+      "yield": 0.62,
+      "description": "The fund generally will invest at least 80% of its assets in the component securities of its underlying index and in investments that have economic characteristics that are substantially identical to the component securities of its underlying index. The index consists of stocks exhibiting relatively higher momentum characteristics than the traditional market capitalization-weighted parent index, the MSCI USA Index.",
+      "holdings": [
+        {
+          "symbol": "MU",
+          "name": "Micron Technology Inc",
+          "pct": 5.15
+        },
+        {
+          "symbol": "AMD",
+          "name": "Advanced Micro Devices Inc",
+          "pct": 5.08
+        },
+        {
+          "symbol": "INTC",
+          "name": "Intel Corp",
+          "pct": 3.73
+        },
+        {
+          "symbol": "CSCO",
+          "name": "Cisco Systems Inc",
+          "pct": 3.61
+        },
+        {
+          "symbol": "JNJ",
+          "name": "Johnson & Johnson",
+          "pct": 3.4
+        },
+        {
+          "symbol": "AMAT",
+          "name": "Applied Materials Inc",
+          "pct": 2.92
+        },
+        {
+          "symbol": "SNDK",
+          "name": "SanDisk Corp Ordinary Shares",
+          "pct": 2.85
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc Class A",
+          "pct": 2.77
+        },
+        {
+          "symbol": "PANW",
+          "name": "Palo Alto Networks Inc",
+          "pct": 2.74
+        },
+        {
+          "symbol": "XOM",
+          "name": "ExxonMobil Holdings Corp",
+          "pct": 2.64
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 51.4
+        },
+        {
+          "name": "Industrials",
+          "pct": 10.75
+        },
+        {
+          "name": "Healthcare",
+          "pct": 10.16
+        },
+        {
+          "name": "Energy",
+          "pct": 8.97
+        },
+        {
+          "name": "Financial Services",
+          "pct": 6.04
+        },
+        {
+          "name": "Communication Services",
+          "pct": 4.96
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 2.9
+        },
+        {
+          "name": "Real Estate",
+          "pct": 1.95
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 1.78
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 0.89
+        },
+        {
+          "name": "Utilities",
+          "pct": 0.2
+        }
+      ],
+      "composition": {
+        "stock": 99.69,
+        "bond": 0.0,
+        "cash": 0.31,
+        "other": 0.0
+      },
+      "equity": {
+        "pe": 27.79,
+        "pb": 6.02,
+        "ps": 3.35,
+        "pcf": 20.72,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
     "OBIL": {
       "ticker": "OBIL",
       "name": "F/m US Treasury 12 Month Bill ETF",
@@ -14927,6 +16506,60 @@
       },
       "bond_ratings": []
     },
+    "SCHI": {
+      "ticker": "SCHI",
+      "name": "Schwab 5-10 Year Corporate Bond ETF",
+      "type": "ETF",
+      "category": "Corporate Bond",
+      "family": "Schwab ETFs",
+      "currency": "USD",
+      "price": 22.06,
+      "change": -0.0100002,
+      "change_pct": -0.0453114,
+      "expense": 0.03,
+      "aum": 11508299776,
+      "yield": 5.12,
+      "description": "To pursue its goal, the fund generally invests in securities that are included in the index. The index measures the performance of U.S. investment grade, taxable corporate bonds with maturities greater than or equal to five years and less than ten years that have $300 million or more of outstanding face value. It is the fund's policy that under normal circumstances it will invest at least 90% of its net assets in securities included in the index.",
+      "holdings": [],
+      "sectors": [],
+      "composition": {
+        "stock": 0.0,
+        "bond": 99.55,
+        "cash": 0.4,
+        "other": 0.05
+      },
+      "equity": {},
+      "bond_ratings": [
+        {
+          "label": "US Government",
+          "pct": 0.07
+        },
+        {
+          "label": "AAA",
+          "pct": 0.69
+        },
+        {
+          "label": "AA",
+          "pct": 7.56
+        },
+        {
+          "label": "A",
+          "pct": 45.17
+        },
+        {
+          "label": "BBB",
+          "pct": 46.55
+        },
+        {
+          "label": "BB",
+          "pct": 0.02
+        },
+        {
+          "label": "Other",
+          "pct": 0.01
+        }
+      ]
+    },
     "SCHK": {
       "ticker": "SCHK",
       "name": "Schwab 1000 ETF",
@@ -16122,6 +17755,48 @@
         }
       ]
     },
+    "SPBO": {
+      "ticker": "SPBO",
+      "name": "State Street SPDR Portfolio Corporate Bond ETF",
+      "type": "ETF",
+      "category": "Corporate Bond",
+      "family": "State Street Investment Management",
+      "currency": "USD",
+      "price": 28.27,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "expense": 0.03,
+      "aum": 2155242240,
+      "yield": 5.19,
+      "description": "The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in securities that the Adviser determines have economic characteristics that are substantially identical to the economic characteristics of the securities that comprise the index. The index is designed to measure the performance of the investment grade corporate bond market.",
+      "holdings": [],
+      "sectors": [],
+      "composition": {
+        "stock": 0.0,
+        "bond": 99.58,
+        "cash": 0.4,
+        "other": 0.01
+      },
+      "equity": {},
+      "bond_ratings": [
+        {
+          "label": "AAA",
+          "pct": 0.94
+        },
+        {
+          "label": "AA",
+          "pct": 9.63
+        },
+        {
+          "label": "A",
+          "pct": 45.64
+        },
+        {
+          "label": "BBB",
+          "pct": 43.79
+        }
+      ]
+    },
     "SPDW": {
       "ticker": "SPDW",
       "name": "State Street SPDR Portfolio Developed World ex-US ETF",
@@ -16519,6 +18194,140 @@
           "pct": 40.53
         }
       ]
+    },
+    "SPMO": {
+      "ticker": "SPMO",
+      "name": "Invesco S&P 500 Momentum ETF",
+      "type": "ETF",
+      "category": "Large Blend",
+      "family": "Invesco",
+      "currency": "USD",
+      "price": 149.72,
+      "change": 2.31,
+      "change_pct": 1.56706,
+      "expense": 0.13,
+      "aum": 22148052992,
+      "yield": 0.71,
+      "description": "The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is designed to measure the performance of approximately 100 stocks in the S&P 500\u00ae Index that have the highest \"momentum score.\" In general, momentum is the tendency of an investment to exhibit persistence in its relative performance; a \"momentum style\" of investing emphasizes investing in securities that have had better recent performance compared to other securities. It is non-diversified.",
+      "holdings": [
+        {
+          "symbol": "MU",
+          "name": "Micron Technology Inc",
+          "pct": 10.84
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corp",
+          "pct": 9.05
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom Inc",
+          "pct": 6.43
+        },
+        {
+          "symbol": "JNJ",
+          "name": "Johnson & Johnson",
+          "pct": 4.65
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc Class A",
+          "pct": 4.39
+        },
+        {
+          "symbol": "AMD",
+          "name": "Advanced Micro Devices Inc",
+          "pct": 3.87
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc Class C",
+          "pct": 3.48
+        },
+        {
+          "symbol": "LRCX",
+          "name": "Lam Research Corp",
+          "pct": 3.43
+        },
+        {
+          "symbol": "XOM",
+          "name": "ExxonMobil Holdings Corp",
+          "pct": 3.15
+        },
+        {
+          "symbol": "CAT",
+          "name": "Caterpillar Inc",
+          "pct": 2.43
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 52.84
+        },
+        {
+          "name": "Industrials",
+          "pct": 12.28
+        },
+        {
+          "name": "Communication Services",
+          "pct": 8.01
+        },
+        {
+          "name": "Healthcare",
+          "pct": 7.4
+        },
+        {
+          "name": "Financial Services",
+          "pct": 6.22
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 4.39
+        },
+        {
+          "name": "Energy",
+          "pct": 3.49
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 1.85
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 1.25
+        },
+        {
+          "name": "Utilities",
+          "pct": 1.17
+        },
+        {
+          "name": "Real Estate",
+          "pct": 1.1
+        }
+      ],
+      "composition": {
+        "stock": 99.94,
+        "bond": 0.0,
+        "cash": 0.06,
+        "other": 0.0
+      },
+      "equity": {
+        "pe": 27.16,
+        "pb": 7.22,
+        "ps": 4.31,
+        "pcf": 22.91,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
     },
     "SPSB": {
       "ticker": "SPSB",
@@ -17829,6 +19638,132 @@
           "pb": 4.86,
           "ps": 2.5,
           "pcf": 16.82
+        }
+      },
+      "bond_ratings": []
+    },
+    "SYLD": {
+      "ticker": "SYLD",
+      "name": "Cambria Shareholder Yield ETF",
+      "type": "ETF",
+      "category": "Mid-Cap Value",
+      "family": "Cambria",
+      "currency": "USD",
+      "price": 87.015,
+      "change": -0.0299988,
+      "change_pct": -0.0344635,
+      "expense": 0.59,
+      "aum": 1018820160,
+      "yield": 1.69,
+      "description": "The fund is actively managed and seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its total assets in equity securities, including common stock, issued by U.S.-based publicly listed companies that provide high \"shareholder yield.\" Its investment adviser, Cambria Investment Management, L.P. (\"Cambria\" or the \"Adviser\"), defines \"shareholder yield\" as the totality of returns realized by an investor from a company\u2019s cash payments for dividends, buybacks and debt paydowns.",
+      "holdings": [
+        {
+          "symbol": "FXFXX",
+          "name": "First American Treasury Obligs X",
+          "pct": 2.15
+        },
+        {
+          "symbol": "MAN",
+          "name": "ManpowerGroup Inc",
+          "pct": 1.77
+        },
+        {
+          "symbol": "ANF",
+          "name": "Abercrombie & Fitch Co Class A",
+          "pct": 1.47
+        },
+        {
+          "symbol": "DINO",
+          "name": "HF Sinclair Corp",
+          "pct": 1.43
+        },
+        {
+          "symbol": "RHI",
+          "name": "Robert Half Inc",
+          "pct": 1.42
+        },
+        {
+          "symbol": "MPC",
+          "name": "Marathon Petroleum Corp",
+          "pct": 1.39
+        },
+        {
+          "symbol": "VLO",
+          "name": "Valero Energy Corp",
+          "pct": 1.36
+        },
+        {
+          "symbol": "THC",
+          "name": "Tenet Healthcare Corp",
+          "pct": 1.33
+        },
+        {
+          "symbol": "HRB",
+          "name": "H&R Block Inc",
+          "pct": 1.29
+        },
+        {
+          "symbol": "FOXA",
+          "name": "Fox Corp Class A",
+          "pct": 1.23
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Financial Services",
+          "pct": 21.81
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 21.7
+        },
+        {
+          "name": "Energy",
+          "pct": 15.48
+        },
+        {
+          "name": "Industrials",
+          "pct": 9.13
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 8.51
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 7.92
+        },
+        {
+          "name": "Communication Services",
+          "pct": 7.28
+        },
+        {
+          "name": "Healthcare",
+          "pct": 5.46
+        },
+        {
+          "name": "Technology",
+          "pct": 2.71
+        }
+      ],
+      "composition": {
+        "stock": 97.74,
+        "bond": 0.0,
+        "cash": 2.15,
+        "other": 0.12
+      },
+      "equity": {
+        "pe": 13.73,
+        "pb": 1.66,
+        "ps": 1.43,
+        "pcf": 6.91,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
         }
       },
       "bond_ratings": []
@@ -23558,6 +25493,48 @@
         }
       ]
     },
+    "VTC": {
+      "ticker": "VTC",
+      "name": "Vanguard Total Corporate Bond ETF ETF Shares",
+      "type": "ETF",
+      "category": "Corporate Bond",
+      "family": "Vanguard",
+      "currency": "USD",
+      "price": 74.77,
+      "change": -0.0200043,
+      "change_pct": -0.0267473,
+      "expense": 0.03,
+      "aum": 1702604672,
+      "yield": 5.03,
+      "description": "The fund is a fund of funds and employs an indexing investment approach designed to track the performance of the Bloomberg U.S. Corporate Bond Index, which measures the investment-grade, fixed-rate, taxable corporate bond market. The index includes U.S. dollar-denominated securities that are publicly issued by industrial, utility, and financial issuers.",
+      "holdings": [],
+      "sectors": [],
+      "composition": {
+        "stock": 0.0,
+        "bond": 99.31,
+        "cash": 0.66,
+        "other": 0.03
+      },
+      "equity": {},
+      "bond_ratings": [
+        {
+          "label": "AAA",
+          "pct": 0.98
+        },
+        {
+          "label": "AA",
+          "pct": 9.76
+        },
+        {
+          "label": "A",
+          "pct": 45.66
+        },
+        {
+          "label": "BBB",
+          "pct": 43.96
+        }
+      ]
+    },
     "VTHR": {
       "ticker": "VTHR",
       "name": "Vanguard Russell 3000 Index Fund ETF Shares",
@@ -25872,6 +27849,140 @@
         "pb": 3.1,
         "ps": 2.19,
         "pcf": 13.58,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
+    "XCEM": {
+      "ticker": "XCEM",
+      "name": "Columbia EM Core ex-China ETF",
+      "type": "ETF",
+      "category": "Diversified Emerging Mkts",
+      "family": "Columbia Threadneedle",
+      "currency": "USD",
+      "price": 52.275,
+      "change": 0.739002,
+      "change_pct": 1.43395,
+      "expense": 0.16,
+      "aum": 2083729792,
+      "yield": 2.43,
+      "description": "The fund will invest at least 80% of its net assets in the companies included in the index and the advisor generally expects to be substantially invested at such times, with at least 95% of its net assets invested in these securities. The index (and therefore the fund) was concentrated in the financials and information technology sectors. It is non-diversified.",
+      "holdings": [
+        {
+          "symbol": "2330.TW",
+          "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+          "pct": 15.33
+        },
+        {
+          "symbol": "005930.KQ",
+          "name": "Samsung Electronics Co Ltd",
+          "pct": 8.53
+        },
+        {
+          "symbol": "000660.KQ",
+          "name": "SK hynix Inc",
+          "pct": 3.26
+        },
+        {
+          "symbol": "2454.TW",
+          "name": "MediaTek Inc",
+          "pct": 1.5
+        },
+        {
+          "symbol": "2308.TW",
+          "name": "Delta Electronics Inc",
+          "pct": 1.43
+        },
+        {
+          "symbol": "2317.TW",
+          "name": "Hon Hai Precision Industry Co Ltd",
+          "pct": 1.09
+        },
+        {
+          "symbol": "009150.KQ",
+          "name": "Samsung Electro-Mechanics Co Ltd",
+          "pct": 1.04
+        },
+        {
+          "symbol": "006400.KQ",
+          "name": "Samsung SDI Co Ltd",
+          "pct": 1.01
+        },
+        {
+          "symbol": "IBN",
+          "name": "ICICI Bank Ltd ADR",
+          "pct": 0.89
+        },
+        {
+          "symbol": "3711.TW",
+          "name": "ASE Technology Holding Co Ltd",
+          "pct": 0.84
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 47.99
+        },
+        {
+          "name": "Financial Services",
+          "pct": 17.82
+        },
+        {
+          "name": "Industrials",
+          "pct": 9.78
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 5.98
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 4.93
+        },
+        {
+          "name": "Energy",
+          "pct": 3.35
+        },
+        {
+          "name": "Communication Services",
+          "pct": 3.24
+        },
+        {
+          "name": "Healthcare",
+          "pct": 2.5
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 1.82
+        },
+        {
+          "name": "Utilities",
+          "pct": 1.75
+        },
+        {
+          "name": "Real Estate",
+          "pct": 0.86
+        }
+      ],
+      "composition": {
+        "stock": 99.43,
+        "bond": 0.0,
+        "cash": 0.47,
+        "other": 0.11
+      },
+      "equity": {
+        "pe": 20.06,
+        "pb": 2.89,
+        "ps": 2.5,
+        "pcf": 15.24,
         "median_mktcap": null,
         "growth3y": null,
         "cat": {

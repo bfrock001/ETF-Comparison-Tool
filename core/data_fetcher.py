@@ -10,10 +10,18 @@ from functools import lru_cache
 import pandas as pd
 import yfinance as yf
 
+from core import screener
 from core.universe import expense_for
 
 
 log = logging.getLogger(__name__)
+
+# Default risk-free assumption for the Sharpe-style screener column. Kept in
+# sync with build_universe.RISK_FREE_RATE so a live row matches a precomputed one.
+DEFAULT_RISK_FREE_RATE = 0.04
+
+_MMF_NOTE = ("Money-market fund — Yahoo carries a flat $1.00 NAV, so price-based "
+             "returns understate the true yield.")
 
 _RETRY_DELAYS = (0.5, 1.5, 4.0)
 
@@ -192,6 +200,61 @@ def get_live_price(symbol: str) -> dict | None:
         "price": round(last, 4),
         "change": round(change, 4) if change is not None else None,
         "change_pct": round(pct, 4) if pct is not None else None,
+    }
+
+
+def get_fund_row(symbol: str, risk_free_rate: float = DEFAULT_RISK_FREE_RATE) -> dict | None:
+    """A screener-table row for one fund, computed from live data.
+
+    Same shape and metrics the build pipeline precomputes into
+    ``fund_tables.json`` (returns/Sharpe from price history; type/expense/AUM
+    from ``info``), so a looked-up fund lines up with the curated rows. Returns
+    None when the symbol has no usable price history.
+
+    Returns and Sharpe come from the history/chart endpoint (reachable from
+    cloud IPs); ``expense`` and ``aum`` come from ``info`` (quoteSummary), which
+    is blocked from some hosts — on those they may be None.
+    """
+    symbol = symbol.strip().upper()
+    tk = yf.Ticker(symbol)
+    try:
+        info = _with_retry(lambda: tk.info) or {}
+    except Exception as e:
+        log.warning("fund_row info failed for %s: %r", symbol, e)
+        info = {}
+
+    try:
+        hist = _with_retry(lambda: tk.history(period="max", auto_adjust=True))
+    except Exception as e:
+        log.warning("fund_row history failed for %s: %r", symbol, e)
+        return None
+    if hist is None or hist.empty or "Close" not in hist:
+        return None
+    closes = hist["Close"].dropna()
+    # Too-short history is a Yahoo glitch (or a brand-new listing); refuse it
+    # rather than emit an all-blank row.
+    if len(closes) < 5:
+        return None
+
+    metrics = screener.compute(closes, risk_free_rate)
+
+    quote_type = (info.get("quoteType") or "").upper()
+    fund_type = _TYPE_MAP.get(quote_type, "Fund")
+    expense = info.get("netExpenseRatio")
+    if expense is None:
+        ar = info.get("annualReportExpenseRatio")
+        expense = round(ar * 100.0, 2) if isinstance(ar, (int, float)) else None
+    expense = expense_for(symbol, expense)
+
+    return {
+        "ticker": symbol,
+        "name": info.get("longName") or info.get("shortName") or symbol,
+        "type": fund_type,
+        "category": info.get("category"),
+        "expense": expense,
+        "aum": info.get("totalAssets"),
+        "note": _MMF_NOTE if quote_type == "MONEYMARKET" else None,
+        **metrics,
     }
 
 

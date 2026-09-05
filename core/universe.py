@@ -1,11 +1,21 @@
 """Curated fund universe for the Fund Finder tab.
 
-There is no free screener API (yfinance can only look up funds you name), so the
-candidate set for each asset class is maintained by hand here. The build pipeline
-(`build_universe.py`) then resolves each ticker against Yahoo Finance, drops any
-that fail, and ranks the survivors by AUM — so the ordering below is not
-significant, only the membership is. The UI shows the top 10 by default with a
-"show 25 / all" control, so the long tail just adds browse depth.
+The candidate set for each asset class is maintained by hand here. This is the
+authoritative list of *mutual funds* (Yahoo's fee data for them is unreliable,
+so each needs a verified fee below) and the per-class anchors, and it's the only
+source for the classes where auto-classification can't be trusted (treasury
+maturities, T-bills, gold — see `core/discovery.py`).
+
+ETF coverage is then *widened automatically*: `core/discovery.py` pulls the
+largest US ETFs from Yahoo's screener, filters out leveraged/inverse/thematic
+funds, and slots the survivors into these same classes by Yahoo's category. So
+the membership below is a floor, not the whole table.
+
+The build pipeline (`build_universe.py`) resolves every ticker (curated +
+discovered) against Yahoo Finance, drops any that fail, and ranks the survivors
+by AUM — so the ordering below is not significant, only the membership is. The
+UI shows the top 10 by default with a "show 25 / all" control, so the long tail
+just adds browse depth.
 
 The lists are ETF-heavy on purpose: Yahoo's expense-ratio data is accurate for
 ETFs but unreliable for mutual funds, so every mutual fund included here also has
@@ -186,7 +196,7 @@ ASSET_CLASSES: dict[str, dict] = {
         "anchor": "VTIAX",
         "tickers": [
             # ETFs
-            "VXUS", "IXUS", "VEU", "ACWX", "CWI", "DFAX",
+            "VXUS", "IXUS", "VEU", "ACWX", "CWI", "DFAX", "AVNM", "AVNV",
             # Mutual funds
             "VTIAX", "FTIHX", "VFWAX", "VGTSX", "FSGGX", "FZILX", "VTSNX",
         ],
