@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T15:22:23+00:00",
+  "generated": "2026-11-02T18:34:54+00:00",
   "funds": {
     "AAAU": {
       "ticker": "AAAU",
@@ -8,9 +8,9 @@
       "category": "Commodities Focused",
       "family": "Goldman Sachs",
       "currency": "USD",
-      "price": 39.625,
-      "change": 0.22499847,
-      "change_pct": 0.5709896,
+      "price": 38.995,
+      "change": 0.7249985,
+      "change_pct": 1.8944303,
       "expense": 0.18,
       "aum": 2684101120,
       "yield": 0.0,
@@ -33,9 +33,9 @@
       "category": "Foreign Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 73.8002,
-      "change": 0.31020355,
-      "change_pct": 0.42210308,
+      "price": 73.975,
+      "change": 0.5649948,
+      "change_pct": 0.76964283,
       "expense": 0.32,
       "aum": 17311576064,
       "yield": 2.52,
@@ -167,9 +167,9 @@
       "category": "Intermediate Core Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 96.0864,
-      "change": 0.12640381,
-      "change_pct": 0.13172552,
+      "price": 96.245,
+      "change": 0.22740173,
+      "change_pct": 0.23683338,
       "expense": 0.03,
       "aum": 135651655680,
       "yield": 4.19,
@@ -219,9 +219,9 @@
       "category": "Intermediate Core Bond",
       "family": "WisdomTree",
       "currency": "USD",
-      "price": 42.015,
-      "change": 0.09500122,
-      "change_pct": 0.22652994,
+      "price": 41.9927,
+      "change": 0.062698364,
+      "change_pct": 0.14939778,
       "expense": 0.12,
       "aum": 893352000,
       "yield": 4.84,
@@ -269,9 +269,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "Avantis Investors",
       "currency": "USD",
-      "price": 87.29,
-      "change": -0.20999908,
-      "change_pct": -0.23999895,
+      "price": 86.79,
+      "change": 0.7700043,
+      "change_pct": 0.89514565,
       "expense": 0.33,
       "aum": 28328701952,
       "yield": 2.56,
@@ -403,9 +403,9 @@
       "category": "Foreign Large Blend",
       "family": "Avantis Investors",
       "currency": "USD",
-      "price": 80.845,
-      "change": 0.29499817,
-      "change_pct": 0.3665712,
+      "price": 80.64,
+      "change": 0.44999695,
+      "change_pct": 0.5611634,
       "expense": 0.31,
       "aum": 780033536,
       "yield": 2.83,
@@ -522,9 +522,9 @@
       "category": "Foreign Large Value",
       "family": "Avantis Investors",
       "currency": "USD",
-      "price": 82.475,
-      "change": 0.3714981,
-      "change_pct": 0.45276982,
+      "price": 82.17,
+      "change": 0.6253967,
+      "change_pct": 0.7669382,
       "expense": 0.34,
       "aum": 75828848,
       "yield": 3.15,
@@ -621,9 +621,9 @@
       "category": "Small Value",
       "family": "Avantis Investors",
       "currency": "USD",
-      "price": 123.355,
-      "change": 1.2950058,
-      "change_pct": 1.0610236,
+      "price": 124.75,
+      "change": 1.3199997,
+      "change_pct": 1.0694318,
       "expense": 0.25,
       "aum": 30383890432,
       "yield": 1.29,
@@ -755,9 +755,9 @@
       "category": "Commodities Focused",
       "family": "Graniteshares",
       "currency": "USD",
-      "price": 39.5822,
-      "change": 0.20219803,
-      "change_pct": 0.5134536,
+      "price": 38.9514,
+      "change": 0.73139954,
+      "change_pct": 1.9136565,
       "expense": 0.1749,
       "aum": 1339821440,
       "yield": 0.0,
@@ -780,9 +780,9 @@
       "category": "Large Blend",
       "family": "JPMorgan",
       "currency": "USD",
-      "price": 138.385,
-      "change": 1.3549957,
-      "change_pct": 0.98883146,
+      "price": 136.585,
+      "change": 0.4650116,
+      "change_pct": 0.3414333,
       "expense": 0.02,
       "aum": 9309235200,
       "yield": 1.0,
@@ -914,10 +914,10 @@
       "category": "Ultrashort Bond",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 91.649,
-      "change": 0.019004822,
-      "change_pct": 0.020741737,
-      "expense": 0.1353,
+      "price": 91.405,
+      "change": 0.0134887695,
+      "change_pct": 0.0147593245,
+      "expense": 0.1352,
       "aum": 49792606208,
       "yield": 3.71,
       "description": "The fund invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in securities that the Adviser determines have economic characteristics that are substantially identical to the economic characteristics of the securities that comprise the index. The index measures the performance of public obligations of the U.S. Treasury that have a remaining maturity of greater than or equal to 1 month and less than 3 months.",
@@ -937,11 +937,11 @@
         },
         {
           "label": "AAA",
-          "pct": 0.18
+          "pct": 0.08
         },
         {
           "label": "AA",
-          "pct": 99.82
+          "pct": 99.92
         }
       ]
     },
@@ -952,9 +952,9 @@
       "category": "Intermediate Core Bond",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 74.0,
-      "change": 0.069999695,
-      "change_pct": 0.094683744,
+      "price": 74.1986,
+      "change": 0.09991455,
+      "change_pct": 0.1348555,
       "expense": 0.03,
       "aum": 50439286784,
       "yield": 4.5,
@@ -998,9 +998,9 @@
       "category": "Long-Term Bond",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 65.17,
-      "change": 0.29999542,
-      "change_pct": 0.46245632,
+      "price": 65.285,
+      "change": 0.29260254,
+      "change_pct": 0.45024505,
       "expense": 0.03,
       "aum": 7789053440,
       "yield": 5.23,
@@ -1048,9 +1048,9 @@
       "category": "Intermediate Core Bond",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 71.305,
-      "change": 0.10500336,
-      "change_pct": 0.14746629,
+      "price": 71.425,
+      "change": 0.12180328,
+      "change_pct": 0.17083618,
       "expense": 0.03,
       "aum": 389050990592,
       "yield": 4.17,
@@ -1098,9 +1098,9 @@
       "category": "Global Bond-USD Hedged",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 66.7288,
-      "change": 0.1187973,
-      "change_pct": 0.17834754,
+      "price": 66.81,
+      "change": 0.12609863,
+      "change_pct": 0.18904547,
       "expense": 0.05,
       "aum": 1902695424,
       "yield": 4.41,
@@ -1168,9 +1168,9 @@
       "category": "Intermediate Core-Plus Bond",
       "family": "PIMCO",
       "currency": "USD",
-      "price": 88.61,
-      "change": 0.11000061,
-      "change_pct": 0.124294475,
+      "price": 88.93,
+      "change": 0.30999756,
+      "change_pct": 0.3498054,
       "expense": 0.54,
       "aum": 8536468992,
       "yield": 5.46,
@@ -1237,9 +1237,9 @@
       "category": "Corporate Bond",
       "family": "PIMCO",
       "currency": "USD",
-      "price": 93.255,
-      "change": 0.23500061,
-      "change_pct": 0.2526345,
+      "price": 93.295,
+      "change": 0.24499512,
+      "change_pct": 0.26329404,
       "expense": 0.41,
       "aum": 1326402304,
       "yield": 5.15,
@@ -1287,9 +1287,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 71.96,
-      "change": 0.55,
-      "change_pct": 0.7702003,
+      "price": 73.0,
+      "change": 0.01,
+      "change_pct": 0.013700508,
       "expense": 0.87,
       "aum": 7573173760,
       "yield": 2.78,
@@ -1389,9 +1389,9 @@
       "category": "Foreign Large Blend",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 39.47,
-      "change": 0.24000168,
-      "change_pct": 0.611781,
+      "price": 39.55,
+      "change": 0.3199997,
+      "change_pct": 0.8157015,
       "expense": 0.3,
       "aum": 2852765440,
       "yield": 2.7,
@@ -1523,9 +1523,9 @@
       "category": "Foreign Large Blend",
       "family": "Xtrackers",
       "currency": "USD",
-      "price": 54.78,
-      "change": 0.48999786,
-      "change_pct": 0.90255636,
+      "price": 55.0001,
+      "change": 0.2600975,
+      "change_pct": 0.4751507,
       "expense": 0.35,
       "aum": 9252574208,
       "yield": 2.27,
@@ -1662,9 +1662,9 @@
       "category": "Commodities Focused",
       "family": "Invesco",
       "currency": "USD",
-      "price": 90.73,
-      "change": 0.3500061,
-      "change_pct": 0.3872606,
+      "price": 88.36,
+      "change": 1.879097,
+      "change_pct": 2.172846,
       "expense": 0.75,
       "aum": 219375520,
       "yield": 2.62,
@@ -1703,9 +1703,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "WisdomTree",
       "currency": "USD",
-      "price": 53.289,
-      "change": -0.5909996,
-      "change_pct": -1.0968812,
+      "price": 53.02,
+      "change": 0.22000122,
+      "change_pct": 0.41666898,
       "expense": 0.63,
       "aum": 4155620864,
       "yield": 3.99,
@@ -1837,9 +1837,9 @@
       "category": "Small Value",
       "family": "WisdomTree",
       "currency": "USD",
-      "price": 39.2501,
-      "change": 0.4001007,
-      "change_pct": 1.0298603,
+      "price": 39.815,
+      "change": 0.60499954,
+      "change_pct": 1.5429726,
       "expense": 0.38,
       "aum": 2041498368,
       "yield": 2.39,
@@ -1971,9 +1971,9 @@
       "category": "Foreign Large Blend",
       "family": "Dimensional Fund Advisors",
       "currency": "USD",
-      "price": 36.14,
-      "change": 0.14999771,
-      "change_pct": 0.41722816,
+      "price": 36.13,
+      "change": 0.31000137,
+      "change_pct": 0.86544216,
       "expense": 0.28,
       "aum": 12395408384,
       "yield": 2.41,
@@ -2105,9 +2105,9 @@
       "category": "Foreign Large Blend",
       "family": "Dimensional Fund Advisors",
       "currency": "USD",
-      "price": 37.61,
-      "change": 0.27000046,
-      "change_pct": 0.72298956,
+      "price": 37.7699,
+      "change": 0.29990005,
+      "change_pct": 0.8000514,
       "expense": 0.22,
       "aum": 15147606016,
       "yield": 2.53,
@@ -2234,9 +2234,9 @@
       "category": "Small Value",
       "family": "Dimensional Fund Advisors",
       "currency": "USD",
-      "price": 39.235,
-      "change": 0.375,
-      "change_pct": 0.96500254,
+      "price": 39.92,
+      "change": 0.47999954,
+      "change_pct": 1.2170374,
       "expense": 0.31,
       "aum": 26491832320,
       "yield": null,
@@ -2363,9 +2363,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "WisdomTree",
       "currency": "USD",
-      "price": 37.58,
-      "change": -0.05999756,
-      "change_pct": -0.1593984,
+      "price": 37.5894,
+      "change": 0.47940063,
+      "change_pct": 1.2918367,
       "expense": 0.32,
       "aum": 149428528,
       "yield": 1.39,
@@ -2490,136 +2490,6 @@
       },
       "bond_ratings": []
     },
-    "DGRO": {
-      "ticker": "DGRO",
-      "name": "iShares Core Dividend Growth ETF",
-      "type": "ETF",
-      "category": "Large Value",
-      "family": "iShares",
-      "currency": "USD",
-      "price": 80.085,
-      "change": 0.43499756,
-      "change_pct": 0.54613626,
-      "expense": 0.08,
-      "aum": 41891237888,
-      "yield": 1.98,
-      "description": "The fund seeks to track the investment results of the Morningstar\u00ae U.S. Dividend Growth IndexSM (the \u201cunderlying index\u201d), which is a dividend dollar-weighted index that seeks to measure the performance of U.S. companies selected based on a consistent history of growing dividends. The underlying index may include large-, mid- and small-capitalization companies.",
-      "holdings": [
-        {
-          "symbol": "MSFT",
-          "name": "Microsoft Corp",
-          "pct": 3.22
-        },
-        {
-          "symbol": "AAPL",
-          "name": "Apple Inc",
-          "pct": 3.16
-        },
-        {
-          "symbol": "XOM",
-          "name": "ExxonMobil Holdings Corp",
-          "pct": 3.11
-        },
-        {
-          "symbol": "ABBV",
-          "name": "AbbVie Inc",
-          "pct": 2.91
-        },
-        {
-          "symbol": "JNJ",
-          "name": "Johnson & Johnson",
-          "pct": 2.9
-        },
-        {
-          "symbol": "JPM",
-          "name": "JPMorgan Chase & Co",
-          "pct": 2.8
-        },
-        {
-          "symbol": "AVGO",
-          "name": "Broadcom Inc",
-          "pct": 2.78
-        },
-        {
-          "symbol": "PG",
-          "name": "Procter & Gamble Co",
-          "pct": 2.34
-        },
-        {
-          "symbol": "PM",
-          "name": "Philip Morris International Inc",
-          "pct": 2.23
-        },
-        {
-          "symbol": "HD",
-          "name": "The Home Depot Inc",
-          "pct": 1.92
-        }
-      ],
-      "sectors": [
-        {
-          "name": "Financial Services",
-          "pct": 19.65
-        },
-        {
-          "name": "Technology",
-          "pct": 19.27
-        },
-        {
-          "name": "Healthcare",
-          "pct": 17.45
-        },
-        {
-          "name": "Consumer Defensive",
-          "pct": 12.32
-        },
-        {
-          "name": "Industrials",
-          "pct": 10.55
-        },
-        {
-          "name": "Utilities",
-          "pct": 6.85
-        },
-        {
-          "name": "Consumer Cyclical",
-          "pct": 5.87
-        },
-        {
-          "name": "Energy",
-          "pct": 5.53
-        },
-        {
-          "name": "Basic Materials",
-          "pct": 2.37
-        },
-        {
-          "name": "Communication Services",
-          "pct": 0.14
-        }
-      ],
-      "composition": {
-        "stock": 99.81,
-        "bond": 0.0,
-        "cash": 0.18,
-        "other": 0.0
-      },
-      "equity": {
-        "pe": 21.52,
-        "pb": 3.7,
-        "ps": 2.53,
-        "pcf": 15.32,
-        "median_mktcap": null,
-        "growth3y": null,
-        "cat": {
-          "pe": null,
-          "pb": null,
-          "ps": null,
-          "pcf": null
-        }
-      },
-      "bond_ratings": []
-    },
     "DGS": {
       "ticker": "DGS",
       "name": "WisdomTree Emerging Markets SmallCap Dividend Fund",
@@ -2627,9 +2497,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "WisdomTree",
       "currency": "USD",
-      "price": 59.8298,
-      "change": -1.2701988,
-      "change_pct": -2.078885,
+      "price": 58.99,
+      "change": 0.40999985,
+      "change_pct": 0.6998973,
       "expense": 0.58,
       "aum": 1704231680,
       "yield": 3.77,
@@ -2761,9 +2631,9 @@
       "category": "Large Value",
       "family": "WisdomTree",
       "currency": "USD",
-      "price": 117.8332,
-      "change": 0.26319885,
-      "change_pct": 0.22386566,
+      "price": 120.0185,
+      "change": 0.72850037,
+      "change_pct": 0.6106969,
       "expense": 0.38,
       "aum": 1544253824,
       "yield": 3.31,
@@ -2895,9 +2765,9 @@
       "category": "Large Value",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 523.95,
-      "change": 2.580017,
-      "change_pct": 0.49485338,
+      "price": 522.3,
+      "change": 5.169983,
+      "change_pct": 0.9997453,
       "expense": 0.16,
       "aum": 43860340736,
       "yield": 1.42,
@@ -3021,9 +2891,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 17.9,
-      "change": -0.12,
-      "change_pct": -0.66592675,
+      "price": 17.89,
+      "change": -0.01,
+      "change_pct": -0.055865925,
       "expense": 0.51,
       "aum": 114788261888,
       "yield": 0.98,
@@ -3155,9 +3025,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 12.23,
-      "change": -0.03,
-      "change_pct": -0.24469823,
+      "price": 12.31,
+      "change": 0.03,
+      "change_pct": 0.24429967,
       "expense": 0.41,
       "aum": 106323869696,
       "yield": 4.55,
@@ -3227,9 +3097,9 @@
       "category": "Mid-Cap Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 161.77,
-      "change": 0.51000977,
-      "change_pct": 0.31626552,
+      "price": 163.32,
+      "change": 0.79000854,
+      "change_pct": 0.48606938,
       "expense": 0.38,
       "aum": 22161467392,
       "yield": 3.51,
@@ -3357,9 +3227,9 @@
       "category": "Intermediate Core Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 45.995,
-      "change": 0.06499863,
-      "change_pct": 0.14151672,
+      "price": 46.0899,
+      "change": 0.065200806,
+      "change_pct": 0.14164911,
       "expense": 0.1,
       "aum": 4952568832,
       "yield": 4.2,
@@ -3409,9 +3279,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 40.38,
-      "change": 0.020000458,
-      "change_pct": 0.04955515,
+      "price": 40.5099,
+      "change": 0.16989899,
+      "change_pct": 0.42158452,
       "expense": 0.49,
       "aum": 1177601920,
       "yield": 4.33,
@@ -3543,9 +3413,9 @@
       "category": "Long Government",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 59.39,
-      "change": 0.36999893,
-      "change_pct": 0.6269043,
+      "price": 59.83,
+      "change": 0.5600014,
+      "change_pct": 0.9448311,
       "expense": 0.05,
       "aum": 4044910336,
       "yield": 5.86,
@@ -3577,9 +3447,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "iShares",
       "currency": "USD",
-      "price": 61.935,
-      "change": -0.07499695,
-      "change_pct": -0.120943315,
+      "price": 61.78,
+      "change": 0.73999786,
+      "change_pct": 1.2123163,
       "expense": 0.72,
       "aum": 31071397888,
       "yield": 1.67,
@@ -3711,9 +3581,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "iShares",
       "currency": "USD",
-      "price": 71.5801,
-      "change": -0.019897461,
-      "change_pct": -0.027789751,
+      "price": 71.38,
+      "change": 0.25,
+      "change_pct": 0.35146916,
       "expense": 0.25,
       "aum": 3577220096,
       "yield": 2.19,
@@ -3845,9 +3715,9 @@
       "category": "Small Value",
       "family": "WisdomTree",
       "currency": "USD",
-      "price": 66.46,
-      "change": 0.55999756,
-      "change_pct": 0.84976864,
+      "price": 67.1301,
+      "change": 0.9700928,
+      "change_pct": 1.4662828,
       "expense": 0.38,
       "aum": 676987392,
       "yield": 1.19,
@@ -3979,9 +3849,9 @@
       "category": "Foreign Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 103.395,
-      "change": 0.7649994,
-      "change_pct": 0.7453955,
+      "price": 104.07,
+      "change": 0.69999695,
+      "change_pct": 0.6771761,
       "expense": 0.32,
       "aum": 76699582464,
       "yield": 3.24,
@@ -4113,9 +3983,9 @@
       "category": "Foreign Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 96.3599,
-      "change": 0.3899002,
-      "change_pct": 0.406273,
+      "price": 96.245,
+      "change": -0.0049972534,
+      "change_pct": -0.0051919515,
       "expense": 0.2,
       "aum": 5276212736,
       "yield": 3.13,
@@ -4247,9 +4117,9 @@
       "category": "Foreign Large Growth",
       "family": "iShares",
       "currency": "USD",
-      "price": 118.535,
-      "change": 0.78500366,
-      "change_pct": 0.6666698,
+      "price": 119.58,
+      "change": 1.0299988,
+      "change_pct": 0.8688307,
       "expense": 0.34,
       "aum": 15033347072,
       "yield": 2.33,
@@ -4381,9 +4251,9 @@
       "category": "Foreign Large Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 79.415,
-      "change": 0.5750046,
-      "change_pct": 0.7293311,
+      "price": 79.665,
+      "change": 0.40499878,
+      "change_pct": 0.510975,
       "expense": 0.31,
       "aum": 30765787136,
       "yield": 4.61,
@@ -4508,140 +4378,6 @@
       },
       "bond_ratings": []
     },
-    "EMCS": {
-      "ticker": "EMCS",
-      "name": "Xtrackers MSCI Emerging Markets Select ETF",
-      "type": "ETF",
-      "category": "Diversified Emerging Mkts",
-      "family": "Xtrackers",
-      "currency": "USD",
-      "price": 42.34,
-      "change": -0.8634987,
-      "change_pct": -1.9986777,
-      "expense": 0.15,
-      "aum": 1112311936,
-      "yield": 1.45,
-      "description": "The underlying index represents an emerging markets subset of the MSCI ACWI Select Climate 500 Index (the \u201cparent index\u201d), which is designed to track the performance of approximately 500 stocks of companies. The fund will invest at least 80% of its total assets (but typically far more) in component securities (including depositary receipts in respect of such securities) of the underlying index. The fund is non-diversified.",
-      "holdings": [
-        {
-          "symbol": "2330.TW",
-          "name": "Taiwan Semiconductor Manufacturing Co Ltd",
-          "pct": 19.54
-        },
-        {
-          "symbol": "005930.KQ",
-          "name": "Samsung Electronics Co Ltd",
-          "pct": 10.57
-        },
-        {
-          "symbol": "000660.KQ",
-          "name": "SK hynix Inc",
-          "pct": 7.68
-        },
-        {
-          "symbol": "0700.HK",
-          "name": "Tencent Holdings Ltd",
-          "pct": 4.35
-        },
-        {
-          "symbol": "2454.TW",
-          "name": "MediaTek Inc",
-          "pct": 2.66
-        },
-        {
-          "symbol": "9988.HK",
-          "name": "Alibaba Group Holding Ltd Ordinary Shares",
-          "pct": 2.6
-        },
-        {
-          "symbol": "2308.TW",
-          "name": "Delta Electronics Inc",
-          "pct": 1.68
-        },
-        {
-          "symbol": "00939",
-          "name": "China Construction Bank Corp Class H",
-          "pct": 1.6
-        },
-        {
-          "symbol": "2881.TW",
-          "name": "Fubon Financial Holdings Co Ltd",
-          "pct": 1.55
-        },
-        {
-          "symbol": "SCCO",
-          "name": "Southern Copper Corp",
-          "pct": 1.53
-        }
-      ],
-      "sectors": [
-        {
-          "name": "Technology",
-          "pct": 48.49
-        },
-        {
-          "name": "Financial Services",
-          "pct": 29.99
-        },
-        {
-          "name": "Consumer Cyclical",
-          "pct": 7.57
-        },
-        {
-          "name": "Communication Services",
-          "pct": 7.21
-        },
-        {
-          "name": "Basic Materials",
-          "pct": 2.65
-        },
-        {
-          "name": "Real Estate",
-          "pct": 1.73
-        },
-        {
-          "name": "Industrials",
-          "pct": 1.29
-        },
-        {
-          "name": "Energy",
-          "pct": 1.01
-        },
-        {
-          "name": "Healthcare",
-          "pct": 0.03
-        },
-        {
-          "name": "Consumer Defensive",
-          "pct": 0.02
-        },
-        {
-          "name": "Utilities",
-          "pct": 0.02
-        }
-      ],
-      "composition": {
-        "stock": 99.08,
-        "bond": 0.0,
-        "cash": 0.92,
-        "other": 0.0
-      },
-      "equity": {
-        "pe": 13.54,
-        "pb": 2.27,
-        "ps": 3.28,
-        "pcf": 13.77,
-        "median_mktcap": null,
-        "growth3y": null,
-        "cat": {
-          "pe": null,
-          "pb": null,
-          "ps": null,
-          "pcf": null
-        }
-      },
-      "bond_ratings": []
-    },
     "EMXC": {
       "ticker": "EMXC",
       "name": "iShares MSCI Emerging Markets ex China ETF",
@@ -4649,9 +4385,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "iShares",
       "currency": "USD",
-      "price": 91.39,
-      "change": -0.3199997,
-      "change_pct": -0.34892562,
+      "price": 90.8,
+      "change": 1.1000061,
+      "change_pct": 1.2263168,
       "expense": 0.25,
       "aum": 25333065728,
       "yield": 1.94,
@@ -4776,129 +4512,129 @@
       },
       "bond_ratings": []
     },
-    "EYLD": {
-      "ticker": "EYLD",
-      "name": "Cambria Emerging Shareholder Yield ETF",
+    "EPS": {
+      "ticker": "EPS",
+      "name": "WisdomTree U.S. LargeCap Fund",
       "type": "ETF",
-      "category": "Diversified Emerging Mkts",
-      "family": "Cambria",
+      "category": "Large Value",
+      "family": "WisdomTree",
       "currency": "USD",
-      "price": 46.12,
-      "change": -0.7100029,
-      "change_pct": -1.5161283,
-      "expense": 0.63,
-      "aum": 918646720,
-      "yield": 4.45,
-      "description": "The fund is actively managed and seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its total assets in equity securities, including common stock and depositary receipts, issued by publicly listed companies in emerging foreign markets that provide high \"shareholder yield.\" Its investment adviser, Cambria Investment Management, L.P. (\"Cambria\" or the \"Adviser\"), defines \"shareholder yield\" as the totality of returns realized by an investor from a company\u2019s cash payments for dividends, buybacks and debt paydowns.",
+      "price": 79.2778,
+      "change": 0.29779816,
+      "change_pct": 0.37705514,
+      "expense": 0.08,
+      "aum": 1649490176,
+      "yield": 1.12,
+      "description": "The fund invests, under normal circumstances, at least 80% of its net assets, plus any borrowings for investment purposes, in constituents of the index and/or investments that have economic characteristics that are substantially similar to the economic characteristics of such constituents. The index is based on a rules-based methodology overseen and implemented by the WisdomTree Core Equity Index Committee. It is non-diversified.",
       "holdings": [
         {
-          "symbol": "3026.TW",
-          "name": "Holy Stone Enterprise Co Ltd",
-          "pct": 2.33
+          "symbol": "NVDA",
+          "name": "NVIDIA Corp",
+          "pct": 7.88
         },
         {
-          "symbol": "XTB.WA",
-          "name": "XTB SA",
-          "pct": 1.86
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc Class A",
+          "pct": 5.81
         },
         {
-          "symbol": "3455.TWO",
-          "name": "UTECHZONE Co Ltd",
-          "pct": 1.84
+          "symbol": "AMZN",
+          "name": "Amazon.com Inc",
+          "pct": 5.79
         },
         {
-          "symbol": "3406.TW",
-          "name": "Genius Electronic Optical Co Ltd",
-          "pct": 1.68
+          "symbol": "AAPL",
+          "name": "Apple Inc",
+          "pct": 5.7
         },
         {
-          "symbol": "2357.TW",
-          "name": "Asustek Computer Inc",
+          "symbol": "MSFT",
+          "name": "Microsoft Corp",
+          "pct": 4.55
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms Inc Class A",
+          "pct": 3.61
+        },
+        {
+          "symbol": "JPM",
+          "name": "JPMorgan Chase & Co",
+          "pct": 2.04
+        },
+        {
+          "symbol": "MU",
+          "name": "Micron Technology Inc",
           "pct": 1.66
         },
         {
-          "symbol": "078930.KQ",
-          "name": "GS Holdings Corp",
-          "pct": 1.57
+          "symbol": "BRK-B",
+          "name": "Berkshire Hathaway Inc Class B",
+          "pct": 1.64
         },
         {
-          "symbol": "105560.KQ",
-          "name": "KB Financial Group Inc",
-          "pct": 1.54
-        },
-        {
-          "symbol": "TUPRS.IS",
-          "name": "Tupras-Turkiye Petrol Rafineleri AS",
-          "pct": 1.47
-        },
-        {
-          "symbol": "005830.KQ",
-          "name": "DB Insurance Co Ltd",
-          "pct": 1.37
-        },
-        {
-          "symbol": "1093.HK",
-          "name": "CSPC Pharmaceutical Group Ltd",
-          "pct": 1.32
+          "symbol": "AVGO",
+          "name": "Broadcom Inc",
+          "pct": 1.41
         }
       ],
       "sectors": [
         {
-          "name": "Financial Services",
-          "pct": 28.21
-        },
-        {
           "name": "Technology",
-          "pct": 19.75
+          "pct": 37.08
         },
         {
-          "name": "Industrials",
-          "pct": 14.72
-        },
-        {
-          "name": "Energy",
-          "pct": 9.9
-        },
-        {
-          "name": "Consumer Cyclical",
-          "pct": 7.7
-        },
-        {
-          "name": "Utilities",
-          "pct": 4.92
+          "name": "Financial Services",
+          "pct": 14.75
         },
         {
           "name": "Communication Services",
-          "pct": 4.67
+          "pct": 12.16
         },
         {
           "name": "Healthcare",
-          "pct": 3.13
+          "pct": 10.18
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 9.51
+        },
+        {
+          "name": "Industrials",
+          "pct": 4.81
+        },
+        {
+          "name": "Energy",
+          "pct": 4.16
         },
         {
           "name": "Consumer Defensive",
-          "pct": 2.99
+          "pct": 3.78
+        },
+        {
+          "name": "Utilities",
+          "pct": 1.61
         },
         {
           "name": "Basic Materials",
-          "pct": 2.63
+          "pct": 1.22
         },
         {
           "name": "Real Estate",
-          "pct": 1.38
+          "pct": 0.74
         }
       ],
       "composition": {
-        "stock": 99.12,
+        "stock": 99.92,
         "bond": 0.0,
-        "cash": 0.75,
-        "other": 0.12
+        "cash": 0.04,
+        "other": 0.04
       },
       "equity": {
-        "pe": 10.56,
-        "pb": 1.29,
-        "ps": 1.02,
-        "pcf": 6.44,
+        "pe": 21.59,
+        "pb": 4.34,
+        "ps": 3.16,
+        "pcf": 16.33,
         "median_mktcap": null,
         "growth3y": null,
         "cat": {
@@ -4917,9 +4653,9 @@
       "category": "Intermediate Core-Plus Bond",
       "family": "Fidelity Investments",
       "currency": "USD",
-      "price": 44.1133,
-      "change": 0.06330109,
-      "change_pct": 0.14369726,
+      "price": 44.22,
+      "change": 0.060001373,
+      "change_pct": 0.13587268,
       "expense": 0.36,
       "aum": 27898273792,
       "yield": 4.88,
@@ -4988,9 +4724,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 10.19,
-      "change": -0.03,
-      "change_pct": -0.2935421,
+      "price": 10.24,
+      "change": 0.02,
+      "change_pct": 0.19569473,
       "expense": 0.45,
       "aum": 1816564992,
       "yield": 4.57,
@@ -5051,9 +4787,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 8.9,
-      "change": 0.0,
-      "change_pct": 0.0,
+      "price": 8.94,
+      "change": 0.02,
+      "change_pct": 0.22421527,
       "expense": 0.05,
       "aum": 11493161984,
       "yield": 4.48,
@@ -5098,9 +4834,9 @@
       "category": "Intermediate Core Bond",
       "family": "Franklin Templeton, Inc",
       "currency": "USD",
-      "price": 20.745,
-      "change": 0.055000305,
-      "change_pct": 0.26583037,
+      "price": 20.785,
+      "change": 0.0394001,
+      "change_pct": 0.1899102,
       "expense": 0.15,
       "aum": 3017393152,
       "yield": 4.5,
@@ -5159,9 +4895,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 25.62,
-      "change": -0.16,
-      "change_pct": -0.62063617,
+      "price": 25.75,
+      "change": -0.21,
+      "change_pct": -0.80893683,
       "expense": 0.035,
       "aum": 14898884608,
       "yield": 0.88,
@@ -5298,9 +5034,9 @@
       "category": "Mid-Cap Blend",
       "family": "Franklin Templeton, Inc",
       "currency": "USD",
-      "price": 61.79,
-      "change": 0.27000046,
-      "change_pct": 0.4388824,
+      "price": 62.2544,
+      "change": 0.8344002,
+      "change_pct": 1.3585155,
       "expense": 0.3,
       "aum": 1418477696,
       "yield": 1.71,
@@ -5432,9 +5168,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 8.69,
-      "change": -0.05,
-      "change_pct": -0.5720824,
+      "price": 8.75,
+      "change": 0.04,
+      "change_pct": 0.45924225,
       "expense": 0.03,
       "aum": 4726464000,
       "yield": 4.43,
@@ -5479,9 +5215,9 @@
       "category": "Small Blend",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 36.05,
-      "change": 0.38000107,
-      "change_pct": 1.0653241,
+      "price": 36.5757,
+      "change": 0.5956993,
+      "change_pct": 1.6556401,
       "expense": 0.25,
       "aum": 8614898688,
       "yield": 1.26,
@@ -5613,9 +5349,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 40.875,
-      "change": -0.82500076,
-      "change_pct": -1.9784191,
+      "price": 40.825,
+      "change": 0.25500107,
+      "change_pct": 0.6285459,
       "expense": 0.39,
       "aum": 10299469824,
       "yield": 3.54,
@@ -5747,9 +5483,9 @@
       "category": "Foreign Large Value",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 53.975,
-      "change": 0.29499817,
-      "change_pct": 0.5495495,
+      "price": 54.115,
+      "change": 0.22500229,
+      "change_pct": 0.41752142,
       "expense": 0.25,
       "aum": 25612226560,
       "yield": 3.03,
@@ -5869,140 +5605,6 @@
       },
       "bond_ratings": []
     },
-    "FNDX": {
-      "ticker": "FNDX",
-      "name": "Schwab Fundamental U.S. Large Company ETF",
-      "type": "ETF",
-      "category": "Large Value",
-      "family": "Schwab ETFs",
-      "currency": "USD",
-      "price": 32.76,
-      "change": 0.15999985,
-      "change_pct": 0.4907971,
-      "expense": 0.25,
-      "aum": 27085967360,
-      "yield": 1.5,
-      "description": "The fund normally will invest at least 90% of its net assets (including, for this purpose, any borrowings for investment purposes) in stocks included in the index. The index measures the performance of the large company size segment by fundamental overall company scores, which are created using as the universe the U.S. companies in the RAFI Global Equity Investable Universe.",
-      "holdings": [
-        {
-          "symbol": "AAPL",
-          "name": "Apple Inc",
-          "pct": 4.76
-        },
-        {
-          "symbol": "MSFT",
-          "name": "Microsoft Corp",
-          "pct": 3.15
-        },
-        {
-          "symbol": "XOM",
-          "name": "ExxonMobil Holdings Corp",
-          "pct": 2.33
-        },
-        {
-          "symbol": "AMZN",
-          "name": "Amazon.com Inc",
-          "pct": 1.9
-        },
-        {
-          "symbol": "META",
-          "name": "Meta Platforms Inc Class A",
-          "pct": 1.87
-        },
-        {
-          "symbol": "GOOGL",
-          "name": "Alphabet Inc Class A",
-          "pct": 1.76
-        },
-        {
-          "symbol": "BRK-B",
-          "name": "Berkshire Hathaway Inc Class B",
-          "pct": 1.74
-        },
-        {
-          "symbol": "JPM",
-          "name": "JPMorgan Chase & Co",
-          "pct": 1.59
-        },
-        {
-          "symbol": "CVX",
-          "name": "Chevron Corp",
-          "pct": 1.58
-        },
-        {
-          "symbol": "GOOG",
-          "name": "Alphabet Inc Class C",
-          "pct": 1.4
-        }
-      ],
-      "sectors": [
-        {
-          "name": "Technology",
-          "pct": 19.75
-        },
-        {
-          "name": "Financial Services",
-          "pct": 14.6
-        },
-        {
-          "name": "Healthcare",
-          "pct": 13.49
-        },
-        {
-          "name": "Energy",
-          "pct": 9.82
-        },
-        {
-          "name": "Communication Services",
-          "pct": 9.18
-        },
-        {
-          "name": "Consumer Cyclical",
-          "pct": 8.98
-        },
-        {
-          "name": "Industrials",
-          "pct": 8.85
-        },
-        {
-          "name": "Consumer Defensive",
-          "pct": 7.5
-        },
-        {
-          "name": "Basic Materials",
-          "pct": 3.17
-        },
-        {
-          "name": "Utilities",
-          "pct": 2.92
-        },
-        {
-          "name": "Real Estate",
-          "pct": 1.75
-        }
-      ],
-      "composition": {
-        "stock": 99.92,
-        "bond": 0.0,
-        "cash": 0.08,
-        "other": 0.0
-      },
-      "equity": {
-        "pe": 18.84,
-        "pb": 2.84,
-        "ps": 1.42,
-        "pcf": 10.97,
-        "median_mktcap": null,
-        "growth3y": null,
-        "cat": {
-          "pe": null,
-          "pb": null,
-          "ps": null,
-          "pcf": null
-        }
-      },
-      "bond_ratings": []
-    },
     "FNILX": {
       "ticker": "FNILX",
       "name": "Fidelity ZERO Large Cap Index",
@@ -6010,9 +5612,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 27.34,
-      "change": -0.13,
-      "change_pct": -0.47324356,
+      "price": 27.17,
+      "change": -0.52,
+      "change_pct": -1.8779342,
       "expense": 0.0,
       "aum": 19397906432,
       "yield": 0.9,
@@ -6149,9 +5751,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 15.68,
-      "change": 0.12,
-      "change_pct": 0.7712082,
+      "price": 15.4,
+      "change": -0.45,
+      "change_pct": -2.8391168,
       "expense": 0.075,
       "aum": 15811250176,
       "yield": 1.91,
@@ -6278,9 +5880,9 @@
       "category": "Real Estate",
       "family": "Fidelity Investments",
       "currency": "USD",
-      "price": 28.338,
-      "change": 0.18799973,
-      "change_pct": 0.66784984,
+      "price": 28.785,
+      "change": 0.28499985,
+      "change_pct": 0.99999946,
       "expense": 0.084,
       "aum": 1349016832,
       "yield": 3.58,
@@ -6380,9 +5982,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 40.26,
-      "change": 0.03,
-      "change_pct": 0.074571215,
+      "price": 40.84,
+      "change": 0.04,
+      "change_pct": 0.09803922,
       "expense": 0.7,
       "aum": 2935443968,
       "yield": 2.23,
@@ -6482,9 +6084,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 20.7,
-      "change": -0.01,
-      "change_pct": -0.04828585,
+      "price": 20.66,
+      "change": -0.32,
+      "change_pct": -1.5252622,
       "expense": 0.055,
       "aum": 20062959616,
       "yield": 2.37,
@@ -6606,9 +6208,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 209.46,
-      "change": -1.01,
-      "change_pct": -0.47987837,
+      "price": 208.52,
+      "change": -3.91,
+      "change_pct": -1.8406062,
       "expense": 0.015,
       "aum": 141614628864,
       "yield": 0.93,
@@ -6745,9 +6347,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 66.17,
-      "change": -0.28,
-      "change_pct": -0.42136946,
+      "price": 66.58,
+      "change": -0.54,
+      "change_pct": -0.80452925,
       "expense": 0.035,
       "aum": 85877383168,
       "yield": 2.86,
@@ -6879,9 +6481,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 17.09,
-      "change": 0.0,
-      "change_pct": 0.0,
+      "price": 17.32,
+      "change": 0.02,
+      "change_pct": 0.11560694,
       "expense": 0.07,
       "aum": 2998035456,
       "yield": 2.98,
@@ -7010,9 +6612,9 @@
       "category": "Mid-Cap Value",
       "family": "First Trust",
       "currency": "USD",
-      "price": 102.5767,
-      "change": 0.031700134,
-      "change_pct": 0.030913388,
+      "price": 104.9899,
+      "change": 1.0097961,
+      "change_pct": 0.9711436,
       "expense": 0.58,
       "aum": 1313168768,
       "yield": 1.84,
@@ -7144,9 +6746,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 9.23,
-      "change": -0.02,
-      "change_pct": -0.21621622,
+      "price": 9.28,
+      "change": 0.03,
+      "change_pct": 0.3243243,
       "expense": 0.45,
       "aum": 39980032000,
       "yield": 4.55,
@@ -7224,9 +6826,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 19.14,
-      "change": -0.01,
-      "change_pct": -0.052219324,
+      "price": 19.08,
+      "change": -0.29,
+      "change_pct": -1.4971604,
       "expense": 0.06,
       "aum": 26284388352,
       "yield": 2.45,
@@ -7348,9 +6950,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 9.37,
-      "change": -0.02,
-      "change_pct": -0.21299253,
+      "price": 9.43,
+      "change": 0.04,
+      "change_pct": 0.42598507,
       "expense": 0.03,
       "aum": 8154278400,
       "yield": 4.06,
@@ -7395,9 +6997,9 @@
       "category": "Mid-Cap Value",
       "family": "First Trust",
       "currency": "USD",
-      "price": 50.285,
-      "change": 0.16500092,
-      "change_pct": 0.32921174,
+      "price": 51.3551,
+      "change": 0.64509964,
+      "change_pct": 1.272135,
       "expense": 0.62,
       "aum": 7550688256,
       "yield": 2.39,
@@ -7529,9 +7131,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 264.99,
-      "change": -1.37,
-      "change_pct": -0.51434153,
+      "price": 263.5,
+      "change": -4.86,
+      "change_pct": -1.8110002,
       "expense": 0.015,
       "aum": 857586073600,
       "yield": 1.04,
@@ -7663,9 +7265,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 10.13,
-      "change": -0.02,
-      "change_pct": -0.19704433,
+      "price": 10.18,
+      "change": 0.03,
+      "change_pct": 0.2955665,
       "expense": 0.025,
       "aum": 67639799808,
       "yield": 3.97,
@@ -7722,9 +7324,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 16.47,
-      "change": -0.01,
-      "change_pct": -0.060679615,
+      "price": 16.42,
+      "change": -0.26,
+      "change_pct": -1.558753,
       "expense": 0.0,
       "aum": 13027884032,
       "yield": 2.33,
@@ -7846,9 +7448,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 26.55,
-      "change": -0.13,
-      "change_pct": -0.4872564,
+      "price": 26.43,
+      "change": -0.5,
+      "change_pct": -1.8566654,
       "expense": 0.0,
       "aum": 41236307968,
       "yield": 0.91,
@@ -7985,9 +7587,9 @@
       "category": "Ultrashort Bond",
       "family": "Goldman Sachs",
       "currency": "USD",
-      "price": 100.1124,
-      "change": 0.012397766,
-      "change_pct": 0.012385381,
+      "price": 99.895,
+      "change": 0.00049591064,
+      "change_pct": 0.0004964344,
       "expense": 0.12,
       "aum": 7915498496,
       "yield": 3.64,
@@ -8019,7 +7621,7 @@
       "category": "Technology",
       "family": "Gabelli",
       "currency": "USD",
-      "price": 35.9601,
+      "price": 35.779,
       "change": 0.0,
       "change_pct": 0.0,
       "expense": 0.0,
@@ -8146,9 +7748,9 @@
       "category": "Corporate Bond",
       "family": "Goldman Sachs",
       "currency": "USD",
-      "price": 44.2355,
-      "change": 0.13560104,
-      "change_pct": 0.30748606,
+      "price": 44.25,
+      "change": 0.1026001,
+      "change_pct": 0.23240349,
       "expense": 0.08,
       "aum": 956107008,
       "yield": 4.88,
@@ -8202,9 +7804,9 @@
       "category": "Commodities Focused",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 368.585,
-      "change": 1.9750061,
-      "change_pct": 0.5387213,
+      "price": 362.7899,
+      "change": 7.0098877,
+      "change_pct": 1.9702872,
       "expense": 0.4,
       "aum": 141702414336,
       "yield": 0.0,
@@ -8227,9 +7829,9 @@
       "category": "Commodities Focused",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 79.54,
-      "change": 0.41000366,
-      "change_pct": 0.51813936,
+      "price": 78.2912,
+      "change": 1.4611969,
+      "change_pct": 1.9018571,
       "expense": 0.1,
       "aum": 30708434944,
       "yield": 0.0,
@@ -8252,9 +7854,9 @@
       "category": "Commodities Focused",
       "family": "Aberdeen Standard Investments",
       "currency": "USD",
-      "price": 175.3,
-      "change": 1.1399994,
-      "change_pct": 0.65457016,
+      "price": 169.21,
+      "change": 3.430008,
+      "change_pct": 2.069012,
       "expense": 0.6,
       "aum": 2604985344,
       "yield": 0.0,
@@ -8277,9 +7879,9 @@
       "category": "Intermediate Government",
       "family": "iShares",
       "currency": "USD",
-      "price": 22.215,
-      "change": 0.01499939,
-      "change_pct": 0.067564815,
+      "price": 22.265,
+      "change": 0.028598785,
+      "change_pct": 0.12861247,
       "expense": 0.05,
       "aum": 41371131904,
       "yield": 3.78,
@@ -8311,9 +7913,9 @@
       "category": "Long Government",
       "family": "iShares",
       "currency": "USD",
-      "price": 33.78,
-      "change": 0.25499725,
-      "change_pct": 0.7603913,
+      "price": 33.898,
+      "change": 0.35239792,
+      "change_pct": 1.0505041,
       "expense": 0.1,
       "aum": 304983424,
       "yield": 5.99,
@@ -8345,9 +7947,9 @@
       "category": "Foreign Large Blend",
       "family": "Goldman Sachs",
       "currency": "USD",
-      "price": 46.24,
-      "change": 0.35500336,
-      "change_pct": 0.7736807,
+      "price": 46.46,
+      "change": 0.30999756,
+      "change_pct": 0.67171735,
       "expense": 0.25,
       "aum": 5916710400,
       "yield": 2.63,
@@ -8479,9 +8081,9 @@
       "category": "Small Blend",
       "family": "Goldman Sachs",
       "currency": "USD",
-      "price": 87.01,
-      "change": 0.8100052,
-      "change_pct": 0.93968123,
+      "price": 87.87,
+      "change": 0.5400009,
+      "change_pct": 0.61834526,
       "expense": 0.2,
       "aum": 1041220416,
       "yield": 1.01,
@@ -8606,136 +8208,6 @@
       },
       "bond_ratings": []
     },
-    "GVAL": {
-      "ticker": "GVAL",
-      "name": "Cambria Global Value ETF",
-      "type": "ETF",
-      "category": "Foreign Large Value",
-      "family": "Cambria",
-      "currency": "USD",
-      "price": 36.6004,
-      "change": -0.7296028,
-      "change_pct": -1.9544677,
-      "expense": 0.68,
-      "aum": 571226944,
-      "yield": 2.48,
-      "description": "The fund is actively managed and seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its total assets in equity securities, including common stock and depositary receipts, issued by publicly listed companies in developed and emerging markets that exhibit strong value characteristics. The fund\u2019s investment adviser, Cambria Investment Management, L.P. (\u201cCambria\u201d or the \u201cAdviser\u201d), uses its own proprietary rules-based quantitative algorithm to select its holdings.",
-      "holdings": [
-        {
-          "symbol": "ATS.VI",
-          "name": "AT&S Austria Technologie & Systemtechnik AG",
-          "pct": 7.46
-        },
-        {
-          "symbol": "MONET.PR",
-          "name": "Moneta Money Bank AS",
-          "pct": 2.75
-        },
-        {
-          "symbol": "MINEROS.CL",
-          "name": "Mineros SA",
-          "pct": 2.63
-        },
-        {
-          "symbol": "FXFXX",
-          "name": "First American Treasury Obligs X",
-          "pct": 2.52
-        },
-        {
-          "symbol": "GRUPOSURA.CL",
-          "name": "Grupo de Inversiones Suramericana SA",
-          "pct": 1.98
-        },
-        {
-          "symbol": "KOMB.PR",
-          "name": "Komercni Banka AS",
-          "pct": 1.71
-        },
-        {
-          "symbol": "CEZ.PR",
-          "name": "CEZ AS",
-          "pct": 1.61
-        },
-        {
-          "symbol": "KGH.WA",
-          "name": "KGHM Polska Miedz SA",
-          "pct": 1.56
-        },
-        {
-          "symbol": "RBI.VI",
-          "name": "Raiffeisen Bank International AG",
-          "pct": 1.49
-        },
-        {
-          "symbol": "TUPRS.IS",
-          "name": "Tupras-Turkiye Petrol Rafineleri AS",
-          "pct": 1.37
-        }
-      ],
-      "sectors": [
-        {
-          "name": "Financial Services",
-          "pct": 29.3
-        },
-        {
-          "name": "Basic Materials",
-          "pct": 12.79
-        },
-        {
-          "name": "Energy",
-          "pct": 11.01
-        },
-        {
-          "name": "Utilities",
-          "pct": 10.49
-        },
-        {
-          "name": "Technology",
-          "pct": 9.44
-        },
-        {
-          "name": "Real Estate",
-          "pct": 8.32
-        },
-        {
-          "name": "Industrials",
-          "pct": 7.18
-        },
-        {
-          "name": "Communication Services",
-          "pct": 4.75
-        },
-        {
-          "name": "Consumer Cyclical",
-          "pct": 3.73
-        },
-        {
-          "name": "Consumer Defensive",
-          "pct": 2.99
-        }
-      ],
-      "composition": {
-        "stock": 97.09,
-        "bond": 0.0,
-        "cash": 2.47,
-        "other": 0.44
-      },
-      "equity": {
-        "pe": 12.76,
-        "pb": 1.21,
-        "ps": 1.13,
-        "pcf": 5.51,
-        "median_mktcap": null,
-        "growth3y": null,
-        "cat": {
-          "pe": null,
-          "pb": null,
-          "ps": null,
-          "pcf": null
-        }
-      },
-      "bond_ratings": []
-    },
     "HAWX": {
       "ticker": "HAWX",
       "name": "iShares Currency Hedged MSCI ACWI ex U.S. ETF",
@@ -8743,9 +8215,9 @@
       "category": "Foreign Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 44.46,
-      "change": 0.24499893,
-      "change_pct": 0.5561206,
+      "price": 44.52,
+      "change": 0.3899994,
+      "change_pct": 0.8823515,
       "expense": 0.35,
       "aum": 345550880,
       "yield": 2.49,
@@ -8837,9 +8309,9 @@
       "category": "Foreign Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 46.305,
-      "change": 0.39500046,
-      "change_pct": 0.86038,
+      "price": 46.56,
+      "change": 0.26000214,
+      "change_pct": 0.5615597,
       "expense": 0.35,
       "aum": 7465138688,
       "yield": 3.1,
@@ -8931,9 +8403,9 @@
       "category": "Commodities Focused",
       "family": "iShares",
       "currency": "USD",
-      "price": 75.575,
-      "change": 0.42499542,
-      "change_pct": 0.56552947,
+      "price": 74.385,
+      "change": 1.465004,
+      "change_pct": 2.0090566,
       "expense": 0.25,
       "aum": 62220972032,
       "yield": 0.0,
@@ -8956,9 +8428,9 @@
       "category": "Commodities Focused",
       "family": "iShares",
       "currency": "USD",
-      "price": 40.075,
-      "change": 0.21500015,
-      "change_pct": 0.53938824,
+      "price": 39.435,
+      "change": 0.7350006,
+      "change_pct": 1.8992263,
       "expense": 0.09,
       "aum": 7949300736,
       "yield": 0.0,
@@ -8981,9 +8453,9 @@
       "category": "Corporate Bond",
       "family": "Inspire",
       "currency": "USD",
-      "price": 23.27,
-      "change": 0.040000916,
-      "change_pct": 0.17219508,
+      "price": 23.28,
+      "change": 0.050001144,
+      "change_pct": 0.21524385,
       "expense": 0.41,
       "aum": 500679968,
       "yield": 4.39,
@@ -9006,9 +8478,9 @@
       "category": "Real Estate",
       "family": "iShares",
       "currency": "USD",
-      "price": 66.31,
-      "change": 0.5400009,
-      "change_pct": 0.8207948,
+      "price": 66.84,
+      "change": 0.21999359,
+      "change_pct": 0.32967716,
       "expense": 0.32,
       "aum": 2034074880,
       "yield": 2.77,
@@ -9100,9 +8572,9 @@
       "category": "Foreign Large Blend",
       "family": "Lazard",
       "currency": "USD",
-      "price": 33.73,
-      "change": 0.20000076,
-      "change_pct": 0.59648305,
+      "price": 33.64,
+      "change": 0.20999908,
+      "change_pct": 0.62817556,
       "expense": 0.4,
       "aum": 1895607680,
       "yield": 1.33,
@@ -9224,9 +8696,9 @@
       "category": "Foreign Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 89.34,
-      "change": 0.609993,
-      "change_pct": 0.6874709,
+      "price": 89.84,
+      "change": 0.62999725,
+      "change_pct": 0.7061958,
       "expense": 0.04,
       "aum": 32156459008,
       "yield": 3.22,
@@ -9358,9 +8830,9 @@
       "category": "Long Government",
       "family": "iShares",
       "currency": "USD",
-      "price": 91.12,
-      "change": 0.069999695,
-      "change_pct": 0.0768805,
+      "price": 91.57,
+      "change": 0.12146759,
+      "change_pct": 0.13282618,
       "expense": 0.15,
       "aum": 41556897792,
       "yield": 4.14,
@@ -9392,9 +8864,9 @@
       "category": "Foreign Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 96.41,
-      "change": 0.73000336,
-      "change_pct": 0.76296335,
+      "price": 96.96,
+      "change": 0.6500015,
+      "change_pct": 0.67490554,
       "expense": 0.07,
       "aum": 190214750208,
       "yield": 3.4,
@@ -9526,9 +8998,9 @@
       "category": "Intermediate Government",
       "family": "iShares",
       "currency": "USD",
-      "price": 114.66,
-      "change": -0.009994507,
-      "change_pct": -0.008715887,
+      "price": 114.99,
+      "change": 0.040901184,
+      "change_pct": 0.03558045,
       "expense": 0.15,
       "aum": 16787430400,
       "yield": 3.82,
@@ -9560,9 +9032,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "iShares",
       "currency": "USD",
-      "price": 75.525,
-      "change": -0.21499634,
-      "change_pct": -0.28386104,
+      "price": 75.13,
+      "change": 0.87999725,
+      "change_pct": 1.1851815,
       "expense": 0.09,
       "aum": 160075055104,
       "yield": 2.21,
@@ -9694,9 +9166,9 @@
       "category": "Corporate Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 51.065,
-      "change": 0.10499954,
-      "change_pct": 0.20604306,
+      "price": 51.095,
+      "change": 0.06568527,
+      "change_pct": 0.12873328,
       "expense": 0.04,
       "aum": 18557360128,
       "yield": 5.13,
@@ -9746,9 +9218,9 @@
       "category": "Long-Term Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 47.1,
-      "change": 0.25999832,
-      "change_pct": 0.555074,
+      "price": 46.99,
+      "change": 0.16260147,
+      "change_pct": 0.34723574,
       "expense": 0.04,
       "aum": 2492434944,
       "yield": 5.71,
@@ -9794,9 +9266,9 @@
       "category": "Short-Term Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 51.485,
-      "change": 0.01499939,
-      "change_pct": 0.029142004,
+      "price": 51.4497,
+      "change": 0.0040130615,
+      "change_pct": 0.007801292,
       "expense": 0.04,
       "aum": 23376680960,
       "yield": 4.68,
@@ -9850,9 +9322,9 @@
       "category": "Mid-Cap Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 144.33,
-      "change": 1.1300049,
-      "change_pct": 0.7891096,
+      "price": 147.6716,
+      "change": 2.2015991,
+      "change_pct": 1.5134386,
       "expense": 0.18,
       "aum": 8333864448,
       "yield": 1.71,
@@ -9984,9 +9456,9 @@
       "category": "Small Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 132.61,
-      "change": 1.1699982,
-      "change_pct": 0.89013857,
+      "price": 134.97,
+      "change": 2.180008,
+      "change_pct": 1.6415724,
       "expense": 0.18,
       "aum": 7600923136,
       "yield": 1.45,
@@ -10118,9 +9590,9 @@
       "category": "Small Growth",
       "family": "iShares",
       "currency": "USD",
-      "price": 163.24,
-      "change": 2.0600128,
-      "change_pct": 1.2780823,
+      "price": 166.26,
+      "change": 1.9199982,
+      "change_pct": 1.1683085,
       "expense": 0.18,
       "aum": 7623017472,
       "yield": 0.78,
@@ -10157,7 +9629,7 @@
           "pct": 0.85
         },
         {
-          "symbol": "MSGS",
+          "symbol": "MSGK",
           "name": "Madison Square Garden Sports Corp Class A",
           "pct": 0.85
         },
@@ -10252,9 +9724,9 @@
       "category": "Large Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 109.6,
-      "change": 0.51999664,
-      "change_pct": 0.4770108,
+      "price": 109.62,
+      "change": 0.33499908,
+      "change_pct": 0.3065371,
       "expense": 0.04,
       "aum": 1316451456,
       "yield": 1.57,
@@ -10386,9 +9858,9 @@
       "category": "Mid-Cap Growth",
       "family": "iShares",
       "currency": "USD",
-      "price": 94.51,
-      "change": 1.1200027,
-      "change_pct": 1.1992748,
+      "price": 93.89,
+      "change": 0.66999817,
+      "change_pct": 0.7187279,
       "expense": 0.06,
       "aum": 4000648960,
       "yield": 0.66,
@@ -10520,9 +9992,9 @@
       "category": "Mid-Cap Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 98.315,
-      "change": 0.3050003,
-      "change_pct": 0.31119305,
+      "price": 99.61,
+      "change": 0.39500427,
+      "change_pct": 0.3981296,
       "expense": 0.06,
       "aum": 1117807616,
       "yield": 1.99,
@@ -10647,6 +10119,136 @@
       },
       "bond_ratings": []
     },
+    "INCE": {
+      "ticker": "INCE",
+      "name": "Franklin Income Equity Focus ETF",
+      "type": "ETF",
+      "category": "Large Value",
+      "family": "Franklin Templeton, Inc",
+      "currency": "USD",
+      "price": 69.12,
+      "change": 0.23000336,
+      "change_pct": 0.33343488,
+      "expense": 0.29,
+      "aum": 317986368,
+      "yield": 5.09,
+      "description": "Under normal market conditions, the fund will invest at least 80% of its net assets in equity securities, and in derivatives and other instruments that have economic characteristics and provide investment exposure similar to equity securities. It may invest up to 50% of its assets in equity-linked notes (ELNs).",
+      "holdings": [
+        {
+          "symbol": "INFXX",
+          "name": "Franklin Instl U.S. Govt Mny Mkt Fund",
+          "pct": 6.8
+        },
+        {
+          "symbol": "CVX",
+          "name": "Chevron Corp",
+          "pct": 3.36
+        },
+        {
+          "symbol": "PG",
+          "name": "Procter & Gamble Co",
+          "pct": 2.47
+        },
+        {
+          "symbol": "VZ",
+          "name": "Verizon Communications Inc",
+          "pct": 2.38
+        },
+        {
+          "symbol": "PEP",
+          "name": "PepsiCo Inc",
+          "pct": 2.33
+        },
+        {
+          "symbol": "SO",
+          "name": "Southern Co",
+          "pct": 2.22
+        },
+        {
+          "symbol": "LMT",
+          "name": "Lockheed Martin Corp",
+          "pct": 2.11
+        },
+        {
+          "symbol": "USB",
+          "name": "U.S. Bancorp",
+          "pct": 1.9
+        },
+        {
+          "symbol": "DUK",
+          "name": "Duke Energy Corp",
+          "pct": 1.9
+        },
+        {
+          "symbol": "MDT",
+          "name": "Medtronic PLC",
+          "pct": 1.84
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Consumer Defensive",
+          "pct": 14.73
+        },
+        {
+          "name": "Financial Services",
+          "pct": 14.56
+        },
+        {
+          "name": "Healthcare",
+          "pct": 13.42
+        },
+        {
+          "name": "Utilities",
+          "pct": 13.36
+        },
+        {
+          "name": "Energy",
+          "pct": 11.96
+        },
+        {
+          "name": "Industrials",
+          "pct": 11.46
+        },
+        {
+          "name": "Technology",
+          "pct": 7.04
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 5.48
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 4.29
+        },
+        {
+          "name": "Communication Services",
+          "pct": 3.7
+        }
+      ],
+      "composition": {
+        "stock": 64.2,
+        "bond": 8.38,
+        "cash": 9.27,
+        "other": 18.16
+      },
+      "equity": {
+        "pe": 18.69,
+        "pb": 2.89,
+        "ps": 2.18,
+        "pcf": 11.36,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
     "INDS": {
       "ticker": "INDS",
       "name": "Pacer Benchmark Industrial Real Estate SCTR ETF",
@@ -10654,9 +10256,9 @@
       "category": "Real Estate",
       "family": "Pacer",
       "currency": "USD",
-      "price": 38.63,
-      "change": 0.19000244,
-      "change_pct": 0.49428317,
+      "price": 40.025,
+      "change": 0.73210144,
+      "change_pct": 1.8662347,
       "expense": 0.49,
       "aum": 101200096,
       "yield": 4.67,
@@ -10748,9 +10350,9 @@
       "category": "Foreign Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 50.195,
-      "change": 0.32500076,
-      "change_pct": 0.6515,
+      "price": 50.66,
+      "change": 0.25,
+      "change_pct": 0.49593335,
       "expense": 0.3,
       "aum": 13607064576,
       "yield": 2.42,
@@ -10882,9 +10484,9 @@
       "category": "Small Growth",
       "family": "iShares",
       "currency": "USD",
-      "price": 61.29,
-      "change": 0.6100006,
-      "change_pct": 1.0052745,
+      "price": 61.78,
+      "change": 0.5,
+      "change_pct": 0.8159269,
       "expense": 0.06,
       "aum": 953625856,
       "yield": 0.65,
@@ -11016,9 +10618,9 @@
       "category": "Small Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 78.155,
-      "change": 0.56500244,
-      "change_pct": 0.72823673,
+      "price": 79.6288,
+      "change": 1.2537994,
+      "change_pct": 1.5997441,
       "expense": 0.06,
       "aum": 653650880,
       "yield": 2.0,
@@ -11060,13 +10662,13 @@
           "pct": 0.48
         },
         {
-          "symbol": "ARMK",
-          "name": "Aramark",
+          "symbol": "APA",
+          "name": "APA Corp",
           "pct": 0.48
         },
         {
-          "symbol": "APA",
-          "name": "APA Corp",
+          "symbol": "ARMK",
+          "name": "Aramark",
           "pct": 0.48
         },
         {
@@ -11150,9 +10752,9 @@
       "category": "Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 167.215,
-      "change": 1.644989,
-      "change_pct": 0.9935308,
+      "price": 165.515,
+      "change": 0.5850067,
+      "change_pct": 0.35470003,
       "expense": 0.03,
       "aum": 95863930880,
       "yield": 1.01,
@@ -11284,9 +10886,9 @@
       "category": "Intermediate Core-Plus Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 44.755,
-      "change": 0.055000305,
-      "change_pct": 0.12304319,
+      "price": 44.815,
+      "change": 0.07683945,
+      "change_pct": 0.1717537,
       "expense": 0.06,
       "aum": 48077492224,
       "yield": 4.43,
@@ -11357,9 +10959,9 @@
       "category": "Large Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 239.325,
-      "change": 1.2050018,
-      "change_pct": 0.50604814,
+      "price": 240.52,
+      "change": 0.9900055,
+      "change_pct": 0.4133117,
       "expense": 0.18,
       "aum": 48203206656,
       "yield": 1.58,
@@ -11491,9 +11093,9 @@
       "category": "Mid-Cap Value",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 112.12,
-      "change": 0.8507004,
-      "change_pct": 0.76454186,
+      "price": 114.75,
+      "change": 1.8899994,
+      "change_pct": 1.6746407,
       "expense": 0.1,
       "aum": 1339810944,
       "yield": 1.72,
@@ -11625,9 +11227,9 @@
       "category": "Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 770.645,
-      "change": 7.3950195,
-      "change_pct": 0.9688856,
+      "price": 761.67,
+      "change": 2.4899902,
+      "change_pct": 0.3279928,
       "expense": 0.03,
       "aum": 881268883456,
       "yield": 1.1,
@@ -11759,9 +11361,9 @@
       "category": "Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 419.127,
-      "change": 3.777008,
-      "change_pct": 0.90935546,
+      "price": 414.63,
+      "change": 1.5800171,
+      "change_pct": 0.38252443,
       "expense": 0.15,
       "aum": 48563396608,
       "yield": 0.92,
@@ -11893,9 +11495,9 @@
       "category": "Large Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 258.74,
-      "change": 1.3199768,
-      "change_pct": 0.5127716,
+      "price": 260.325,
+      "change": 1.6750183,
+      "change_pct": 0.64760035,
       "expense": 0.18,
       "aum": 80959332352,
       "yield": 1.42,
@@ -12027,9 +11629,9 @@
       "category": "Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 190.3601,
-      "change": 1.8401031,
-      "change_pct": 0.9758461,
+      "price": 187.63,
+      "change": 0.40290833,
+      "change_pct": 0.21519765,
       "expense": 0.15,
       "aum": 2233981696,
       "yield": 0.84,
@@ -12161,9 +11763,9 @@
       "category": "Small Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 214.78,
-      "change": 1.7799988,
-      "change_pct": 0.8356802,
+      "price": 216.815,
+      "change": 2.2350006,
+      "change_pct": 1.0415698,
       "expense": 0.24,
       "aum": 13789684736,
       "yield": 1.55,
@@ -12295,9 +11897,9 @@
       "category": "Small Growth",
       "family": "iShares",
       "currency": "USD",
-      "price": 349.78,
-      "change": 4.3599854,
-      "change_pct": 1.2622272,
+      "price": 351.9225,
+      "change": 0.17248535,
+      "change_pct": 0.049036346,
       "expense": 0.24,
       "aum": 14106266624,
       "yield": 0.47,
@@ -12429,9 +12031,9 @@
       "category": "Mid-Cap Growth",
       "family": "iShares",
       "currency": "USD",
-      "price": 134.935,
-      "change": 2.125,
-      "change_pct": 1.6000302,
+      "price": 131.53,
+      "change": -0.11000061,
+      "change_pct": -0.08356169,
       "expense": 0.23,
       "aum": 19347443712,
       "yield": 0.38,
@@ -12563,9 +12165,9 @@
       "category": "Mid-Cap Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 169.33,
-      "change": 0.90000916,
-      "change_pct": 0.53435206,
+      "price": 171.82,
+      "change": 1.75,
+      "change_pct": 1.028988,
       "expense": 0.23,
       "aum": 14776222720,
       "yield": 1.37,
@@ -12697,9 +12299,9 @@
       "category": "Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 434.8075,
-      "change": 4.087494,
-      "change_pct": 0.94899094,
+      "price": 430.46,
+      "change": 1.5,
+      "change_pct": 0.34968296,
       "expense": 0.2,
       "aum": 20278747136,
       "yield": 0.88,
@@ -12831,9 +12433,9 @@
       "category": "Foreign Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 92.82,
-      "change": 0.3899994,
-      "change_pct": 0.42194027,
+      "price": 93.11,
+      "change": 0.76000214,
+      "change_pct": 0.82295847,
       "expense": 0.07,
       "aum": 58758029312,
       "yield": 2.95,
@@ -12965,9 +12567,9 @@
       "category": "Real Estate",
       "family": "iShares",
       "currency": "USD",
-      "price": 99.04,
-      "change": 0.6399994,
-      "change_pct": 0.6504059,
+      "price": 100.6,
+      "change": 0.9399948,
+      "change_pct": 0.94339097,
       "expense": 0.37,
       "aum": 4162730752,
       "yield": 2.51,
@@ -13056,140 +12658,6 @@
       },
       "bond_ratings": []
     },
-    "JMOM": {
-      "ticker": "JMOM",
-      "name": "JPMorgan U.S. Momentum Factor ETF",
-      "type": "ETF",
-      "category": "Large Blend",
-      "family": "JPMorgan",
-      "currency": "USD",
-      "price": 80.765,
-      "change": 1.3649979,
-      "change_pct": 1.7191409,
-      "expense": 0.12,
-      "aum": 2748337408,
-      "yield": 0.75,
-      "description": "The fund will invest at least 80% of its assets in securities included in the underlying index. \"Assets\" means net assets, plus the amount of borrowing for investment purposes. The underlying index is comprised of U.S. equity securities selected to represent positive momentum factor characteristics.",
-      "holdings": [
-        {
-          "symbol": "AMD",
-          "name": "Advanced Micro Devices Inc",
-          "pct": 2.54
-        },
-        {
-          "symbol": "MU",
-          "name": "Micron Technology Inc",
-          "pct": 2.08
-        },
-        {
-          "symbol": "AAPL",
-          "name": "Apple Inc",
-          "pct": 2.06
-        },
-        {
-          "symbol": "MSFT",
-          "name": "Microsoft Corp",
-          "pct": 2.04
-        },
-        {
-          "symbol": "GOOGL",
-          "name": "Alphabet Inc Class A",
-          "pct": 2.02
-        },
-        {
-          "symbol": "NVDA",
-          "name": "NVIDIA Corp",
-          "pct": 1.97
-        },
-        {
-          "symbol": "AVGO",
-          "name": "Broadcom Inc",
-          "pct": 1.95
-        },
-        {
-          "symbol": "JNJ",
-          "name": "Johnson & Johnson",
-          "pct": 1.8
-        },
-        {
-          "symbol": "INTC",
-          "name": "Intel Corp",
-          "pct": 1.63
-        },
-        {
-          "symbol": "PLTR",
-          "name": "Palantir Technologies Inc Ordinary Shares - Class A",
-          "pct": 1.26
-        }
-      ],
-      "sectors": [
-        {
-          "name": "Technology",
-          "pct": 44.81
-        },
-        {
-          "name": "Industrials",
-          "pct": 11.67
-        },
-        {
-          "name": "Healthcare",
-          "pct": 9.73
-        },
-        {
-          "name": "Financial Services",
-          "pct": 9.3
-        },
-        {
-          "name": "Consumer Cyclical",
-          "pct": 6.55
-        },
-        {
-          "name": "Consumer Defensive",
-          "pct": 5.02
-        },
-        {
-          "name": "Communication Services",
-          "pct": 3.9
-        },
-        {
-          "name": "Energy",
-          "pct": 3.48
-        },
-        {
-          "name": "Real Estate",
-          "pct": 2.3
-        },
-        {
-          "name": "Utilities",
-          "pct": 2.01
-        },
-        {
-          "name": "Basic Materials",
-          "pct": 1.22
-        }
-      ],
-      "composition": {
-        "stock": 99.91,
-        "bond": 0.0,
-        "cash": 0.09,
-        "other": 0.0
-      },
-      "equity": {
-        "pe": 25.32,
-        "pb": 5.24,
-        "ps": 2.69,
-        "pcf": 18.91,
-        "median_mktcap": null,
-        "growth3y": null,
-        "cat": {
-          "pe": null,
-          "pb": null,
-          "ps": null,
-          "pcf": null
-        }
-      },
-      "bond_ratings": []
-    },
     "KBWY": {
       "ticker": "KBWY",
       "name": "Invesco KBW Premium Yield Equity REIT ETF",
@@ -13197,9 +12665,9 @@
       "category": "Real Estate",
       "family": "Invesco",
       "currency": "USD",
-      "price": 16.5,
-      "change": 0.11000061,
-      "change_pct": 0.6717185,
+      "price": 16.6,
+      "change": 0.22000122,
+      "change_pct": 1.3431089,
       "expense": 0.35,
       "aum": 298036480,
       "yield": 8.89,
@@ -13291,9 +12759,9 @@
       "category": "Corporate Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 104.215,
-      "change": 0.36499786,
-      "change_pct": 0.35146642,
+      "price": 104.12,
+      "change": 0.25,
+      "change_pct": 0.24068546,
       "expense": 0.14,
       "aum": 28273213440,
       "yield": 4.91,
@@ -13332,6 +12800,140 @@
         }
       ]
     },
+    "LRGF": {
+      "ticker": "LRGF",
+      "name": "iShares U.S. Equity Factor ETF",
+      "type": "ETF",
+      "category": "Large Blend",
+      "family": "iShares",
+      "currency": "USD",
+      "price": 77.2401,
+      "change": 0.23009491,
+      "change_pct": 0.29878575,
+      "expense": 0.08,
+      "aum": 3671384320,
+      "yield": 1.06,
+      "description": "The fund generally will invest at least 80% of its assets in the component securities of its underlying index and in investments that have economic characteristics that are substantially identical to the component securities of its underlying index. The underlying index is composed of large- and mid-capitalization equity securities from the STOXX USA 900 index that are selected and weighted using an optimization process designed to maximize exposure to five target factors: momentum, quality, value, low volatility and size.",
+      "holdings": [
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corp",
+          "pct": 7.73
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc",
+          "pct": 6.84
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corp",
+          "pct": 5.24
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc Class C",
+          "pct": 3.94
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon.com Inc",
+          "pct": 3.12
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom Inc",
+          "pct": 2.57
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms Inc Class A",
+          "pct": 2.15
+        },
+        {
+          "symbol": "MU",
+          "name": "Micron Technology Inc",
+          "pct": 1.51
+        },
+        {
+          "symbol": "JPM",
+          "name": "JPMorgan Chase & Co",
+          "pct": 1.47
+        },
+        {
+          "symbol": "V",
+          "name": "Visa Inc Class A",
+          "pct": 1.21
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 38.86
+        },
+        {
+          "name": "Financial Services",
+          "pct": 11.16
+        },
+        {
+          "name": "Healthcare",
+          "pct": 10.27
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 9.85
+        },
+        {
+          "name": "Communication Services",
+          "pct": 9.77
+        },
+        {
+          "name": "Industrials",
+          "pct": 7.94
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 4.33
+        },
+        {
+          "name": "Energy",
+          "pct": 3.14
+        },
+        {
+          "name": "Utilities",
+          "pct": 1.85
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 1.77
+        },
+        {
+          "name": "Real Estate",
+          "pct": 1.06
+        }
+      ],
+      "composition": {
+        "stock": 99.91,
+        "bond": 0.0,
+        "cash": 0.1,
+        "other": 0.0
+      },
+      "equity": {
+        "pe": 22.96,
+        "pb": 5.37,
+        "ps": 2.9,
+        "pcf": 16.47,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
     "LTPZ": {
       "ticker": "LTPZ",
       "name": "PIMCO 15+ Year U.S. TIPS Index Exchange-Traded Fund",
@@ -13339,9 +12941,9 @@
       "category": "Inflation-Protected Bond",
       "family": "PIMCO",
       "currency": "USD",
-      "price": 47.3774,
-      "change": 0.13739777,
-      "change_pct": 0.2909268,
+      "price": 47.315,
+      "change": 0.2349968,
+      "change_pct": 0.49914357,
       "expense": 0.2,
       "aum": 1012057024,
       "yield": 6.88,
@@ -13377,9 +12979,9 @@
       "category": "Mid-Cap Growth",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 103.22,
-      "change": 1.3800049,
-      "change_pct": 1.3550717,
+      "price": 104.1756,
+      "change": 1.3055954,
+      "change_pct": 1.2691702,
       "expense": 0.15,
       "aum": 2791486464,
       "yield": 0.67,
@@ -13511,9 +13113,9 @@
       "category": "Mid-Cap Value",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 92.91,
-      "change": 0.8500061,
-      "change_pct": 0.92331755,
+      "price": 94.959,
+      "change": 1.5090027,
+      "change_pct": 1.6147702,
       "expense": 0.15,
       "aum": 2663163392,
       "yield": 1.79,
@@ -13645,9 +13247,9 @@
       "category": "Large Blend",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 282.21,
-      "change": 2.869995,
-      "change_pct": 1.02742,
+      "price": 277.585,
+      "change": 0.7049866,
+      "change_pct": 0.25461808,
       "expense": 0.05,
       "aum": 11049763840,
       "yield": 0.92,
@@ -13779,9 +13381,9 @@
       "category": "Large Value",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 167.8195,
-      "change": 1.089508,
-      "change_pct": 0.6534565,
+      "price": 169.8,
+      "change": 0.80000305,
+      "change_pct": 0.47337458,
       "expense": 0.05,
       "aum": 13603106816,
       "yield": 1.91,
@@ -13913,9 +13515,9 @@
       "category": "Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 106.3001,
-      "change": 0.85240173,
-      "change_pct": 0.80836445,
+      "price": 105.0501,
+      "change": 0.38010406,
+      "change_pct": 0.36328438,
       "expense": 0.03,
       "aum": 1294918272,
       "yield": 0.98,
@@ -14047,9 +13649,9 @@
       "category": "Real Estate",
       "family": "VanEck",
       "currency": "USD",
-      "price": 7.805,
-      "change": 0.0149998665,
-      "change_pct": 0.19242439,
+      "price": 7.71,
+      "change": 0.07999992,
+      "change_pct": 1.0491793,
       "expense": 0.43,
       "aum": 325370656,
       "yield": 17.66,
@@ -14141,9 +13743,9 @@
       "category": "Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 295.195,
-      "change": 5.744995,
-      "change_pct": 1.9850371,
+      "price": 278.87,
+      "change": -5.230011,
+      "change_pct": -1.840905,
       "expense": 0.15,
       "aum": 20429352960,
       "yield": 0.58,
@@ -14275,9 +13877,9 @@
       "category": "Short Government",
       "family": "F/m Investments LLC",
       "currency": "USD",
-      "price": 50.015,
-      "change": -0.01499939,
-      "change_pct": -0.029980792,
+      "price": 49.9176,
+      "change": -0.0023994446,
+      "change_pct": -0.00480658,
       "expense": 0.15,
       "aum": 325016160,
       "yield": 3.97,
@@ -14309,9 +13911,9 @@
       "category": "Large Blend",
       "family": "iShares",
       "currency": "USD",
-      "price": 380.905,
-      "change": 3.6149902,
-      "change_pct": 0.9581463,
+      "price": 374.01,
+      "change": 0.6500244,
+      "change_pct": 0.17410125,
       "expense": 0.2,
       "aum": 20433901568,
       "yield": 0.86,
@@ -14443,9 +14045,9 @@
       "category": "Commodities Focused",
       "family": "Merk Funds",
       "currency": "USD",
-      "price": 38.625,
-      "change": 0.20500183,
-      "change_pct": 0.5335811,
+      "price": 38.02,
+      "change": 0.7099991,
+      "change_pct": 1.9029726,
       "expense": 0.25,
       "aum": 2689784064,
       "yield": 0.0,
@@ -14461,6 +14063,140 @@
       "equity": {},
       "bond_ratings": []
     },
+    "PBUS": {
+      "ticker": "PBUS",
+      "name": "Invesco MSCI USA ETF",
+      "type": "ETF",
+      "category": "Large Blend",
+      "family": "Invesco",
+      "currency": "USD",
+      "price": 75.94,
+      "change": 0.2400055,
+      "change_pct": 0.31700638,
+      "expense": 0.04,
+      "aum": 11389575168,
+      "yield": 1.01,
+      "description": "The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, MSCI Inc. (the \u201cindex provider\u201d) compiles, maintains and calculates the underlying index, which is designed to measure the performance of the large- and mid-capitalization segments of the U.S. equity market. The fund is non-diversified.",
+      "holdings": [
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corp",
+          "pct": 7.96
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc",
+          "pct": 7.42
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corp",
+          "pct": 5.49
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon.com Inc",
+          "pct": 3.65
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc Class A",
+          "pct": 3.06
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc Class C",
+          "pct": 2.41
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms Inc Class A",
+          "pct": 2.41
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom Inc",
+          "pct": 2.4
+        },
+        {
+          "symbol": "MU",
+          "name": "Micron Technology Inc",
+          "pct": 1.82
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla Inc",
+          "pct": 1.54
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 40.22
+        },
+        {
+          "name": "Financial Services",
+          "pct": 11.03
+        },
+        {
+          "name": "Communication Services",
+          "pct": 9.9
+        },
+        {
+          "name": "Healthcare",
+          "pct": 9.34
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 8.81
+        },
+        {
+          "name": "Industrials",
+          "pct": 7.88
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 4.26
+        },
+        {
+          "name": "Energy",
+          "pct": 3.48
+        },
+        {
+          "name": "Utilities",
+          "pct": 1.84
+        },
+        {
+          "name": "Real Estate",
+          "pct": 1.62
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 1.62
+        }
+      ],
+      "composition": {
+        "stock": 100.0,
+        "bond": 0.0,
+        "cash": 0.0,
+        "other": 0.0
+      },
+      "equity": {
+        "pe": 24.33,
+        "pb": 5.33,
+        "ps": 3.69,
+        "pcf": 18.91,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
+    },
     "PEZ": {
       "ticker": "PEZ",
       "name": "Invesco Dorsey Wright Consumer Cyclicals Momentum ETF",
@@ -14468,13 +14204,13 @@
       "category": "Consumer Cyclical",
       "family": "Invesco",
       "currency": "USD",
-      "price": 98.13,
-      "change": 0.20999908,
-      "change_pct": 0.21445985,
+      "price": 100.92,
+      "change": 1.3699951,
+      "change_pct": 1.3761879,
       "expense": 0.6,
       "aum": 21403276,
       "yield": 0.41,
-      "description": "The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of at least 30 securities of companies in the consumer discretionary (or cyclicals) sector that have powerful relative strength or \"momentum\" characteristics.",
+      "description": "Under normal circumstances, at least 80% of the value of its net assets, plus the amount of any borrowings for investment purposes, in the components of the underlying index and in derivatives and other investments that have economic characteristics similar to the components of the underlying index (the \u201c80% investment policy\u201d).",
       "holdings": [
         {
           "symbol": "VSXY",
@@ -14582,9 +14318,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "Invesco",
       "currency": "USD",
-      "price": 32.33,
-      "change": 0.18500137,
-      "change_pct": 0.57552147,
+      "price": 31.2,
+      "change": 0.050001144,
+      "change_pct": 0.16051732,
       "expense": 0.9,
       "aum": 254607184,
       "yield": 2.19,
@@ -14716,9 +14452,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 197.88,
-      "change": -1.03,
-      "change_pct": -0.51782215,
+      "price": 196.77,
+      "change": -3.63,
+      "change_pct": -1.8113772,
       "expense": 0.19,
       "aum": 40116854784,
       "yield": 0.89,
@@ -14850,9 +14586,9 @@
       "category": "Large Value",
       "family": "Invesco",
       "currency": "USD",
-      "price": 56.33,
-      "change": 0.2800026,
-      "change_pct": 0.4995586,
+      "price": 56.385,
+      "change": 0.25499725,
+      "change_pct": 0.4542976,
       "expense": 0.34,
       "aum": 9787648000,
       "yield": 1.36,
@@ -14977,389 +14713,129 @@
       },
       "bond_ratings": []
     },
-    "PXF": {
-      "ticker": "PXF",
-      "name": "Invesco RAFI Developed Markets ex-U.S. ETF",
+    "QDF": {
+      "ticker": "QDF",
+      "name": "Northern Trust Quality Dividend ETF",
       "type": "ETF",
-      "category": "Foreign Large Value",
-      "family": "Invesco",
+      "category": "Large Value",
+      "family": "Northern Trust",
       "currency": "USD",
-      "price": 76.3598,
-      "change": 0.4098053,
-      "change_pct": 0.5395725,
-      "expense": 0.43,
-      "aum": 2936878080,
-      "yield": 3.26,
-      "description": "The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The index provider compiles, maintains and calculates the new underlying index, which is comprised of approximately 1,000 common stocks and is designed to track the performance of the largest developed market companies, excluding U.S. companies, based on the following four fundamental measures of company size: book value plus intangibles, adjusted cash flow, adjusted sales, dividend plus buybacks.",
+      "price": 90.91,
+      "change": 0.44200134,
+      "change_pct": 0.488572,
+      "expense": 0.39,
+      "aum": 2174889728,
+      "yield": 1.52,
+      "description": "The underlying index is designed to reflect the performance of a selection of companies that, in aggregate, provide exposure to a high-quality income-oriented universe of long-only U.S. equity securities, with an emphasis on long-term capital growth and a targeted overall beta that is similar to that of the Northern Trust 1250 Index (the \u201cparent index\u201d), a float-adjusted market-capitalization weighted index of U.S. domiciled large- and mid-capitalization companies.",
       "holdings": [
         {
-          "symbol": "005930.KQ",
-          "name": "Samsung Electronics Co Ltd",
-          "pct": 3.6
+          "symbol": "AAPL",
+          "name": "Apple Inc",
+          "pct": 9.51
         },
         {
-          "symbol": "SHEL.L",
-          "name": "Shell PLC",
-          "pct": 2.27
+          "symbol": "NVDA",
+          "name": "NVIDIA Corp",
+          "pct": 7.97
         },
         {
-          "symbol": "TTE.PA",
-          "name": "TotalEnergies SE",
-          "pct": 1.45
+          "symbol": "MSFT",
+          "name": "Microsoft Corp",
+          "pct": 4.57
         },
         {
-          "symbol": "HSBA.L",
-          "name": "HSBC Holdings PLC",
-          "pct": 1.28
+          "symbol": "JNJ",
+          "name": "Johnson & Johnson",
+          "pct": 2.96
         },
         {
-          "symbol": "ROP.SW",
-          "name": "Roche Holding AG Ordinary Shares new",
-          "pct": 1.04
+          "symbol": "LRCX",
+          "name": "Lam Research Corp",
+          "pct": 2.9
         },
         {
-          "symbol": "7203.T",
-          "name": "Toyota Motor Corp",
-          "pct": 0.96
-        },
-        {
-          "symbol": "BHP.AX",
-          "name": "BHP Group Ltd",
-          "pct": 0.95
-        },
-        {
-          "symbol": "BP.L",
-          "name": "BP PLC",
-          "pct": 0.91
-        },
-        {
-          "symbol": "GLEN.L",
-          "name": "Glencore PLC",
-          "pct": 0.74
-        },
-        {
-          "symbol": "NOVN.SW",
-          "name": "Novartis AG Registered Shares",
-          "pct": 0.7
-        }
-      ],
-      "sectors": [
-        {
-          "name": "Financial Services",
-          "pct": 21.64
-        },
-        {
-          "name": "Industrials",
-          "pct": 14.96
-        },
-        {
-          "name": "Technology",
-          "pct": 10.67
-        },
-        {
-          "name": "Energy",
-          "pct": 9.88
-        },
-        {
-          "name": "Consumer Cyclical",
-          "pct": 9.84
-        },
-        {
-          "name": "Basic Materials",
-          "pct": 9.26
-        },
-        {
-          "name": "Healthcare",
-          "pct": 7.54
-        },
-        {
-          "name": "Consumer Defensive",
-          "pct": 6.64
-        },
-        {
-          "name": "Communication Services",
-          "pct": 4.49
-        },
-        {
-          "name": "Utilities",
-          "pct": 3.4
-        },
-        {
-          "name": "Real Estate",
-          "pct": 1.68
-        }
-      ],
-      "composition": {
-        "stock": 99.91,
-        "bond": 0.0,
-        "cash": -0.03,
-        "other": 0.11
-      },
-      "equity": {
-        "pe": 14.47,
-        "pb": 1.47,
-        "ps": 1.05,
-        "pcf": 7.54,
-        "median_mktcap": null,
-        "growth3y": null,
-        "cat": {
-          "pe": null,
-          "pb": null,
-          "ps": null,
-          "pcf": null
-        }
-      },
-      "bond_ratings": []
-    },
-    "PXH": {
-      "ticker": "PXH",
-      "name": "Invesco RAFI Emerging Markets ETF",
-      "type": "ETF",
-      "category": "Diversified Emerging Mkts",
-      "family": "Invesco",
-      "currency": "USD",
-      "price": 28.205,
-      "change": -0.5550003,
-      "change_pct": -1.9297646,
-      "expense": 0.47,
-      "aum": 2053918336,
-      "yield": 3.98,
-      "description": "The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index, as well as ADRs and GDRs that represent securities in the underlying index. The underlying index is is comprised of securities of companies located in countries that are classified as emerging markets within the country classification definition of FTSE. which is comprised of approximately 350 common stocks and is designed to track the performance of the largest emerging markets companies, as defined by the index provider.",
-      "holdings": [
-        {
-          "symbol": "2330.TW",
-          "name": "Taiwan Semiconductor Manufacturing Co Ltd",
-          "pct": 5.94
-        },
-        {
-          "symbol": "PETR4",
-          "name": "Petroleo Brasileiro SA Petrobras",
-          "pct": 4.5
-        },
-        {
-          "symbol": "9988.HK",
-          "name": "Alibaba Group Holding Ltd Ordinary Shares",
-          "pct": 3.1
-        },
-        {
-          "symbol": "00939",
-          "name": "China Construction Bank Corp Class H",
+          "symbol": "AVGO",
+          "name": "Broadcom Inc",
           "pct": 2.66
         },
         {
-          "symbol": "2317.TW",
-          "name": "Hon Hai Precision Industry Co Ltd",
-          "pct": 2.63
+          "symbol": "JPM",
+          "name": "JPMorgan Chase & Co",
+          "pct": 2.45
         },
         {
-          "symbol": "0700.HK",
-          "name": "Tencent Holdings Ltd",
-          "pct": 2.27
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc Class A",
+          "pct": 2.37
         },
         {
-          "symbol": "2454.TW",
-          "name": "MediaTek Inc",
-          "pct": 2.07
+          "symbol": "GE",
+          "name": "GE Aerospace",
+          "pct": 2.29
         },
         {
-          "symbol": "01398",
-          "name": "Industrial And Commercial Bank Of China Ltd Class H",
-          "pct": 2.05
-        },
-        {
-          "symbol": "VALE3.SA",
-          "name": "Vale SA",
-          "pct": 1.97
-        },
-        {
-          "symbol": "03988",
-          "name": "Bank Of China Ltd Class H",
-          "pct": 1.61
+          "symbol": "PM",
+          "name": "Philip Morris International Inc",
+          "pct": 1.92
         }
       ],
       "sectors": [
         {
-          "name": "Financial Services",
-          "pct": 27.51
-        },
-        {
           "name": "Technology",
-          "pct": 21.56
+          "pct": 38.36
         },
         {
-          "name": "Energy",
-          "pct": 11.81
-        },
-        {
-          "name": "Basic Materials",
-          "pct": 10.58
-        },
-        {
-          "name": "Consumer Cyclical",
-          "pct": 10.37
-        },
-        {
-          "name": "Communication Services",
-          "pct": 5.87
+          "name": "Financial Services",
+          "pct": 12.02
         },
         {
           "name": "Industrials",
-          "pct": 4.91
+          "pct": 9.34
+        },
+        {
+          "name": "Healthcare",
+          "pct": 8.31
+        },
+        {
+          "name": "Communication Services",
+          "pct": 7.66
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 7.4
         },
         {
           "name": "Consumer Defensive",
-          "pct": 2.69
-        },
-        {
-          "name": "Utilities",
-          "pct": 2.18
+          "pct": 5.3
         },
         {
           "name": "Real Estate",
-          "pct": 1.53
+          "pct": 4.76
         },
-        {
-          "name": "Healthcare",
-          "pct": 1.0
-        }
-      ],
-      "composition": {
-        "stock": 99.84,
-        "bond": 0.0,
-        "cash": 0.16,
-        "other": 0.0
-      },
-      "equity": {
-        "pe": 11.19,
-        "pb": 1.17,
-        "ps": 1.16,
-        "pcf": 6.66,
-        "median_mktcap": null,
-        "growth3y": null,
-        "cat": {
-          "pe": null,
-          "pb": null,
-          "ps": null,
-          "pcf": null
-        }
-      },
-      "bond_ratings": []
-    },
-    "QVAL": {
-      "ticker": "QVAL",
-      "name": "Alpha Architect U.S. Quantitative Value ETF",
-      "type": "ETF",
-      "category": "Mid-Cap Value",
-      "family": "Alpha Architect",
-      "currency": "USD",
-      "price": 63.465,
-      "change": 0.31499863,
-      "change_pct": 0.49881017,
-      "expense": 0.28,
-      "aum": 599056320,
-      "yield": 1.51,
-      "description": "The Sub-Adviser employs a multi-step, quantitative, rules-based methodology to identify a portfolio of approximately 50 to 200 undervalued U.S. equity securities with the potential for capital appreciation. A security is considered to be undervalued when it trades at a price below the price at which the Sub-Adviser believes it would trade if the market reflected all factors relating to the company\u2019s worth.",
-      "holdings": [
-        {
-          "symbol": "UTHR",
-          "name": "United Therapeutics Corp",
-          "pct": 2.27
-        },
-        {
-          "symbol": "ACN",
-          "name": "Accenture PLC Class A",
-          "pct": 2.09
-        },
-        {
-          "symbol": "ADBE",
-          "name": "Adobe Inc",
-          "pct": 2.08
-        },
-        {
-          "symbol": "EIX",
-          "name": "Edison International",
-          "pct": 2.05
-        },
-        {
-          "symbol": "ANF",
-          "name": "Abercrombie & Fitch Co Class A",
-          "pct": 2.03
-        },
-        {
-          "symbol": "EXPE",
-          "name": "Expedia Group Inc",
-          "pct": 2.02
-        },
-        {
-          "symbol": "PSX",
-          "name": "Phillips 66",
-          "pct": 2.02
-        },
-        {
-          "symbol": "HPQ",
-          "name": "HP Inc",
-          "pct": 2.02
-        },
-        {
-          "symbol": "STZ",
-          "name": "Constellation Brands Inc Class A",
-          "pct": 2.02
-        },
-        {
-          "symbol": "DINO",
-          "name": "HF Sinclair Corp",
-          "pct": 2.02
-        }
-      ],
-      "sectors": [
         {
           "name": "Energy",
-          "pct": 25.88
-        },
-        {
-          "name": "Consumer Cyclical",
-          "pct": 23.89
-        },
-        {
-          "name": "Healthcare",
-          "pct": 14.14
-        },
-        {
-          "name": "Technology",
-          "pct": 8.21
-        },
-        {
-          "name": "Industrials",
-          "pct": 7.95
-        },
-        {
-          "name": "Basic Materials",
-          "pct": 7.91
-        },
-        {
-          "name": "Consumer Defensive",
-          "pct": 5.98
-        },
-        {
-          "name": "Communication Services",
-          "pct": 3.99
+          "pct": 2.85
         },
         {
           "name": "Utilities",
-          "pct": 2.05
+          "pct": 2.64
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 1.37
         }
       ],
       "composition": {
-        "stock": 100.0,
+        "stock": 99.38,
         "bond": 0.0,
-        "cash": 0.0,
+        "cash": 0.62,
         "other": 0.0
       },
       "equity": {
-        "pe": 11.68,
-        "pb": 2.28,
-        "ps": 1.01,
-        "pcf": 6.43,
+        "pe": 18.96,
+        "pb": 4.0,
+        "ps": 2.84,
+        "pcf": 14.08,
         "median_mktcap": null,
         "growth3y": null,
         "cat": {
@@ -15378,9 +14854,9 @@
       "category": "Real Estate",
       "family": "iShares",
       "currency": "USD",
-      "price": 17.5495,
-      "change": 0.029499054,
-      "change_pct": 0.16837358,
+      "price": 17.345,
+      "change": 0.14499855,
+      "change_pct": 0.8430148,
       "expense": 0.48,
       "aum": 457763104,
       "yield": 10.88,
@@ -15472,9 +14948,9 @@
       "category": "Real Estate",
       "family": "iShares",
       "currency": "USD",
-      "price": 92.03,
-      "change": 0.47999573,
-      "change_pct": 0.52401274,
+      "price": 91.95,
+      "change": 1.0399933,
+      "change_pct": 1.1439811,
       "expense": 0.48,
       "aum": 790767616,
       "yield": 2.2,
@@ -15566,9 +15042,9 @@
       "category": "Mid-Cap Growth",
       "family": "Invesco",
       "currency": "USD",
-      "price": 56.03,
-      "change": 0.15999985,
-      "change_pct": 0.28637883,
+      "price": 57.27,
+      "change": 0.54999924,
+      "change_pct": 0.9696742,
       "expense": 0.35,
       "aum": 331975904,
       "yield": 0.11,
@@ -15700,9 +15176,9 @@
       "category": "Small Value",
       "family": "Invesco",
       "currency": "USD",
-      "price": 148.08,
-      "change": 1.9840088,
-      "change_pct": 1.3580172,
+      "price": 149.5,
+      "change": 1.5859985,
+      "change_pct": 1.0722437,
       "expense": 0.35,
       "aum": 322107040,
       "yield": 1.69,
@@ -15830,9 +15306,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 100.82,
-      "change": -0.32,
-      "change_pct": -0.3163931,
+      "price": 100.64,
+      "change": -2.14,
+      "change_pct": -2.0821173,
       "expense": 0.73,
       "aum": 21030258688,
       "yield": 0.0,
@@ -15960,9 +15436,9 @@
       "category": "Mid-Cap Value",
       "family": "Invesco",
       "currency": "USD",
-      "price": 121.46,
-      "change": 0.51000214,
-      "change_pct": 0.4215939,
+      "price": 122.1,
+      "change": 0.26000214,
+      "change_pct": 0.21339637,
       "expense": 0.35,
       "aum": 1649762048,
       "yield": 2.2,
@@ -16094,9 +15570,9 @@
       "category": "Large Blend",
       "family": "Invesco",
       "currency": "USD",
-      "price": 217.8165,
-      "change": 1.2765045,
-      "change_pct": 0.5895006,
+      "price": 220.725,
+      "change": 2.4150085,
+      "change_pct": 1.1062291,
       "expense": 0.2,
       "aum": 96059047936,
       "yield": 1.53,
@@ -16228,9 +15704,9 @@
       "category": "Real Estate",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 108.08,
-      "change": 0.66999817,
-      "change_pct": 0.6237763,
+      "price": 109.38,
+      "change": 0.94999695,
+      "change_pct": 0.87613845,
       "expense": 0.25,
       "aum": 1767657344,
       "yield": 3.59,
@@ -16322,9 +15798,9 @@
       "category": "Small Growth",
       "family": "Invesco",
       "currency": "USD",
-      "price": 62.3,
-      "change": 0.6568985,
-      "change_pct": 1.0656481,
+      "price": 62.87,
+      "change": 0.68510056,
+      "change_pct": 1.1017153,
       "expense": 0.35,
       "aum": 120212608,
       "yield": 0.58,
@@ -16452,9 +15928,9 @@
       "category": "Small Value",
       "family": "Invesco",
       "currency": "USD",
-      "price": 144.0264,
-      "change": 1.0406952,
-      "change_pct": 0.72783166,
+      "price": 146.84,
+      "change": 2.7899017,
+      "change_pct": 1.936758,
       "expense": 0.35,
       "aum": 277623680,
       "yield": 1.47,
@@ -16586,9 +16062,9 @@
       "category": "Large Blend",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 29.4899,
-      "change": 0.29990005,
-      "change_pct": 1.0274068,
+      "price": 29.1801,
+      "change": 0.11009979,
+      "change_pct": 0.37874025,
       "expense": 0.03,
       "aum": 44425461760,
       "yield": 1.05,
@@ -16720,9 +16196,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 34.845,
-      "change": -0.114997864,
-      "change_pct": -0.32897893,
+      "price": 34.555,
+      "change": 0.39500046,
+      "change_pct": 1.1561588,
       "expense": 0.06,
       "aum": 12777276416,
       "yield": 2.61,
@@ -16854,9 +16330,9 @@
       "category": "Foreign Large Blend",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 27.005,
-      "change": 0.21499825,
-      "change_pct": 0.80253166,
+      "price": 27.19,
+      "change": 0.21000099,
+      "change_pct": 0.77850235,
       "expense": 0.03,
       "aum": 67947536384,
       "yield": 3.06,
@@ -16983,9 +16459,9 @@
       "category": "Real Estate",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 22.975,
-      "change": 0.18499947,
-      "change_pct": 0.81175715,
+      "price": 23.21,
+      "change": 0.15999985,
+      "change_pct": 0.6942931,
       "expense": 0.07,
       "aum": 10558759936,
       "yield": 3.08,
@@ -17077,9 +16553,9 @@
       "category": "Corporate Bond",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 21.7499,
-      "change": 0.049900055,
-      "change_pct": 0.22995417,
+      "price": 21.755,
+      "change": 0.04419899,
+      "change_pct": 0.20358066,
       "expense": 0.03,
       "aum": 10839583744,
       "yield": 5.29,
@@ -17127,9 +16603,9 @@
       "category": "Large Blend",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 36.865,
-      "change": 0.375,
-      "change_pct": 1.0276787,
+      "price": 36.46,
+      "change": 0.12999725,
+      "change_pct": 0.35792193,
       "expense": 0.03,
       "aum": 5721143808,
       "yield": 1.04,
@@ -17261,9 +16737,9 @@
       "category": "Short Government",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 23.955,
-      "change": -0.0049991608,
-      "change_pct": -0.020866876,
+      "price": 23.9399,
+      "change": 0.00289917,
+      "change_pct": 0.012111668,
       "expense": 0.03,
       "aum": 15282102272,
       "yield": 3.83,
@@ -17299,9 +16775,9 @@
       "category": "Inflation-Protected Bond",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 25.625,
-      "change": -0.0049991608,
-      "change_pct": -0.019505115,
+      "price": 25.635,
+      "change": -0.025100708,
+      "change_pct": -0.09781999,
       "expense": 0.03,
       "aum": 15956761600,
       "yield": 5.1,
@@ -17333,9 +16809,9 @@
       "category": "Intermediate Government",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 24.0,
-      "change": 0.0,
-      "change_pct": 0.0,
+      "price": 24.0877,
+      "change": 0.02519989,
+      "change_pct": 0.10473857,
       "expense": 0.03,
       "aum": 13080122368,
       "yield": 4.07,
@@ -17371,9 +16847,9 @@
       "category": "Large Value",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 34.58,
-      "change": 0.24000168,
-      "change_pct": 0.69879663,
+      "price": 34.81,
+      "change": 0.1800003,
+      "change_pct": 0.5197814,
       "expense": 0.04,
       "aum": 15090690048,
       "yield": 1.88,
@@ -17505,9 +16981,9 @@
       "category": "Large Blend",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 30.185,
-      "change": 0.3050003,
-      "change_pct": 1.0205799,
+      "price": 29.8301,
+      "change": 0.10009956,
+      "change_pct": 0.33669546,
       "expense": 0.03,
       "aum": 73852100608,
       "yield": 1.04,
@@ -17639,9 +17115,9 @@
       "category": "Intermediate Core Bond",
       "family": "Schwab ETFs",
       "currency": "USD",
-      "price": 22.455,
-      "change": 0.034999847,
-      "change_pct": 0.15610993,
+      "price": 22.4856,
+      "change": 0.04150009,
+      "change_pct": 0.18490425,
       "expense": 0.03,
       "aum": 10451268608,
       "yield": 4.33,
@@ -17689,9 +17165,9 @@
       "category": "Mid-Cap Value",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 158.815,
-      "change": 0.41500854,
-      "change_pct": 0.26200035,
+      "price": 163.05,
+      "change": 2.3300018,
+      "change_pct": 1.4497274,
       "expense": 0.35,
       "aum": 20381466624,
       "yield": 2.58,
@@ -17823,9 +17299,9 @@
       "category": "Commodities Focused",
       "family": "Aberdeen Standard Investments",
       "currency": "USD",
-      "price": 38.27,
-      "change": 0.20000076,
-      "change_pct": 0.52535003,
+      "price": 37.67,
+      "change": 0.7199974,
+      "change_pct": 1.9485722,
       "expense": 0.17,
       "aum": 7167043072,
       "yield": 0.0,
@@ -17848,9 +17324,9 @@
       "category": "Ultrashort Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 100.675,
-      "change": 0.01499939,
-      "change_pct": 0.0149003025,
+      "price": 100.42,
+      "change": 0.018577576,
+      "change_pct": 0.018503299,
       "expense": 0.09,
       "aum": 112259588096,
       "yield": 3.69,
@@ -17886,9 +17362,9 @@
       "category": "Ultrashort Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 110.33,
-      "change": 0.0,
-      "change_pct": 0.0,
+      "price": 110.055,
+      "change": 0.0009994507,
+      "change_pct": 0.00090818695,
       "expense": 0.15,
       "aum": 22830276608,
       "yield": 3.69,
@@ -17924,9 +17400,9 @@
       "category": "Short Government",
       "family": "iShares",
       "currency": "USD",
-      "price": 81.475,
-      "change": -0.025001526,
-      "change_pct": -0.030676719,
+      "price": 81.465,
+      "change": -0.000579834,
+      "change_pct": -0.0007117534,
       "expense": 0.15,
       "aum": 26281537536,
       "yield": 3.65,
@@ -17964,9 +17440,9 @@
       "category": "Short-Term Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 49.68,
-      "change": 0.025001526,
-      "change_pct": 0.050350472,
+      "price": 49.605,
+      "change": 0.01712799,
+      "change_pct": 0.034537204,
       "expense": 0.06,
       "aum": 2428783616,
       "yield": 4.44,
@@ -18012,9 +17488,9 @@
       "category": "Small Growth",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 108.945,
-      "change": 1.3550034,
-      "change_pct": 1.2594138,
+      "price": 110.98,
+      "change": 1.2200012,
+      "change_pct": 1.1115171,
       "expense": 0.15,
       "aum": 4734638592,
       "yield": 0.73,
@@ -18051,7 +17527,7 @@
           "pct": 0.85
         },
         {
-          "symbol": "MSGS",
+          "symbol": "MSGK",
           "name": "Madison Square Garden Sports Corp Class A",
           "pct": 0.85
         },
@@ -18146,9 +17622,9 @@
       "category": "Small Value",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 105.77,
-      "change": 0.9799957,
-      "change_pct": 0.9351997,
+      "price": 107.6311,
+      "change": 1.6811066,
+      "change_pct": 1.586698,
       "expense": 0.15,
       "aum": 4711612928,
       "yield": 2.01,
@@ -18280,9 +17756,9 @@
       "category": "Intermediate Core Bond",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 24.755,
-      "change": 0.045000076,
-      "change_pct": 0.18211283,
+      "price": 24.81,
+      "change": 0.053199768,
+      "change_pct": 0.21493205,
       "expense": 0.03,
       "aum": 9897055232,
       "yield": 4.27,
@@ -18309,19 +17785,23 @@
         },
         {
           "label": "AAA",
-          "pct": 3.34
+          "pct": 3.51
         },
         {
           "label": "AA",
-          "pct": 73.69
+          "pct": 73.49
         },
         {
           "label": "A",
-          "pct": 11.51
+          "pct": 11.48
         },
         {
           "label": "BBB",
-          "pct": 11.45
+          "pct": 11.47
+        },
+        {
+          "label": "Other",
+          "pct": 0.05
         }
       ]
     },
@@ -18332,9 +17812,9 @@
       "category": "Corporate Bond",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 27.96,
-      "change": 0.069999695,
-      "change_pct": 0.25098494,
+      "price": 27.925,
+      "change": 0.07009888,
+      "change_pct": 0.25165725,
       "expense": 0.03,
       "aum": 2161055232,
       "yield": 5.36,
@@ -18351,23 +17831,27 @@
       "bond_ratings": [
         {
           "label": "AAA",
-          "pct": 1.34
+          "pct": 1.12
         },
         {
           "label": "AA",
-          "pct": 9.88
+          "pct": 9.77
         },
         {
           "label": "A",
-          "pct": 44.89
+          "pct": 44.92
         },
         {
           "label": "BBB",
-          "pct": 43.88
+          "pct": 44.0
+        },
+        {
+          "label": "BB",
+          "pct": 0.02
         },
         {
           "label": "Other",
-          "pct": 0.01
+          "pct": 0.17
         }
       ]
     },
@@ -18378,9 +17862,9 @@
       "category": "Foreign Large Blend",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 49.425,
-      "change": 0.36499786,
-      "change_pct": 0.74398255,
+      "price": 49.735,
+      "change": 0.38500214,
+      "change_pct": 0.7801462,
       "expense": 0.03,
       "aum": 41142882304,
       "yield": 3.01,
@@ -18512,9 +17996,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 49.4398,
-      "change": -0.2301979,
-      "change_pct": -0.46345463,
+      "price": 48.965,
+      "change": 0.49499893,
+      "change_pct": 1.0211427,
       "expense": 0.07,
       "aum": 17536630784,
       "yield": 2.5,
@@ -18646,9 +18130,9 @@
       "category": "Corporate Bond",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 32.575,
-      "change": 0.034999847,
-      "change_pct": 0.10754327,
+      "price": 32.5699,
+      "change": 0.031902313,
+      "change_pct": 0.09804633,
       "expense": 0.04,
       "aum": 11286659072,
       "yield": 4.62,
@@ -18669,11 +18153,11 @@
         },
         {
           "label": "AA",
-          "pct": 8.87
+          "pct": 8.94
         },
         {
           "label": "A",
-          "pct": 45.53
+          "pct": 45.24
         },
         {
           "label": "BBB",
@@ -18685,7 +18169,7 @@
         },
         {
           "label": "Other",
-          "pct": 0.02
+          "pct": 0.23
         }
       ]
     },
@@ -18696,9 +18180,9 @@
       "category": "Inflation-Protected Bond",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 24.8801,
-      "change": -0.009899139,
-      "change_pct": -0.039779704,
+      "price": 24.8634,
+      "change": -0.0169487,
+      "change_pct": -0.068102494,
       "expense": 0.12,
       "aum": 1011451200,
       "yield": 5.7,
@@ -18719,11 +18203,11 @@
         },
         {
           "label": "AAA",
-          "pct": 0.12
+          "pct": 0.1
         },
         {
           "label": "AA",
-          "pct": 99.88
+          "pct": 99.9
         }
       ]
     },
@@ -18734,9 +18218,9 @@
       "category": "Long-Term Bond",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 21.06,
-      "change": 0.12999916,
-      "change_pct": 0.621114,
+      "price": 20.9972,
+      "change": 0.07959938,
+      "change_pct": 0.38048688,
       "expense": 0.04,
       "aum": 1184181888,
       "yield": 5.9,
@@ -18753,21 +18237,163 @@
       "bond_ratings": [
         {
           "label": "AAA",
-          "pct": 1.84
+          "pct": 1.71
         },
         {
           "label": "AA",
-          "pct": 13.04
+          "pct": 12.8
         },
         {
           "label": "A",
-          "pct": 45.11
+          "pct": 45.14
         },
         {
           "label": "BBB",
-          "pct": 40.01
+          "pct": 40.16
+        },
+        {
+          "label": "BB",
+          "pct": 0.01
+        },
+        {
+          "label": "Other",
+          "pct": 0.19
         }
       ]
+    },
+    "SPMO": {
+      "ticker": "SPMO",
+      "name": "Invesco S&P 500 Momentum ETF",
+      "type": "ETF",
+      "category": "Large Blend",
+      "family": "Invesco",
+      "currency": "USD",
+      "price": 133.78,
+      "change": -2.4900055,
+      "change_pct": -1.8272587,
+      "expense": 0.13,
+      "aum": 23015297024,
+      "yield": 0.73,
+      "description": "The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is designed to measure the performance of approximately 100 stocks in the S&P 500\u00ae Index that have the highest \"momentum score.\" In general, momentum is the tendency of an investment to exhibit persistence in its relative performance; a \"momentum style\" of investing emphasizes investing in securities that have had better recent performance compared to other securities. It is non-diversified.",
+      "holdings": [
+        {
+          "symbol": "MU",
+          "name": "Micron Technology Inc",
+          "pct": 9.51
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc",
+          "pct": 8.99
+        },
+        {
+          "symbol": "AMD",
+          "name": "Advanced Micro Devices Inc",
+          "pct": 5.63
+        },
+        {
+          "symbol": "INTC",
+          "name": "Intel Corp",
+          "pct": 5.56
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc Class A",
+          "pct": 4.81
+        },
+        {
+          "symbol": "JNJ",
+          "name": "Johnson & Johnson",
+          "pct": 4.51
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc Class C",
+          "pct": 3.87
+        },
+        {
+          "symbol": "XOM",
+          "name": "ExxonMobil Holdings Corp",
+          "pct": 3.04
+        },
+        {
+          "symbol": "LRCX",
+          "name": "Lam Research Corp",
+          "pct": 2.99
+        },
+        {
+          "symbol": "AMAT",
+          "name": "Applied Materials Inc",
+          "pct": 2.77
+        }
+      ],
+      "sectors": [
+        {
+          "name": "Technology",
+          "pct": 54.72
+        },
+        {
+          "name": "Healthcare",
+          "pct": 10.42
+        },
+        {
+          "name": "Communication Services",
+          "pct": 8.74
+        },
+        {
+          "name": "Industrials",
+          "pct": 7.44
+        },
+        {
+          "name": "Financial Services",
+          "pct": 6.51
+        },
+        {
+          "name": "Energy",
+          "pct": 5.63
+        },
+        {
+          "name": "Consumer Defensive",
+          "pct": 2.34
+        },
+        {
+          "name": "Real Estate",
+          "pct": 2.12
+        },
+        {
+          "name": "Consumer Cyclical",
+          "pct": 1.32
+        },
+        {
+          "name": "Basic Materials",
+          "pct": 0.6
+        },
+        {
+          "name": "Utilities",
+          "pct": 0.17
+        }
+      ],
+      "composition": {
+        "stock": 99.99,
+        "bond": 0.0,
+        "cash": 0.0,
+        "other": 0.0
+      },
+      "equity": {
+        "pe": 24.63,
+        "pb": 6.09,
+        "ps": 3.68,
+        "pcf": 20.83,
+        "median_mktcap": null,
+        "growth3y": null,
+        "cat": {
+          "pe": null,
+          "pb": null,
+          "ps": null,
+          "pcf": null
+        }
+      },
+      "bond_ratings": []
     },
     "SPSB": {
       "ticker": "SPSB",
@@ -18776,9 +18402,9 @@
       "category": "Short-Term Bond",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 29.6887,
-      "change": 0.008699417,
-      "change_pct": 0.029310705,
+      "price": 29.655,
+      "change": 0.017400742,
+      "change_pct": 0.05872142,
       "expense": 0.04,
       "aum": 11108336640,
       "yield": 4.4,
@@ -18795,23 +18421,23 @@
       "bond_ratings": [
         {
           "label": "AAA",
-          "pct": 0.36
+          "pct": 0.56
         },
         {
           "label": "AA",
-          "pct": 9.17
+          "pct": 8.93
         },
         {
           "label": "A",
-          "pct": 49.87
+          "pct": 49.51
         },
         {
           "label": "BBB",
-          "pct": 40.56
+          "pct": 40.94
         },
         {
           "label": "Other",
-          "pct": 0.03
+          "pct": 0.07
         }
       ]
     },
@@ -18822,9 +18448,9 @@
       "category": "Intermediate Government",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 27.635,
-      "change": 0.005001068,
-      "change_pct": 0.018103348,
+      "price": 27.715,
+      "change": 0.020900726,
+      "change_pct": 0.07546996,
       "expense": 0.03,
       "aum": 10376130560,
       "yield": 4.02,
@@ -18845,11 +18471,11 @@
         },
         {
           "label": "AAA",
-          "pct": 0.02
+          "pct": 0.01
         },
         {
           "label": "AA",
-          "pct": 99.98
+          "pct": 99.99
         }
       ]
     },
@@ -18860,9 +18486,9 @@
       "category": "Long Government",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 24.9094,
-      "change": 0.099401474,
-      "change_pct": 0.40080273,
+      "price": 25.0137,
+      "change": 0.1182003,
+      "change_pct": 0.4747858,
       "expense": 0.03,
       "aum": 10674008064,
       "yield": 4.59,
@@ -18883,11 +18509,11 @@
         },
         {
           "label": "AAA",
-          "pct": 0.02
+          "pct": 0.04
         },
         {
           "label": "AA",
-          "pct": 99.98
+          "pct": 99.96
         }
       ]
     },
@@ -18898,9 +18524,9 @@
       "category": "Large Blend",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 92.8,
-      "change": 0.91000366,
-      "change_pct": 0.9903185,
+      "price": 91.885,
+      "change": 0.375,
+      "change_pct": 0.40979126,
       "expense": 0.03,
       "aum": 13993409536,
       "yield": 1.07,
@@ -19032,9 +18658,9 @@
       "category": "Large Blend",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 767.33,
-      "change": 7.3600464,
-      "change_pct": 0.96846545,
+      "price": 758.24,
+      "change": 2.5200195,
+      "change_pct": 0.33345944,
       "expense": 0.0945,
       "aum": 809216114688,
       "yield": 0.99,
@@ -19166,9 +18792,9 @@
       "category": "Large Blend",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 90.3118,
-      "change": 0.86180115,
-      "change_pct": 0.9633595,
+      "price": 89.2419,
+      "change": 0.29190063,
+      "change_pct": 0.3281626,
       "expense": 0.02,
       "aum": 173633224704,
       "yield": 1.02,
@@ -19300,9 +18926,9 @@
       "category": "Large Value",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 64.09,
-      "change": 0.31999588,
-      "change_pct": 0.5017969,
+      "price": 64.4124,
+      "change": 0.28240204,
+      "change_pct": 0.44035873,
       "expense": 0.04,
       "aum": 35618357248,
       "yield": 1.73,
@@ -19434,9 +19060,9 @@
       "category": "Real Estate",
       "family": "Pacer",
       "currency": "USD",
-      "price": 27.86,
-      "change": 0.3900013,
-      "change_pct": 1.4197354,
+      "price": 27.87,
+      "change": -0.23999977,
+      "change_pct": -0.85378784,
       "expense": 0.49,
       "aum": 319818112,
       "yield": 4.87,
@@ -19552,9 +19178,9 @@
       "category": "Short-Term Inflation-Protected Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 100.8299,
-      "change": -0.07009888,
-      "change_pct": -0.06947699,
+      "price": 100.6799,
+      "change": -0.22709656,
+      "change_pct": -0.2250553,
       "expense": 0.03,
       "aum": 16322508800,
       "yield": 4.98,
@@ -19586,9 +19212,9 @@
       "category": "Short-Term Inflation-Protected Bond",
       "family": "PIMCO",
       "currency": "USD",
-      "price": 52.4625,
-      "change": -0.057498932,
-      "change_pct": -0.10948007,
+      "price": 52.1351,
+      "change": -0.14489746,
+      "change_pct": -0.2771566,
       "expense": 0.2,
       "aum": 529952512,
       "yield": 4.94,
@@ -19624,9 +19250,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 311.42,
-      "change": -1.61,
-      "change_pct": -0.5143277,
+      "price": 309.67,
+      "change": -5.72,
+      "change_pct": -1.8136275,
       "expense": 0.16,
       "aum": 1709326848,
       "yield": 0.89,
@@ -19758,9 +19384,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 8.63,
-      "change": -0.02,
-      "change_pct": -0.23121385,
+      "price": 8.67,
+      "change": 0.02,
+      "change_pct": 0.23121388,
       "expense": 0.04,
       "aum": 8127525888,
       "yield": 4.43,
@@ -19821,9 +19447,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 31.4,
-      "change": -0.3,
-      "change_pct": -0.94637233,
+      "price": 31.44,
+      "change": -0.28,
+      "change_pct": -0.8827238,
       "expense": 0.06,
       "aum": 14626778112,
       "yield": 3.23,
@@ -19945,9 +19571,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 19.7,
-      "change": -0.11,
-      "change_pct": -0.5552751,
+      "price": 19.59,
+      "change": -0.36,
+      "change_pct": -1.8045112,
       "expense": 0.02,
       "aum": 148684849152,
       "yield": 0.98,
@@ -20079,9 +19705,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 18.38,
-      "change": -0.09,
-      "change_pct": -0.48727667,
+      "price": 18.3,
+      "change": -0.34,
+      "change_pct": -1.8240345,
       "expense": 0.03,
       "aum": 45006794752,
       "yield": 0.98,
@@ -20213,9 +19839,9 @@
       "category": "Ultrashort Bond",
       "family": "F/m Investments LLC",
       "currency": "USD",
-      "price": 49.9904,
-      "change": 0.00039672852,
-      "change_pct": 0.0007936157,
+      "price": 49.8601,
+      "change": 9.918213e-05,
+      "change_pct": 0.00019889252,
       "expense": 0.15,
       "aum": 7403464192,
       "yield": 3.97,
@@ -20247,9 +19873,9 @@
       "category": "Ultrashort Bond",
       "family": "Invesco",
       "currency": "USD",
-      "price": 105.545,
-      "change": 0.0049972534,
-      "change_pct": 0.004734938,
+      "price": 105.64,
+      "change": 0.0,
+      "change_pct": 0.0,
       "expense": 0.08,
       "aum": 2887320576,
       "yield": 3.6,
@@ -20281,9 +19907,9 @@
       "category": "Short-Term Inflation-Protected Bond",
       "family": "Northern Trust",
       "currency": "USD",
-      "price": 23.5113,
-      "change": -0.018701553,
-      "change_pct": -0.079450235,
+      "price": 23.475,
+      "change": -0.05691147,
+      "change_pct": -0.24179667,
       "expense": 0.18,
       "aum": 2545243392,
       "yield": 5.2,
@@ -20315,9 +19941,9 @@
       "category": "Ultrashort Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 50.655,
-      "change": 0.0049972534,
-      "change_pct": 0.009866245,
+      "price": 50.535,
+      "change": -0.0033721924,
+      "change_pct": -0.006672539,
       "expense": 0.15,
       "aum": 6945307136,
       "yield": 3.74,
@@ -20355,9 +19981,9 @@
       "category": "Inflation-Protected Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 106.255,
-      "change": 0.01499939,
-      "change_pct": 0.014117736,
+      "price": 106.505,
+      "change": -0.024002075,
+      "change_pct": -0.022531025,
       "expense": 0.18,
       "aum": 14229889024,
       "yield": 4.71,
@@ -20389,9 +20015,9 @@
       "category": "Short-Term Inflation-Protected Bond",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 18.4731,
-      "change": -0.011899948,
-      "change_pct": -0.064376235,
+      "price": 18.47,
+      "change": -0.010400772,
+      "change_pct": -0.056249578,
       "expense": 0.15,
       "aum": 2013683968,
       "yield": 5.3,
@@ -20412,11 +20038,11 @@
         },
         {
           "label": "AAA",
-          "pct": 0.16
+          "pct": 0.11
         },
         {
           "label": "AA",
-          "pct": 99.84
+          "pct": 99.89
         }
       ]
     },
@@ -20427,9 +20053,9 @@
       "category": "Long Government",
       "family": "iShares",
       "currency": "USD",
-      "price": 95.635,
-      "change": 0.3050003,
-      "change_pct": 0.31995836,
+      "price": 96.1,
+      "change": 0.40799713,
+      "change_pct": 0.42636493,
       "expense": 0.15,
       "aum": 10728644608,
       "yield": 4.83,
@@ -20461,9 +20087,9 @@
       "category": "Long Government",
       "family": "iShares",
       "currency": "USD",
-      "price": 81.655,
-      "change": 0.31500244,
-      "change_pct": 0.38726637,
+      "price": 81.98,
+      "change": 0.48317719,
+      "change_pct": 0.59291494,
       "expense": 0.15,
       "aum": 46233321472,
       "yield": 5.0,
@@ -20495,9 +20121,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 11.72,
-      "change": 0.06,
-      "change_pct": 0.5145798,
+      "price": 11.81,
+      "change": 0.02,
+      "change_pct": 0.16963528,
       "expense": 0.65,
       "aum": 606770944,
       "yield": 2.68,
@@ -20593,9 +20219,9 @@
       "category": "Foreign Large Value",
       "family": "Victory Capital Management Inc.",
       "currency": "USD",
-      "price": 73.27,
-      "change": 0.7049942,
-      "change_pct": 0.9715347,
+      "price": 73.8015,
+      "change": 0.35649872,
+      "change_pct": 0.4853955,
       "expense": 0.35,
       "aum": 333631488,
       "yield": 4.12,
@@ -20727,9 +20353,9 @@
       "category": "Ultrashort Bond",
       "family": "WisdomTree",
       "currency": "USD",
-      "price": 50.54,
-      "change": 0.020000458,
-      "change_pct": 0.03958919,
+      "price": 50.4199,
+      "change": 0.019897461,
+      "change_pct": 0.03947901,
       "expense": 0.15,
       "aum": 19778600960,
       "yield": 3.73,
@@ -20767,9 +20393,9 @@
       "category": "Corporate Bond",
       "family": "iShares",
       "currency": "USD",
-      "price": 49.46,
-      "change": 0.11000061,
-      "change_pct": 0.22289892,
+      "price": 49.425,
+      "change": 0.08439255,
+      "change_pct": 0.17104076,
       "expense": 0.04,
       "aum": 17489655808,
       "yield": 4.99,
@@ -20823,9 +20449,9 @@
       "category": "Real Estate",
       "family": "iShares",
       "currency": "USD",
-      "price": 63.495,
-      "change": 0.42499924,
-      "change_pct": 0.6738532,
+      "price": 64.27,
+      "change": 0.4999962,
+      "change_pct": 0.78406173,
       "expense": 0.08,
       "aum": 4314472960,
       "yield": 2.85,
@@ -20917,9 +20543,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 22.29,
-      "change": -0.02,
-      "change_pct": -0.08964589,
+      "price": 22.41,
+      "change": 0.06,
+      "change_pct": 0.26845637,
       "expense": 0.1,
       "aum": 26970232832,
       "yield": 4.07,
@@ -20968,9 +20594,9 @@
       "category": "Ultrashort Bond",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 75.71,
-      "change": 0.0,
-      "change_pct": 0.0,
+      "price": 75.53,
+      "change": -0.00090026855,
+      "change_pct": -0.0011919208,
       "expense": 0.06,
       "aum": 12726850560,
       "yield": 3.53,
@@ -21002,9 +20628,9 @@
       "category": "Small Growth",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 331.005,
-      "change": 3.5150146,
-      "change_pct": 1.0733197,
+      "price": 331.865,
+      "change": 1.6849976,
+      "change_pct": 0.510327,
       "expense": 0.05,
       "aum": 42941300736,
       "yield": 0.41,
@@ -21136,9 +20762,9 @@
       "category": "Small Value",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 242.37,
-      "change": 2.0399933,
-      "change_pct": 0.84883004,
+      "price": 246.8028,
+      "change": 3.362793,
+      "change_pct": 1.3813642,
       "expense": 0.05,
       "aum": 64117555200,
       "yield": 1.91,
@@ -21270,9 +20896,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 9.36,
-      "change": -0.02,
-      "change_pct": -0.21321961,
+      "price": 9.4,
+      "change": 0.02,
+      "change_pct": 0.21321964,
       "expense": 0.035,
       "aum": 389050990592,
       "yield": 4.24,
@@ -21333,9 +20959,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 9.36,
-      "change": -0.02,
-      "change_pct": -0.21321961,
+      "price": 9.4,
+      "change": 0.02,
+      "change_pct": 0.21321964,
       "expense": 0.05,
       "aum": 389050990592,
       "yield": 4.22,
@@ -21396,9 +21022,9 @@
       "category": "Corporate Bond",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 79.445,
-      "change": 0.1949997,
-      "change_pct": 0.2460564,
+      "price": 79.455,
+      "change": 0.115104675,
+      "change_pct": 0.14506878,
       "expense": 0.03,
       "aum": 68645912576,
       "yield": 5.08,
@@ -21446,9 +21072,9 @@
       "category": "Long-Term Bond",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 70.795,
-      "change": 0.42499542,
-      "change_pct": 0.603944,
+      "price": 70.53,
+      "change": 0.26599884,
+      "change_pct": 0.3785706,
       "expense": 0.03,
       "aum": 8868049920,
       "yield": 5.99,
@@ -21496,9 +21122,9 @@
       "category": "Short-Term Bond",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 77.675,
-      "change": 0.0450058,
-      "change_pct": 0.057974752,
+      "price": 77.615,
+      "change": 0.02949524,
+      "change_pct": 0.03801643,
       "expense": 0.03,
       "aum": 50868535296,
       "yield": 4.56,
@@ -21546,9 +21172,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 17.16,
-      "change": -0.06,
-      "change_pct": -0.34843206,
+      "price": 17.25,
+      "change": -0.26,
+      "change_pct": -1.4848658,
       "expense": 0.16,
       "aum": 313543393280,
       "yield": 2.29,
@@ -21680,9 +21306,9 @@
       "category": "Foreign Large Blend",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 69.565,
-      "change": 0.5149994,
-      "change_pct": 0.7458354,
+      "price": 70.01,
+      "change": 0.5699997,
+      "change_pct": 0.82085204,
       "expense": 0.03,
       "aum": 313543393280,
       "yield": 2.41,
@@ -21814,9 +21440,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 35.96,
-      "change": 0.01,
-      "change_pct": 0.027816411,
+      "price": 35.15,
+      "change": -0.69,
+      "change_pct": -1.9252232,
       "expense": 0.28,
       "aum": 164656922624,
       "yield": 1.88,
@@ -21948,9 +21574,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 47.2,
-      "change": 0.01,
-      "change_pct": 0.021190928,
+      "price": 46.14,
+      "change": -0.91,
+      "change_pct": -1.9341127,
       "expense": 0.14,
       "aum": 164656922624,
       "yield": 2.0,
@@ -22082,9 +21708,9 @@
       "category": "Foreign Large Blend",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 81.135,
-      "change": 0.4350052,
-      "change_pct": 0.5390399,
+      "price": 81.34,
+      "change": 0.76999664,
+      "change_pct": 0.95568657,
       "expense": 0.04,
       "aum": 95685828608,
       "yield": 2.36,
@@ -22216,9 +21842,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 703.82,
-      "change": -3.64,
-      "change_pct": -0.5145167,
+      "price": 699.87,
+      "change": -12.9,
+      "change_pct": -1.8098404,
       "expense": 0.04,
       "aum": 1729312194560,
       "yield": 1.05,
@@ -22350,9 +21976,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 707.58,
-      "change": -8.64,
-      "change_pct": -1.2063333,
+      "price": 699.96,
+      "change": -12.91,
+      "change_pct": -1.8109894,
       "expense": 0.14,
       "aum": 1729312194560,
       "yield": 0.95,
@@ -22484,9 +22110,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 9.56,
-      "change": -0.02,
-      "change_pct": -0.20876825,
+      "price": 9.62,
+      "change": 0.04,
+      "change_pct": 0.41753653,
       "expense": 0.2,
       "aum": 6969062400,
       "yield": 4.14,
@@ -22531,9 +22157,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 50.22,
-      "change": -0.86,
-      "change_pct": -1.6836334,
+      "price": 50.04,
+      "change": -0.8,
+      "change_pct": -1.5735642,
       "expense": 0.11,
       "aum": 95685828608,
       "yield": 2.33,
@@ -22665,9 +22291,9 @@
       "category": "Intermediate Government",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 57.3985,
-      "change": -0.0015029907,
-      "change_pct": -0.0026186102,
+      "price": 57.59,
+      "change": 0.039001465,
+      "change_pct": 0.06776853,
       "expense": 0.03,
       "aum": 47829745664,
       "yield": 4.03,
@@ -22703,9 +22329,9 @@
       "category": "Long Government",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 52.33,
-      "change": 0.1800003,
-      "change_pct": 0.3451588,
+      "price": 52.56,
+      "change": 0.24150085,
+      "change_pct": 0.46159744,
       "expense": 0.03,
       "aum": 14842457088,
       "yield": 5.04,
@@ -22741,9 +22367,9 @@
       "category": "Short Government",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 57.765,
-      "change": -0.01499939,
-      "change_pct": -0.025959484,
+      "price": 57.74,
+      "change": -0.0010986328,
+      "change_pct": -0.0019026877,
       "expense": 0.03,
       "aum": 39489773568,
       "yield": 3.8,
@@ -22779,9 +22405,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 131.39,
-      "change": 0.11,
-      "change_pct": 0.08379037,
+      "price": 133.11,
+      "change": 0.08,
+      "change_pct": 0.06013681,
       "expense": 0.13,
       "aum": 66417905664,
       "yield": 3.8,
@@ -22885,9 +22511,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 26.47,
-      "change": -0.07,
-      "change_pct": -0.26375285,
+      "price": 26.42,
+      "change": -0.43,
+      "change_pct": -1.6014898,
       "expense": 0.17,
       "aum": 649285074944,
       "yield": 2.22,
@@ -23019,9 +22645,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 21.38,
-      "change": -0.05,
-      "change_pct": -0.23331779,
+      "price": 21.51,
+      "change": 0.06,
+      "change_pct": 0.27972028,
       "expense": 0.07,
       "aum": 68645912576,
       "yield": 4.63,
@@ -23082,9 +22708,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 613.67,
-      "change": -7.49,
-      "change_pct": -1.2058085,
+      "price": 607.08,
+      "change": -11.19,
+      "change_pct": -1.8098888,
       "expense": 0.035,
       "aum": 348681830400,
       "yield": 1.05,
@@ -23216,9 +22842,9 @@
       "category": "Small Growth",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 140.43,
-      "change": 1.8199921,
-      "change_pct": 1.3130308,
+      "price": 143.3967,
+      "change": 1.9566956,
+      "change_pct": 1.3834103,
       "expense": 0.1,
       "aum": 1014796800,
       "yield": 0.79,
@@ -23255,7 +22881,7 @@
           "pct": 0.85
         },
         {
-          "symbol": "MSGS",
+          "symbol": "MSGK",
           "name": "Madison Square Garden Sports Corp Class A",
           "pct": 0.85
         },
@@ -23350,9 +22976,9 @@
       "category": "Small Value",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 114.0,
-      "change": 1.0699997,
-      "change_pct": 0.9474893,
+      "price": 116.0499,
+      "change": 1.8498993,
+      "change_pct": 1.6205848,
       "expense": 0.1,
       "aum": 1853927680,
       "yield": 1.71,
@@ -23484,9 +23110,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 11.35,
-      "change": -0.01,
-      "change_pct": -0.08802816,
+      "price": 11.42,
+      "change": 0.04,
+      "change_pct": 0.35149384,
       "expense": 0.2,
       "aum": 26970232832,
       "yield": 3.99,
@@ -23535,9 +23161,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 92.08,
-      "change": -0.36,
-      "change_pct": -0.3894418,
+      "price": 92.87,
+      "change": -2.44,
+      "change_pct": -2.560067,
       "expense": 0.17,
       "aum": 42941300736,
       "yield": 0.28,
@@ -23669,9 +23295,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 57.63,
-      "change": -0.32,
-      "change_pct": -0.55220014,
+      "price": 58.36,
+      "change": -0.37,
+      "change_pct": -0.6300017,
       "expense": 0.17,
       "aum": 64117555200,
       "yield": 1.78,
@@ -23803,9 +23429,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 181.62,
-      "change": -0.88,
-      "change_pct": -0.48219177,
+      "price": 180.88,
+      "change": -3.31,
+      "change_pct": -1.7970574,
       "expense": 0.03,
       "aum": 2322096979968,
       "yield": 1.05,
@@ -23937,9 +23563,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 87.83,
-      "change": -0.58,
-      "change_pct": -0.65603435,
+      "price": 88.97,
+      "change": -0.36,
+      "change_pct": -0.40300012,
       "expense": 0.17,
       "aum": 251724939264,
       "yield": 1.8,
@@ -24071,9 +23697,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 177.72,
-      "change": -2.25,
-      "change_pct": -1.2502084,
+      "price": 175.77,
+      "change": -3.29,
+      "change_pct": -1.837373,
       "expense": 0.05,
       "aum": 75985477632,
       "yield": 1.01,
@@ -24205,9 +23831,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 17.53,
-      "change": -0.09,
-      "change_pct": -0.5107832,
+      "price": 17.66,
+      "change": 0.09,
+      "change_pct": 0.5122368,
       "expense": 0.07,
       "aum": 14842457088,
       "yield": 4.6,
@@ -24256,9 +23882,9 @@
       "category": "Large Value",
       "family": "iShares",
       "currency": "USD",
-      "price": 195.335,
-      "change": 2.1350098,
-      "change_pct": 1.1049912,
+      "price": 194.02,
+      "change": -0.36999512,
+      "change_pct": -0.1903365,
       "expense": 0.15,
       "aum": 9367618560,
       "yield": 1.56,
@@ -24395,7 +24021,7 @@
       "change_pct": null,
       "expense": 0.11,
       "aum": 1000000,
-      "yield": 3.92,
+      "yield": 3.96,
       "description": null,
       "holdings": [],
       "sectors": [],
@@ -24410,9 +24036,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 123.61,
-      "change": -0.93,
-      "change_pct": -0.74674803,
+      "price": 123.52,
+      "change": -3.44,
+      "change_pct": -2.7095149,
       "expense": 0.07,
       "aum": 33194823680,
       "yield": 0.6,
@@ -24544,9 +24170,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 23.78,
-      "change": -0.01,
-      "change_pct": -0.042034466,
+      "price": 23.65,
+      "change": -0.89,
+      "change_pct": -3.626732,
       "expense": 0.36,
       "aum": 2734264832,
       "yield": 0.2,
@@ -24666,9 +24292,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 107.83,
-      "change": -0.6,
-      "change_pct": -0.5533524,
+      "price": 109.43,
+      "change": 0.08,
+      "change_pct": 0.07315958,
       "expense": 0.07,
       "aum": 36742696960,
       "yield": 1.97,
@@ -24800,9 +24426,9 @@
       "category": "Real Estate",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 93.32,
-      "change": 0.62999725,
-      "change_pct": 0.679682,
+      "price": 94.78,
+      "change": 0.83999634,
+      "change_pct": 0.8941839,
       "expense": 0.13,
       "aum": 66417905664,
       "yield": 3.8,
@@ -24906,9 +24532,9 @@
       "category": "Mid-Cap Value",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 209.1901,
-      "change": 1.1501007,
-      "change_pct": 0.5526809,
+      "price": 212.9156,
+      "change": 1.8256073,
+      "change_pct": 0.86484784,
       "expense": 0.05,
       "aum": 36742696960,
       "yield": 1.99,
@@ -25040,9 +24666,9 @@
       "category": "Large Blend",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 346.59,
-      "change": 3.1600037,
-      "change_pct": 0.9201304,
+      "price": 343.02,
+      "change": 1.3599854,
+      "change_pct": 0.39805213,
       "expense": 0.06,
       "aum": 12184858624,
       "yield": 1.02,
@@ -25174,9 +24800,9 @@
       "category": "Large Value",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 113.44,
-      "change": 0.5299988,
-      "change_pct": 0.46935776,
+      "price": 114.1797,
+      "change": 0.74970245,
+      "change_pct": 0.66105324,
       "expense": 0.06,
       "aum": 23289356288,
       "yield": 1.6,
@@ -25308,9 +24934,9 @@
       "category": "Large Blend",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 705.16,
-      "change": 6.579956,
-      "change_pct": 0.9419044,
+      "price": 696.85,
+      "change": 2.039978,
+      "change_pct": 0.2936023,
       "expense": 0.03,
       "aum": 1729312194560,
       "yield": 1.06,
@@ -25442,9 +25068,9 @@
       "category": "Mid-Cap Growth",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 291.11,
-      "change": 3.9699707,
-      "change_pct": 1.3818686,
+      "price": 288.9,
+      "change": 2.399994,
+      "change_pct": 0.8376942,
       "expense": 0.05,
       "aum": 33194823680,
       "yield": 0.61,
@@ -25576,9 +25202,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 115.14,
-      "change": -0.45,
-      "change_pct": -0.38930705,
+      "price": 116.13,
+      "change": -3.05,
+      "change_pct": -2.5591543,
       "expense": 0.07,
       "aum": 42941300736,
       "yield": 0.4,
@@ -25710,9 +25336,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 103.25,
-      "change": -0.57,
-      "change_pct": -0.54902714,
+      "price": 104.56,
+      "change": -0.67,
+      "change_pct": -0.6367006,
       "expense": 0.07,
       "aum": 64117555200,
       "yield": 1.9,
@@ -25844,9 +25470,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 19.38,
-      "change": -0.03,
-      "change_pct": -0.15455951,
+      "price": 19.5,
+      "change": 0.08,
+      "change_pct": 0.41194645,
       "expense": 0.07,
       "aum": 47829745664,
       "yield": 3.68,
@@ -25895,9 +25521,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 340.7,
-      "change": -1.66,
-      "change_pct": -0.48486972,
+      "price": 339.3,
+      "change": -6.22,
+      "change_pct": -1.8001853,
       "expense": 0.02,
       "aum": 2322096979968,
       "yield": 1.06,
@@ -26029,9 +25655,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 24.48,
-      "change": 0.07,
-      "change_pct": 0.28676772,
+      "price": 24.56,
+      "change": 0.04,
+      "change_pct": 0.16313215,
       "expense": 0.04,
       "aum": 73009381376,
       "yield": 2.85,
@@ -26080,9 +25706,9 @@
       "category": "Corporate Bond",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 73.99,
-      "change": 0.18999481,
-      "change_pct": 0.25744554,
+      "price": 73.9141,
+      "change": 0.17250061,
+      "change_pct": 0.23392577,
       "expense": 0.03,
       "aum": 1612534784,
       "yield": 5.2,
@@ -26130,9 +25756,9 @@
       "category": "Large Blend",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 337.44,
-      "change": 3.130005,
-      "change_pct": 0.9362302,
+      "price": 334.265,
+      "change": 1.6450195,
+      "change_pct": 0.49456424,
       "expense": 0.06,
       "aum": 6485594112,
       "yield": 1.03,
@@ -26264,9 +25890,9 @@
       "category": "Large Blend",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 376.68,
-      "change": 3.669983,
-      "change_pct": 0.9838832,
+      "price": 372.93,
+      "change": 1.3599854,
+      "change_pct": 0.36601052,
       "expense": 0.03,
       "aum": 2322096979968,
       "yield": 1.06,
@@ -26398,9 +26024,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 44.29,
-      "change": -0.1,
-      "change_pct": -0.22527596,
+      "price": 44.19,
+      "change": -0.72,
+      "change_pct": -1.6032064,
       "expense": 0.09,
       "aum": 649285074944,
       "yield": 2.3,
@@ -26532,9 +26158,9 @@
       "category": "Short-Term Inflation-Protected Bond",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 48.8099,
-      "change": -0.020103455,
-      "change_pct": -0.04117029,
+      "price": 48.8743,
+      "change": -0.11570358,
+      "change_pct": -0.23617795,
       "expense": 0.03,
       "aum": 73009381376,
       "yield": 4.19,
@@ -26570,9 +26196,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 22.16,
-      "change": -0.08,
-      "change_pct": -0.35971224,
+      "price": 22.28,
+      "change": -0.33,
+      "change_pct": -1.4595312,
       "expense": 0.07,
       "aum": 313543393280,
       "yield": 2.39,
@@ -26704,9 +26330,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 22.2,
-      "change": -0.07,
-      "change_pct": -0.3143242,
+      "price": 22.31,
+      "change": -0.33,
+      "change_pct": -1.4575973,
       "expense": 0.06,
       "aum": 313543393280,
       "yield": 2.41,
@@ -26838,9 +26464,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 181.59,
-      "change": -0.89,
-      "change_pct": -0.4877247,
+      "price": 180.85,
+      "change": -3.31,
+      "change_pct": -1.79735,
       "expense": 0.04,
       "aum": 2322096979968,
       "yield": 1.05,
@@ -26972,9 +26598,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 181.56,
-      "change": -0.88,
-      "change_pct": -0.48235035,
+      "price": 180.81,
+      "change": -3.31,
+      "change_pct": -1.7977407,
       "expense": 0.14,
       "aum": 2322096979968,
       "yield": 1.01,
@@ -27106,9 +26732,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 177.1,
-      "change": -0.43,
-      "change_pct": -0.24221258,
+      "price": 176.72,
+      "change": -2.86,
+      "change_pct": -1.592605,
       "expense": 0.08,
       "aum": 649285074944,
       "yield": 2.33,
@@ -27240,9 +26866,9 @@
       "category": "Large Value",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 226.41,
-      "change": 1.3600006,
-      "change_pct": 0.6043104,
+      "price": 229.26,
+      "change": 1.2399902,
+      "change_pct": 0.5438076,
       "expense": 0.03,
       "aum": 251724939264,
       "yield": 1.93,
@@ -27374,9 +27000,9 @@
       "category": "Small Growth",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 255.22,
-      "change": 2.9450073,
-      "change_pct": 1.1673799,
+      "price": 257.65,
+      "change": 0.8800049,
+      "change_pct": 0.34272107,
       "expense": 0.06,
       "aum": 1638051328,
       "yield": 0.67,
@@ -27508,9 +27134,9 @@
       "category": "Small Value",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 188.8,
-      "change": 1.1399994,
-      "change_pct": 0.6074813,
+      "price": 191.14,
+      "change": 2.2700043,
+      "change_pct": 1.2018871,
       "expense": 0.06,
       "aum": 1358529280,
       "yield": 1.73,
@@ -27642,9 +27268,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 7.41,
-      "change": -0.04,
-      "change_pct": -0.53691274,
+      "price": 7.46,
+      "change": 0.04,
+      "change_pct": 0.53908354,
       "expense": 0.2,
       "aum": 2547787520,
       "yield": 5.0,
@@ -27709,9 +27335,9 @@
       "category": "Large Blend",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 353.6199,
-      "change": 3.4699097,
-      "change_pct": 0.99097806,
+      "price": 349.155,
+      "change": 1.105011,
+      "change_pct": 0.3174863,
       "expense": 0.03,
       "aum": 75985477632,
       "yield": 1.02,
@@ -27843,9 +27469,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 87.81,
-      "change": -0.57,
-      "change_pct": -0.64494234,
+      "price": 88.94,
+      "change": -0.36,
+      "change_pct": -0.40313548,
       "expense": 0.05,
       "aum": 251724939264,
       "yield": 1.91,
@@ -27977,9 +27603,9 @@
       "category": null,
       "family": null,
       "currency": "USD",
-      "price": 7.1,
-      "change": -0.04,
-      "change_pct": -0.5602241,
+      "price": 7.13,
+      "change": 0.01,
+      "change_pct": 0.14044943,
       "expense": 0.2,
       "aum": 9207767040,
       "yield": 5.6,
@@ -28044,9 +27670,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 56.6375,
-      "change": -0.20249939,
-      "change_pct": -0.3562778,
+      "price": 56.11,
+      "change": 0.6000023,
+      "change_pct": 1.0809976,
       "expense": 0.06,
       "aum": 164656922624,
       "yield": 2.05,
@@ -28178,9 +27804,9 @@
       "category": "Foreign Large Blend",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 82.9,
-      "change": 0.37000275,
-      "change_pct": 0.44832516,
+      "price": 83.045,
+      "change": 0.6749954,
+      "change_pct": 0.8194177,
       "expense": 0.05,
       "aum": 649285074944,
       "yield": 2.34,
@@ -28312,9 +27938,9 @@
       "category": "Large Value",
       "family": "Vanguard",
       "currency": "USD",
-      "price": 162.63,
-      "change": 1.1300049,
-      "change_pct": 0.69969344,
+      "price": 164.48,
+      "change": 0.73999023,
+      "change_pct": 0.45193002,
       "expense": 0.04,
       "aum": 95754289152,
       "yield": 2.37,
@@ -28446,9 +28072,9 @@
       "category": "Real Estate",
       "family": "State Street Investment Management",
       "currency": "USD",
-      "price": 42.87,
-      "change": 0.29999924,
-      "change_pct": 0.70471984,
+      "price": 43.505,
+      "change": 0.3350029,
+      "change_pct": 0.7760086,
       "expense": 0.08,
       "aum": 7652509696,
       "yield": 3.53,
@@ -28540,9 +28166,9 @@
       "category": "Mid-Cap Blend",
       "family": "Invesco",
       "currency": "USD",
-      "price": 117.03,
-      "change": 1.4199982,
-      "change_pct": 1.2282659,
+      "price": 120.57,
+      "change": 2.7799988,
+      "change_pct": 2.3601315,
       "expense": 0.25,
       "aum": 5345000448,
       "yield": 0.59,
@@ -28666,9 +28292,9 @@
       "category": "Small Value",
       "family": "Invesco",
       "currency": "USD",
-      "price": 74.06,
-      "change": 0.8703003,
-      "change_pct": 1.1891022,
+      "price": 75.145,
+      "change": 0.875,
+      "change_pct": 1.1786892,
       "expense": 0.37,
       "aum": 495975328,
       "yield": 1.95,
@@ -28792,9 +28418,9 @@
       "category": "Small Blend",
       "family": "Invesco",
       "currency": "USD",
-      "price": 80.42,
-      "change": 1.8199997,
-      "change_pct": 2.3155212,
+      "price": 80.83,
+      "change": -0.15000153,
+      "change_pct": -0.1852328,
       "expense": 0.35,
       "aum": 2862272512,
       "yield": 0.63,
@@ -28821,7 +28447,7 @@
           "pct": 2.72
         },
         {
-          "symbol": "MSGS",
+          "symbol": "MSGK",
           "name": "Madison Square Garden Sports Corp Class A",
           "pct": 2.21
         },
@@ -28922,9 +28548,9 @@
       "category": "Diversified Emerging Mkts",
       "family": "WisdomTree",
       "currency": "USD",
-      "price": 43.5,
-      "change": 0.0,
-      "change_pct": 0.0,
+      "price": 43.18,
+      "change": 0.5,
+      "change_pct": 1.1715089,
       "expense": 0.32,
       "aum": 2082081408,
       "yield": 1.65,
@@ -29056,13 +28682,13 @@
       "category": "Small Value",
       "family": "Invesco",
       "currency": "USD",
-      "price": 67.9357,
-      "change": 0.745697,
-      "change_pct": 1.1098334,
+      "price": 68.6399,
+      "change": 1.3798981,
+      "change_pct": 2.0495067,
       "expense": 0.36,
       "aum": 582008448,
       "yield": 1.95,
-      "description": "The fund generally will invest at least 90% of its total assets in securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, the index provider compiles, maintains and calculates the underlying index, which is designed to measure the performance of 120 stocks in the S&P SmallCap 600\u00ae Index that have relatively high \u201cvalue\u201d and \u201cmomentum\u201d scores.",
+      "description": "The underlying index, which is designed to measure the performance of 120 stocks in the S&P SmallCap 600\u00ae Index (the \u201cParent Index\u201d) that have relatively high \u201cvalue\u201d and \u201cmomentum\u201d scores. under normal circumstances, at least 80% of the value of its net assets, plus the amount of any borrowings for investment purposes, in the components of the underlying index and in derivatives and other investments that have economic characteristics similar to the components of the underlying index.",
       "holdings": [
         {
           "symbol": "KSS",
@@ -29190,9 +28816,9 @@
       "category": "Long Government",
       "family": "PIMCO",
       "currency": "USD",
-      "price": 58.735,
-      "change": 0.4449997,
-      "change_pct": 0.76342374,
+      "price": 59.18,
+      "change": 0.77000046,
+      "change_pct": 1.3182682,
       "expense": 0.15,
       "aum": 1884239104,
       "yield": 6.02,
